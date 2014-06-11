@@ -394,6 +394,12 @@ a > .producto{
   color: #005783;
 }
 
+.bg-half{
+  background-image: url("../assets/img/bg-half.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+
 /* Custom Buttons */
 
 .btn{
