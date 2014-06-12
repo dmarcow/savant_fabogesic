@@ -15,19 +15,28 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
+
+	//Using EsAdministrador as name to check access rules by 1 / 0 if is administrator or not
+	private $_name;
+
 	public function authenticate()
 	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
+		$user = Usuario::model()->findByAttributes(array('Email'=>$this->username));
+
+		if($user == null){
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
+		}else if($user->Password !== $this->password){
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
+		}else{
+			$this->_name = $user->EsAdministrador;
 			$this->errorCode=self::ERROR_NONE;
+		}
+		
 		return !$this->errorCode;
 	}
+
+    public function getName(){
+
+        return $this->_name;
+    }
 }
