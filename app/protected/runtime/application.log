@@ -97,3 +97,267 @@ Stack trace:
 REQUEST_URI=/Savant/savant_fabogesic/app/index.php/BackOffice
 HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/index.php/site/login
 ---
+2014/06/12 17:54:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "BackOffice".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('BackOffice')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('BackOffice')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/BackOffice')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/BackOffice
+---
+2014/06/12 17:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Slider".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('Slider')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/Slider
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/BackOffice
+---
+2014/06/12 18:02:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('slider/admin')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/Slider
+---
+2014/06/12 18:02:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/usuario/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/Usuario
+---
+2014/06/12 18:04:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('slider/admin')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/Slider
+---
+2014/06/12 18:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Oferta".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('Oferta')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/Oferta
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/BackOffice
+---
+2014/06/12 18:41:43 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.simpleImage" is not defined.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CModule.php(105): CComponent->__get('simpleImage')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(84): CModule->__get('simpleImage')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(49): SliderController->actionCreate()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('slider/create')
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/create
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/slider/create
+---
+2014/06/12 18:43:33 [error] [php] include(/Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/extensions/simple_image.php): failed to open stream: No such file or directory (/Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/YiiBase.php:404)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/extensions/CSimpleImage.php(13): spl_autoload_call()
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(84): CSimpleImage->load()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(49): SliderController->actionCreate()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): SliderController->runAction()
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): SliderController->filterAccessControl()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): SliderController->runActionWithFilters()
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): SliderController->run()
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/create
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/extensions/CSimpleImage.php (13)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php (84)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php (13)
+2014/06/12 20:56:23 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php:113) (/Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CHttpRequest.php:859)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(131): SliderController->redirect()
+#1 unknown(0): SliderController->actionUpdate()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): SliderController->runAction()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): SliderController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): SliderController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): SliderController->run()
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/update/6
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php (131)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php (13)
+2014/06/12 20:57:35 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php:121) (/Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CHttpRequest.php:859)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(132): SliderController->redirect()
+#1 unknown(0): SliderController->actionUpdate()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): SliderController->runAction()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): SliderController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): SliderController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): SliderController->run()
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/update/6
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php (132)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php (13)
+2014/06/12 21:02:21 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php:117) (/Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CHttpRequest.php:859)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(131): SliderController->redirect()
+#1 unknown(0): SliderController->actionUpdate()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): SliderController->runAction()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): SliderController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): SliderController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): SliderController->run()
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/update/6
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php (131)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php (13)
+2014/06/12 21:18:47 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php:117) (/Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CHttpRequest.php:859)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php(131): SliderController->redirect()
+#1 unknown(0): SliderController->actionUpdate()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(133): SliderController->runAction()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): SliderController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): SliderController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): SliderController->run()
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/Savant/savant_fabogesic/app/slider/update/7
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SliderController.php (131)
+in /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php (13)
+2014/06/12 22:57:01 [error] [exception.CException] exception 'CException' with message 'Property "EditableContent.AboutA1" is not defined.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/db/ar/CActiveRecord.php(145): CComponent->__get('AboutA1')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/views/site/pages/about.php(12): CActiveRecord->__get('AboutA1')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CBaseController.php(126): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CAction.php(76): CViewAction->run()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('page')
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/page?view=about
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/index
+---
+2014/06/12 23:19:32 [error] [exception.CException] exception 'CException' with message 'Property "EditableContent.aboutA1" is not defined.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/db/ar/CActiveRecord.php(145): CComponent->__get('aboutA1')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/views/site/presentaciones.php(3): CActiveRecord->__get('aboutA1')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CBaseController.php(126): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(782): CController->renderPartial('presentaciones', Array, true)
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/protected/controllers/SiteController.php(43): CController->render('presentaciones', Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/actions/CInlineAction.php(49): SiteController->actionPresentaciones()
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('presentaciones')
+#12 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/presentaci...')
+#13 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/presentaciones
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/queEsIbuprofeno
+---
+2014/06/12 23:19:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('editableContent...')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/editableContent/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/EditableContent
+---

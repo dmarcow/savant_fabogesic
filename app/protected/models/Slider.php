@@ -1,26 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "Usuario".
+ * This is the model class for table "Slider".
  *
- * The followings are the available columns in table 'Usuario':
+ * The followings are the available columns in table 'Slider':
  * @property integer $id
- * @property string $Nombre
- * @property string $Apellido
- * @property string $Email
- * @property string $Password
- * @property integer $EsAdministrador
+ * @property string $ImageUrl
+ * @property string $LinkUrl
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
-class Usuario extends CActiveRecord
+class Slider extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'Usuario';
+		return 'Slider';
 	}
 
 	/**
@@ -31,14 +28,12 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Apellido, Email, Password', 'required'),
-			array('EsAdministrador', 'numerical', 'integerOnly'=>true),
-			array('Nombre, Apellido, Password', 'length', 'max'=>100),
-			array('Email', 'length', 'max'=>150),
-			array('Email', 'email', 'message' => 'El {attribute} ingresado, no es valido.'),
+			array('ImageUrl', 'required'),
+			array('ImageUrl, LinkUrl', 'length', 'max'=>150),
+			array('ImageUrl', 'file','types'=>'jpg, gif, png','maxSize'=>IMAGES_MAX_UPLOAD_SIZE, 'allowEmpty'=>true, 'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Nombre, Apellido, Email, Password, EsAdministrador, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('id, ImageUrl, LinkUrl, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,11 +55,8 @@ class Usuario extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Nombre' => 'Nombre',
-			'Apellido' => 'Apellido',
-			'Email' => 'Email',
-			'Password' => 'Password',
-			'EsAdministrador' => 'Es Administrador',
+			'ImageUrl' => 'Image Url',
+			'LinkUrl' => 'Link Url',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);
@@ -89,11 +81,8 @@ class Usuario extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('Apellido',$this->Apellido,true);
-		$criteria->compare('Email',$this->Email,true);
-		$criteria->compare('Password',$this->Password,true);
-		$criteria->compare('EsAdministrador',$this->EsAdministrador);
+		$criteria->compare('ImageUrl',$this->ImageUrl,true);
+		$criteria->compare('LinkUrl',$this->LinkUrl,true);
 		$criteria->compare('FechaCreacion',$this->FechaCreacion,true);
 		$criteria->compare('FechaModificacion',$this->FechaModificacion,true);
 
@@ -106,7 +95,7 @@ class Usuario extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Usuario the static model class
+	 * @return Slider the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

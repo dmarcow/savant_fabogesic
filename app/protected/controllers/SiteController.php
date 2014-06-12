@@ -25,11 +25,36 @@ class SiteController extends Controller
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
-	public function actionIndex()
-	{
+	public function actionIndex(){
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$model=EditableContent::model()->findByPk(1);
+
+		$this->render('index',array(
+			'contentEdModel'=>$model,
+		));
+	}
+
+	public function actionPresentaciones(){
+		$model = EditableContent::model()->findByPk(1);
+
+		$this->render('presentaciones',array(
+			'contentEdModel'=>$model,
+		));
+	}	
+
+	public function actionQueEsIbuprofeno(){
+
+		$this->render('queEsIbuprofeno',array(
+			//'contentEdModel'=>$model,
+		));
+	}	
+
+	public function actionUsosMasFrecuentes(){
+
+		$this->render('usosMasFrecuentes',array(
+			//'contentEdModel'=>$model,
+		));
 	}
 
 	/**

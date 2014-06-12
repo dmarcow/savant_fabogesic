@@ -1,5 +1,11 @@
 <?php
 
+
+define('IMAGES_MAX_UPLOAD_SIZE', 10485760); //Seteado en 10Mb 1024^2 *10. Nota, este valor no sobrescribe el valor seteado en el php.ini. 
+
+define('SLIDE_IMAGES_PATH', "upload/images/slides/"); 
+define('SLIDE_THUMBS_IMAGES_PATH', "upload/images/slides/thumbs/"); 
+
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -38,9 +44,13 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+        'simpleImage'=>array(
+            'class' => 'application.extensions.CSimpleImage',
+        ),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
