@@ -6,6 +6,11 @@ define('IMAGES_MAX_UPLOAD_SIZE', 10485760); //Seteado en 10Mb 1024^2 *10. Nota, 
 define('SLIDE_IMAGES_PATH', "upload/images/slides/"); 
 define('SLIDE_THUMBS_IMAGES_PATH', "upload/images/slides/thumbs/"); 
 
+$http = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && !in_array(strtolower($_SERVER['HTTPS']),array('off','no'))) ? 'https' : 'http';
+$http.= "://" . $_SERVER['HTTP_HOST'];
+
+define("HTTP_AND_SERVER_CONST", $http);
+
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -14,6 +19,12 @@ define('SLIDE_THUMBS_IMAGES_PATH', "upload/images/slides/thumbs/");
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Fabogesic',
+	'theme'=>'fabogesic',
+
+	'aliases' => array(
+        'bootstrap' => 'application.modules.bootstrap',
+        'chartjs' => 'application.modules.bootstrap.extensions.yii-chartjs-master',
+    ),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -22,9 +33,25 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'ext.giix-components.*', // giix components
+        'bootstrap.*',
+        'bootstrap.components.*',
+        'bootstrap.models.*',
+        'bootstrap.controllers.*',
+        'bootstrap.helpers.*',
+        'bootstrap.widgets.*',
+        'bootstrap.extensions.*',
+        'chartjs.*',
+        'chartjs.widgets.*',
+        'chartjs.components.*',
 	),
 
 	'modules'=>array(
+
+		'bootstrap' => array(
+            'class' => 'bootstrap.BootStrapModule'
+        ),
+
 		// uncomment the following to enable the Gii tool
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
@@ -40,6 +67,15 @@ return array(
 
 	// application components
 	'components'=>array(
+		'coreMessages'=>array(
+			'basePath'=>'protected/messages'
+		),
+		'bsHtml' => array('class' => 'bootstrap.components.BSHtml'),
+        'chartjs'=>array('class' => 'chartjs.components.ChartJs'),
+
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.BsApi'
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

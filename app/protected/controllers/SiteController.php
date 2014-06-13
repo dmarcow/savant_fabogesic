@@ -29,9 +29,11 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$model=EditableContent::model()->findByPk(1);
+		$sliderModel = Slider::model()->findAll();
 
 		$this->render('index',array(
 			'contentEdModel'=>$model,
+			'sliders'=>$sliderModel,
 		));
 	}
 
