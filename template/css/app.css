@@ -281,7 +281,7 @@ a > .producto{
 /* SECCION PEDIATRICA
 -------------------------------------------------- */
 
-.pediatria{
+.pediatria, .contacto{
   margin: 30px auto 0;
 }
 
@@ -333,9 +333,24 @@ a > .producto{
   margin-top: 30px; 
 }
 
+/*.ventajas h4{
+  color: #1d5284;
+  background: #c6db0c;
+  padding: 10px 25px;
+}*/
+
 .ventajas ul, .curiosidades ul, .usos-internas ul{
   list-style: none;
   padding: 25px;
+}
+
+.ventajas ul{
+  padding: 15px 15px 20px;
+}
+
+.ventajas .tick p{
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .ventajas-left, .ventajas-right, .curiosidades .panel-body{
