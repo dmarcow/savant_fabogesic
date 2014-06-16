@@ -38,6 +38,8 @@ class SiteController extends Controller
 	}
 
 	public function actionPresentaciones(){
+
+		$this->layout="internas";
 		$model = EditableContent::model()->findByPk(1);
 
 		$this->render('presentaciones',array(
@@ -47,6 +49,7 @@ class SiteController extends Controller
 
 	public function actionQueEsIbuprofeno(){
 
+		$this->layout="queEsIbuprofeno";
 		$this->render('queEsIbuprofeno',array(
 			//'contentEdModel'=>$model,
 		));
@@ -54,6 +57,7 @@ class SiteController extends Controller
 
 	public function actionUsosMasFrecuentes(){
 
+		$this->layout="usosFrecuentes";
 		$this->render('usosMasFrecuentes',array(
 			//'contentEdModel'=>$model,
 		));
@@ -78,6 +82,7 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
+		$this->layout="contacto";
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{

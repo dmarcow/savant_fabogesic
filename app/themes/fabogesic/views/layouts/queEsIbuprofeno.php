@@ -25,7 +25,7 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body class="bg-half">
 
 <div id="page">
 
@@ -42,7 +42,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,7 +51,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo $this->createUrl('/site/')?>"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/main-logo.png'?> " alt="Fabogesic"></a>
+              <a class="navbar-brand" href="<?php echo $this->createUrl('/site/')?>"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/main-logo-inverse.png'?> " alt="Fabogesic"></a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
