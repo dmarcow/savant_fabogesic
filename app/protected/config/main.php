@@ -100,7 +100,7 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=fabogesic',
 			'emulatePrepare' => true,
-			'username' => 'root3',
+			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
 		),
