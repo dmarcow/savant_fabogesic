@@ -247,6 +247,7 @@ a > .producto{
   .producto p{
     color: #fff;
     font-size: 20px;
+    line-height: 1;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -262,7 +263,7 @@ a > .producto{
     content: '▼';
     position: absolute;
     font-size: 14px;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -595,6 +596,7 @@ a > .producto{
     font-size: 12px;
   }
 
+  .navbar-nav > li.active:last-child a,
   .navbar-default .navbar-nav > li:last-child > a:hover, 
   .navbar-default .navbar-nav > li:last-child > a:focus,
   .navbar-inverse .navbar-nav > li:last-child > a:hover, 
@@ -755,7 +757,7 @@ a > .producto{
   }
 
   .producto p{
-    bottom: 60px;
+    bottom: 35px;
   }
 
   .producto img{
