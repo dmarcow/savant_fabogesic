@@ -27,7 +27,7 @@
 
 <body class="bg-primary bg-presentaciones">
 
-<div id="page">
+
 
 	<?php
 		$UserName = "";
@@ -55,7 +55,7 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-              	<li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
+              	<li class="active"><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
@@ -76,7 +76,7 @@
 
 	<?php echo $content; ?>
 
-</div><!-- page -->
+
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->

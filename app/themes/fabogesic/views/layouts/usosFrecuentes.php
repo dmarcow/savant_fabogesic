@@ -27,8 +27,6 @@
 
 <body class="bg-primary">
 
-<div id="page">
-
   <?php
     $UserName = "";
     if(!Yii::app()->user->isGuest){
@@ -57,7 +55,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
-                <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
+                <li class="active"><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
                 <?php if(!Yii::app()->user->isGuest ){ ?>
                   <li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo $UserName ?> )</a></li>
@@ -75,8 +73,6 @@
     </div>
 
   <?php echo $content; ?>
-
-</div><!-- page -->
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
