@@ -15,14 +15,14 @@
         
         <div class="row">
           <div class="col-md-12">
-            <img class="img-responsive" src="assets/img/caja-capsulas-400x10.png" alt="400mg x 10 cápsulas de gelatina blanda">
+            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub1Model->Sub1ImageUrl ?>" alt="400mg x 10 cápsulas de gelatina blanda">
           </div>
           <div class="col-md-12">
             
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p>400mg x 10 cápsulas de gelatina blanda</p>
+                <p><?php echo utf8_encode($presSub1Model->Sub1Text) ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -45,14 +45,14 @@
         
         <div class="row">
           <div class="col-md-12">
-            <img class="img-responsive" src="assets/img/caja-capsulas-400x20.png" alt="400mg x 20 cápsulas de gelatina blanda">
+            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub1Model->Sub2ImageUrl ?>" alt="400mg x 20 cápsulas de gelatina blanda">
           </div>
           <div class="col-md-12">
             
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p>400mg x 20 cápsulas de gelatina blanda</p>
+                <p><?php echo utf8_encode($presSub1Model->Sub2Text) ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -75,14 +75,14 @@
 
         <div class="row">
           <div class="col-md-12">
-            <img class="img-responsive" src="assets/img/caja-capsulas-400x90.png" alt="400mg x 90 cápsulas de gelatina blanda">
+            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub1Model->Sub3ImageUrl ?>" alt="400mg x 90 cápsulas de gelatina blanda">
           </div>
           <div class="col-md-12">
             
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p>400mg x 90 cápsulas de gelatina blanda</p>
+                <p><?php echo utf8_encode($presSub1Model->Sub3Text) ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -107,14 +107,14 @@
 
         <div class="row">
           <div class="col-md-12">
-            <img class="img-responsive" src="assets/img/caja-capsulas-600x10.png" alt="600mg x 10 cápsulas de gelatina blanda">
+            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub1Model->Sub4ImageUrl ?>" alt="600mg x 10 cápsulas de gelatina blanda">
           </div>
           <div class="col-md-12">
             
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p>600mg x 10 cápsulas de gelatina blanda</p>
+                <p><?php echo utf8_encode($presSub1Model->Sub4Text) ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -140,14 +140,14 @@
 
         <div class="row">
           <div class="col-md-12">
-            <img class="img-responsive" src="assets/img/caja-capsulas-600x20.png" alt="600mg x 20 cápsulas de gelatina blanda">
+            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub1Model->Sub5ImageUrl ?>" alt="600mg x 20 cápsulas de gelatina blanda">
           </div>
           <div class="col-md-12">
             
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p>600mg x 20 cápsulas de gelatina blanda</p>
+                <p><?php echo utf8_encode($presSub1Model->Sub5Text) ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -169,7 +169,8 @@
 
   <div class="col-sm-12 btn-back">
     <p class="text-left">
-      <a href="presentaciones.html" class="btn btn-warning" role="button"><strong>VOLVER</strong></a>
+      <?php $urlBack = Yii::app()->createUrl('site/presentaciones/'); ?>
+      <a href="<?php echo $urlBack ?>" class="btn btn-warning" role="button"><strong>VOLVER</strong></a>
     </p>
   </div>
 
@@ -186,8 +187,9 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <p><img class="img-responsive" src="prospectos/fabo_400_CB.png" /></p>
-        <a role="button" class="btn btn-primary" href="prospectos/fabo_400_CB.png" target="_blank">Descargar</a>
+        <?php $url400 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub1Model->Sub1Link ?>
+        <p><img class="img-responsive" src="<?php echo $url400; ?>" /></p>
+        <a role="button" class="btn btn-primary" href="<?php echo $url400; ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -200,8 +202,9 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <p><img class="img-responsive" src="prospectos/fabo_600_CB.png" /></p>
-        <a role="button" class="btn btn-primary" href="prospectos/fabo_600_CB.png" target="_blank">Descargar</a>
+        <?php $url600 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub1Model->Sub4Link ?>
+        <p><img class="img-responsive" src="<?php echo $url600 ?>" /></p>
+        <a role="button" class="btn btn-primary" href="<?php echo $url600 ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

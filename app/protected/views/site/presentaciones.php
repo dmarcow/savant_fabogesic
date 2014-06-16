@@ -13,23 +13,25 @@
 
   <!-- Three columns of text below the carousel -->
   <div class="row">
-    <?php $url1 = Yii::app()->createUrl('site/capsulasBlandas/'); ?>
+    <?php $url1 = Yii::app()->createUrl('site/presentacionesSub1/'); ?>
     <a href="<?php echo $url1 ?>" class="col-sm-4">
       <div class="producto">
        	<img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presModel->Sub1ImageUrl ?> " alt="Cápsulas blandas"> 
-        <p><?php echo $presModel->Sub1Text; ?></p>
+        <p><?php echo utf8_encode($presModel->Sub1Text); ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
-    <a href="comprimidos.html" class="col-sm-4">
+    <?php $url2 = Yii::app()->createUrl('site/presentacionesSub2/'); ?>
+    <a href="<?php echo $url2 ?>" class="col-sm-4">
       <div class="producto">
         <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presModel->Sub2ImageUrl ?> " alt="Comprimidos">
-        <p><?php echo $presModel->Sub2Text; ?></p>
+        <p><?php echo utf8_encode($presModel->Sub2Text); ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
-    <a href="seccion-pediatrica.html" class="col-sm-4">
+    <?php $url3 = Yii::app()->createUrl('site/presentacionesSub3/'); ?>
+    <a href="<?php echo $url3 ?>" class="col-sm-4">
       <div class="producto">
         <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presModel->Sub3ImageUrl ?> " alt="Suspensión oral">
-        <p><?php echo $presModel->Sub3Text; ?></p>
+        <p><?php echo utf8_encode($presModel->Sub3Text); ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
   </div><!-- /.row -->

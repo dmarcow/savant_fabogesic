@@ -47,12 +47,32 @@ class SiteController extends Controller
 		));
 	}	
 
-	public function actionCapsulasBlandas(){
+	public function actionPresentacionesSub1(){
+
+		$this->layout="internas";
+		$model = PresentacionesSub1::model()->findByPk(1);
+
+		$this->render('presentacionesSub1',array(
+			'presSub1Model'=>$model,
+		));
+	}
+
+	public function actionPresentacionesSub2(){
+
+		$this->layout="internas";
+		$model = PresentacionesSub2::model()->findByPk(1);
+
+		$this->render('presentacionesSub2',array(
+			'presSub2Model'=>$model,
+		));
+	}
+
+	public function actionPresentacionesSub3(){
 
 		$this->layout="internas";
 		$model = PresentacionesEditable::model()->findByPk(1);
 
-		$this->render('capsulas_blandas',array(
+		$this->render('presentacionesSub3',array(
 			'presModel'=>$model,
 		));
 	}
