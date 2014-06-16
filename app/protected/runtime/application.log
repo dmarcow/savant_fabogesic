@@ -4234,3 +4234,39 @@ Stack trace:
 REQUEST_URI=/app/upload/images/slides/slide4.jpg
 HTTP_REFERER=http://fabogesic.loc/app/
 ---
+2014/06/16 20:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/images/slides/slide_1402591481.jpg".' in C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/images/s...')
+#1 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\_gitHub\savant_fabogesic\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/upload/images/slides/slide_1402591481.jpg
+HTTP_REFERER=http://fabogesic.loc/app/
+---
+2014/06/16 20:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/images/slides/slide_1402591646.jpg".' in C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/images/s...')
+#1 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\_gitHub\savant_fabogesic\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/upload/images/slides/slide_1402591646.jpg
+HTTP_REFERER=http://fabogesic.loc/app/
+---
+2014/06/16 20:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/images/slides/slide_1402601733.jpg".' in C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/images/s...')
+#1 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\_gitHub\savant_fabogesic\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/upload/images/slides/slide_1402601733.jpg
+HTTP_REFERER=http://fabogesic.loc/app/
+---
+2014/06/16 20:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/images/slides/slide4.jpg".' in C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/images/s...')
+#1 C:\xampp\htdocs\_gitHub\savant_fabogesic\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\_gitHub\savant_fabogesic\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/upload/images/slides/slide4.jpg
+HTTP_REFERER=http://fabogesic.loc/app/
+---
