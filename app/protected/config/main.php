@@ -101,12 +101,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=fabogesic',
 			'emulatePrepare' => true,
 			'username' => 'root',
-<<<<<<< HEAD
-			'password' => 'sqlw1r4ll',
-=======
 			'password' => 'root',
->>>>>>> c7f11630baa0114da5cb90ee5fe30f6fd70d1795
-			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
