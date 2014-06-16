@@ -40,12 +40,22 @@ class SiteController extends Controller
 	public function actionPresentaciones(){
 
 		$this->layout="internas";
-		$model = EditableContent::model()->findByPk(1);
+		$model = PresentacionesEditable::model()->findByPk(1);
 
 		$this->render('presentaciones',array(
-			'contentEdModel'=>$model,
+			'presModel'=>$model,
 		));
 	}	
+
+	public function actionCapsulasBlandas(){
+
+		$this->layout="internas";
+		$model = PresentacionesEditable::model()->findByPk(1);
+
+		$this->render('capsulas_blandas',array(
+			'presModel'=>$model,
+		));
+	}
 
 	public function actionQueEsIbuprofeno(){
 
