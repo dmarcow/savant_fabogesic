@@ -8,7 +8,8 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'ABM Usuarios', 'url'=>array('//Usuario')),
 	array('label'=>'ABM Slider', 'url'=>array('//Slider')),
-	array('label'=>'ABM Contenido Páginas', 'url'=>array('//EditableContent')),
+	array('label'=>'ABM Presen Sub1', 'url'=>array('//PresentacionesSub1')),
+	array('label'=>'ABM Presen Sub2', 'url'=>array('//PresentacionesSub2')),
 );
 
 ?>

@@ -36,6 +36,7 @@ class BackOfficeController extends Controller
 
 	public function actionIndex(){
 		
+		//$this->layout="backoffice";
 		$this->render('index');
 	}
 }

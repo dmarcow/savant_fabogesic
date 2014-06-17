@@ -22,7 +22,7 @@
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p><?php echo utf8_encode($presSub1Model->Sub1Text) ?></p>
+                <p><?php echo $presSub1Model->Sub1Text ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -52,7 +52,7 @@
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p><?php echo utf8_encode($presSub1Model->Sub2Text) ?></p>
+                <p><?php echo $presSub1Model->Sub2Text ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -82,7 +82,7 @@
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p><?php echo utf8_encode($presSub1Model->Sub3Text) ?></p>
+                <p><?php echo $presSub1Model->Sub3Text ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -114,7 +114,7 @@
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p><?php echo utf8_encode($presSub1Model->Sub4Text) ?></p>
+                <p><?php echo $presSub1Model->Sub4Text ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">
@@ -147,7 +147,7 @@
             <div class="row info-box bordered">
 
               <div class="col-xs-12 col-md-12">
-                <p><?php echo utf8_encode($presSub1Model->Sub5Text) ?></p>
+                <p><?php echo $presSub1Model->Sub5Text ?></p>
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="row">

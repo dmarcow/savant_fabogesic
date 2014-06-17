@@ -63,6 +63,9 @@ class PresentacionesSub1Controller extends Controller
 		if(isset($_POST['PresentacionesSub1']))
 		{
 			$model->attributes=$_POST['PresentacionesSub1'];
+   	  		$model->FechaCreacion = date("Y-m-d H:i:s");
+       	  	$model->FechaModificacion = date("Y-m-d H:i:s");
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -87,6 +90,8 @@ class PresentacionesSub1Controller extends Controller
 		if(isset($_POST['PresentacionesSub1']))
 		{
 			$model->attributes=$_POST['PresentacionesSub1'];
+       	  	$model->FechaModificacion = date("Y-m-d H:i:s");
+       	  	
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

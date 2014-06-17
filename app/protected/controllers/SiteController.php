@@ -39,7 +39,7 @@ class SiteController extends Controller
 
 	public function actionPresentaciones(){
 
-		$this->layout="internas";
+		$this->layout="presentaciones";
 		$model = PresentacionesEditable::model()->findByPk(1);
 
 		$this->render('presentaciones',array(
@@ -49,7 +49,7 @@ class SiteController extends Controller
 
 	public function actionPresentacionesSub1(){
 
-		$this->layout="internas";
+		$this->layout="presentaciones";
 		$model = PresentacionesSub1::model()->findByPk(1);
 
 		$this->render('presentacionesSub1',array(
@@ -59,7 +59,7 @@ class SiteController extends Controller
 
 	public function actionPresentacionesSub2(){
 
-		$this->layout="internas";
+		$this->layout="presentaciones";
 		$model = PresentacionesSub2::model()->findByPk(1);
 
 		$this->render('presentacionesSub2',array(
@@ -69,11 +69,11 @@ class SiteController extends Controller
 
 	public function actionPresentacionesSub3(){
 
-		$this->layout="internas";
-		$model = PresentacionesEditable::model()->findByPk(1);
+		$this->layout="presentacionesSub3";
+		$model = PresentacionesSub3::model()->findByPk(1);
 
 		$this->render('presentacionesSub3',array(
-			'presModel'=>$model,
+			'presSub3Model'=>$model,
 		));
 	}
 

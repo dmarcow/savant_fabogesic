@@ -32,6 +32,6 @@ $this->menu=array(
 		'Sub3Text',
 		'Sub3Link',
 		'FechaCreacion',
-		'FechaModifcacion',
+		'FechaModificacion',
 	),
 )); ?>

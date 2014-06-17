@@ -53,13 +53,13 @@
               <a class="navbar-brand" href="<?php echo $this->createUrl('/site/')?>"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/main-logo-inverse.png'?> " alt="Fabogesic"></a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav" <?php if(!Yii::app()->user->isGuest){ echo "id = menuLogged";}?>>
                 <li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
                 <li class="active"><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
                 <?php if(!Yii::app()->user->isGuest ){ ?>
-                  <li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo $UserName ?> )</a></li>
+                  <li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo utf8_encode($UserName) ?> )</a></li>
                 <?php }
                 if(Yii::app()->user->name != 0  && !Yii::app()->user->isGuest){ ?>
                   <li><a href="<?php echo $this->createUrl('/backOffice') ?>">BACKOFFICE</a></li>

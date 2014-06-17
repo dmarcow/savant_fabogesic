@@ -67,8 +67,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'FechaModifcacion'); ?>
-		<?php echo $form->textField($model,'FechaModifcacion'); ?>
+		<?php echo $form->label($model,'FechaModificacion'); ?>
+		<?php echo $form->textField($model,'FechaModificacion'); ?>
 	</div>
 
 	<div class="row buttons">

@@ -33,7 +33,6 @@
 	<?php echo CHtml::encode($data->Sub2Link); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub3ImageUrl')); ?>:</b>
 	<?php echo CHtml::encode($data->Sub3ImageUrl); ?>
 	<br />
@@ -50,10 +49,8 @@
 	<?php echo CHtml::encode($data->FechaCreacion); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaModifcacion')); ?>:</b>
-	<?php echo CHtml::encode($data->FechaModifcacion); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaModificacion')); ?>:</b>
+	<?php echo CHtml::encode($data->FechaModificacion); ?>
 	<br />
-
-	*/ ?>
-
+	
 </div>

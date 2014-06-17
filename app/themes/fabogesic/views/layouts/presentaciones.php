@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -22,18 +22,20 @@
     <!-- Fonts styles -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
-  <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body class="bg-primary">
+<body class="bg-primary bg-presentaciones">
 
-  <?php
-    $UserName = "";
-    if(!Yii::app()->user->isGuest){
-      $userLogged = Usuario::model()->findByAttributes(array('Email'=>Yii::app()->user->id));
-      $UserName = $userLogged->Nombre;
-    }
-  ?>
+
+
+	<?php
+		$UserName = "";
+		if(!Yii::app()->user->isGuest){
+			$userLogged = Usuario::model()->findByAttributes(array('Email'=>Yii::app()->user->id));
+			$UserName = $userLogged->Nombre;
+		}
+	?>
 
     <!-- NAVBAR
     ================================================== -->
@@ -53,15 +55,15 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" <?php if(!Yii::app()->user->isGuest){ echo "id = menuLogged";}?>>
-                <li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
+              	<li class="active"><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
-                <li class="active"><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
+                <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
                 <?php if(!Yii::app()->user->isGuest ){ ?>
-                  <li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo utf8_encode($UserName) ?> )</a></li>
+                	<li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo utf8_encode($UserName) ?> )</a></li>
                 <?php }
                 if(Yii::app()->user->name != 0  && !Yii::app()->user->isGuest){ ?>
-                  <li><a href="<?php echo $this->createUrl('/backOffice') ?>">BACKOFFICE</a></li>
+                	<li><a href="<?php echo $this->createUrl('/backOffice') ?>">BACKOFFICE</a></li>
                 <?php } ?>
                 </li>
               </ul>
@@ -72,35 +74,43 @@
       </div>
     </div>
 
-  <?php echo $content; ?>
+	<?php echo $content; ?>
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
 
-  <!-- Jquery -->
-  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap.min.js"></script>
-  <!-- My App Scripts -->
-  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/holder.js"></script>
-  <!-- My App Scripts -->
-  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
-  <!-- Google Analytics -->
-  <script>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
-    { (i[r].q=i[r].q||[]).push(arguments)}
+	<!-- Jquery -->
+	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap.min.js"></script>
+	<!-- My App Scripts -->
+	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/holder.js"></script>
+	<!-- My App Scripts -->
+	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
-    ,i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script>
+	  $('#myModal').modal({
+	      show: true
+	  });
+	</script>
 
-    ga('create', 'UA-51790155-1', 'fabogesic.com');
-    ga('send', 'pageview');
+	<!-- Google Analytics -->
+	<script>
 
-  </script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+	  { (i[r].q=i[r].q||[]).push(arguments)}
+
+	  ,i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-51790155-1', 'fabogesic.com');
+	  ga('send', 'pageview');
+
+	</script>
 
 </body>
 </html>

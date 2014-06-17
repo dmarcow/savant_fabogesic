@@ -73,18 +73,6 @@
 		<?php echo $form->error($model,'Sub3Link'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'FechaCreacion'); ?>
-		<?php echo $form->textField($model,'FechaCreacion'); ?>
-		<?php echo $form->error($model,'FechaCreacion'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'FechaModifcacion'); ?>
-		<?php echo $form->textField($model,'FechaModifcacion'); ?>
-		<?php echo $form->error($model,'FechaModifcacion'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

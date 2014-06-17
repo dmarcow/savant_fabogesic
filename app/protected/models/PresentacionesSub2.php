@@ -15,7 +15,7 @@
  * @property string $Sub3Text
  * @property string $Sub3Link
  * @property string $FechaCreacion
- * @property string $FechaModifcacion
+ * @property string $FechaModificacion
  */
 class PresentacionesSub2 extends CActiveRecord
 {
@@ -35,11 +35,11 @@ class PresentacionesSub2 extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, FechaCreacion, FechaModifcacion', 'required'),
+			array('Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, FechaCreacion, FechaModificacion', 'required'),
 			array('Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, FechaCreacion, FechaModifcacion', 'safe', 'on'=>'search'),
+			array('id, Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,7 +71,7 @@ class PresentacionesSub2 extends CActiveRecord
 			'Sub3Text' => 'Sub3 Text',
 			'Sub3Link' => 'Sub3 Link',
 			'FechaCreacion' => 'Fecha Creacion',
-			'FechaModifcacion' => 'Fecha Modifcacion',
+			'FechaModificacion' => 'Fecha Modificacion',
 		);
 	}
 
@@ -104,7 +104,7 @@ class PresentacionesSub2 extends CActiveRecord
 		$criteria->compare('Sub3Text',$this->Sub3Text,true);
 		$criteria->compare('Sub3Link',$this->Sub3Link,true);
 		$criteria->compare('FechaCreacion',$this->FechaCreacion,true);
-		$criteria->compare('FechaModifcacion',$this->FechaModifcacion,true);
+		$criteria->compare('FechaModificacion',$this->FechaModificacion,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
