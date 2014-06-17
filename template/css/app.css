@@ -201,7 +201,7 @@ body {
 -------------------------------------------------- */
 
 .presentaciones{
-  margin: 0 auto 120px;
+  margin: 0 auto 240px;
 }
 
 .presentaciones h3:before{
@@ -293,6 +293,11 @@ a > .producto{
     bottom: -10px;
     right: -20px;
     width: 25%;
+  }
+
+  .vta-bjo-receta{
+    max-width: 227px;
+    width: 80%;
   }
 
   .footer-logo{
