@@ -80,6 +80,7 @@ $this->pageTitle=Yii::app()->name;
         <div class="col-md-3 bg-warning">
           <h4>¿QUIENES SOMOS?</h4>
           <p>Conocé nuestros otros productos en nuestro sitio web.</p>
+          <a class="btn btn-default" href="http://www.savant.com.ar" target="_blank" role="button">VER MÁS</a>
         </div> <!-- /.col-xs-6 .col-sm-3 -->
 
     </div><!-- /.marketing -->

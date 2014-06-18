@@ -27,7 +27,7 @@ $mensaje="
 </table>
 ";
 @mail($to,$tema,$mensaje,$headers);
-   echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"0;URL=http://www.fabogesic.com/test-1306\">";
+   echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"0;URL=http://www.fabogesic.com/test-1606\">";
 } else {
     echo "No se puede enviar el formulario, verifica los campos";
 }

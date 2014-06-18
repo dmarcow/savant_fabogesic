@@ -8,12 +8,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#menuLogged li a{
- padding-left: 15px;
- padding-right: 15px;
- font-size: 12px;
-}
-
 .img-responsive{
   margin: 0 auto;
 }
@@ -27,6 +21,13 @@ body {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+#menuLogged li a{
+ padding-left: 15px;
+ padding-right: 15px;
+ font-size: 12px;
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -207,7 +208,7 @@ body {
 -------------------------------------------------- */
 
 .presentaciones{
-  margin: 0 auto 120px;
+  margin: 0 auto 240px;
 }
 
 .presentaciones h3:before{
@@ -253,6 +254,7 @@ a > .producto{
   .producto p{
     color: #fff;
     font-size: 20px;
+    line-height: 1;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -268,7 +270,7 @@ a > .producto{
     content: '▼';
     position: absolute;
     font-size: 14px;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -298,6 +300,11 @@ a > .producto{
     bottom: -10px;
     right: -20px;
     width: 25%;
+  }
+
+  .vta-bjo-receta{
+    max-width: 227px;
+    width: 80%;
   }
 
   .footer-logo{
@@ -762,7 +769,7 @@ a > .producto{
   }
 
   .producto p{
-    bottom: 60px;
+    bottom: 35px;
   }
 
   .producto img{
