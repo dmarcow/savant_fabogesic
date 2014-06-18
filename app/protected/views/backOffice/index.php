@@ -13,6 +13,8 @@ $this->menu=array(
 	array('label'=>'ABM Presen Sub3', 'url'=>array('//PresentacionesSub3')),
 	array('label'=>'ABM Que Es Ibuprofeno', 'url'=>array('//QueEsIbuprofeno')),
 	array('label'=>'ABM Prospecto Ibuprofeno', 'url'=>array('//prospectoIbuprofeno')),
+	array('label'=>'ABM Usos Mas Frecuentes', 'url'=>array('//usosMasFrecuentes')),
+	array('label'=>'ABM Usos Dolores', 'url'=>array('//dolores')),
 );
 
 ?>

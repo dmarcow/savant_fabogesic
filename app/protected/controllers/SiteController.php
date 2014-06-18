@@ -100,8 +100,59 @@ class SiteController extends Controller
 	public function actionUsosMasFrecuentes(){
 
 		$this->layout="usosFrecuentes";
+		$model = UsosMasFrecuentes::model()->findByPk(1);
 		$this->render('usosMasFrecuentes',array(
-			//'contentEdModel'=>$model,
+			'usosModel'=>$model,
+		));
+	}
+
+	public function actionDoloresMusculares(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+
+		$this->render('doloresMusculares',array(
+			'doloresModel'=>$model,
+		));
+	}	
+
+	public function actionDoloresPosturales(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+
+		$this->render('doloresPosturales',array(
+			'doloresModel'=>$model,
+		));
+	}	
+
+	public function actionDoloresMenstruales(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+
+		$this->render('doloresMenstruales',array(
+			'doloresModel'=>$model,
+		));
+	}	
+
+	public function actionDoloresCabeza(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+
+		$this->render('doloresCabeza',array(
+			'doloresModel'=>$model,
+		));
+	}	
+
+	public function actionDoloresArticulares(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+		
+		$this->render('doloresArticulares',array(
+			'doloresModel'=>$model,
 		));
 	}
 
