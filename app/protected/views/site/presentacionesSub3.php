@@ -15,7 +15,7 @@
           <h1><img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image2Url ?>" alt="SECCIÓN PEDIÁTRICA"></h1>
         </div>
         <div class="col-xs-12">
-          <p class="text-center header-description"><?php echo utf8_encode($presSub3Model->Text1); ?> </p>
+          <p class="text-center header-description"><?php echo $presSub3Model->Text1; ?> </p>
         </div>
         <div class="col-xs-12">
           <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image3Url ?>" alt="¿Sabía usted... ?">
@@ -36,7 +36,7 @@
           <div class="row info-box">
 
             <div class="col-xs-12 col-md-9">
-              <h4><?php echo utf8_encode($presSub3Model->Text2); ?></h4>
+              <h4><?php echo $presSub3Model->Text2; ?></h4>
             </div>
             <div class="col-xs-12 col-md-9">
               <div class="row">
@@ -60,7 +60,7 @@
           <div class="row info-box">
 
             <div class="col-xs-12 col-md-10">
-              <h4><?php echo utf8_encode($presSub3Model->Text3); ?></h4>
+              <h4><?php echo $presSub3Model->Text3; ?></h4>
             </div>
             <div class="col-xs-12 col-md-10">
               <div class="row">
@@ -92,13 +92,13 @@
 
           <div class="col-xs-12 col-sm-6">
             <ul class="ventajas-left"> 
-              <?php echo utf8_encode($presSub3Model->Text4); ?>
+              <?php echo $presSub3Model->Text4; ?>
             </ul>
           </div>  
 
           <div class="col-xs-12 col-sm-6">
             <ul class="ventajas-right">
-              <?php echo utf8_encode($presSub3Model->Text5); ?>
+              <?php echo $presSub3Model->Text5; ?>
             </ul>
           </div>
 
@@ -123,7 +123,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-8">
-          <p class="text-center"> <?php echo utf8_encode($presSub3Model->Text6); ?> </p>
+          <p class="text-center"> <?php echo $presSub3Model->Text6; ?> </p>
         </div>
 
       </div>
@@ -147,7 +147,7 @@
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12">
-                  <?php echo utf8_encode($presSub3Model->Text9); ?>
+                  <?php echo $presSub3Model->Text9; ?>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@
             <div id="collapseThree" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12">
-                  <?php echo utf8_encode($presSub3Model->Text10); ?>
+                  <?php echo $presSub3Model->Text10; ?>
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-8">
-      <p class="text-center"><?php echo utf8_encode($presSub3Model->Text11); ?></p>
+      <p class="text-center"><?php echo $presSub3Model->Text11; ?></p>
     </div>
 
   </div>
@@ -217,11 +217,11 @@
               <ul>
               
                 <div class="col-xs-12 col-sm-6">
-                  <?php echo utf8_encode($presSub3Model->Text12); ?>
+                  <?php echo $presSub3Model->Text12; ?>
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                  <?php echo utf8_encode($presSub3Model->Text13); ?>
+                  <?php echo $presSub3Model->Text13; ?>
                 </div>
 
               </ul>

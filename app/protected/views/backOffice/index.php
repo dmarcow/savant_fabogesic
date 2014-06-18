@@ -10,6 +10,7 @@ $this->menu=array(
 	array('label'=>'ABM Slider', 'url'=>array('//Slider')),
 	array('label'=>'ABM Presen Sub1', 'url'=>array('//PresentacionesSub1')),
 	array('label'=>'ABM Presen Sub2', 'url'=>array('//PresentacionesSub2')),
+	array('label'=>'ABM Presen Sub3', 'url'=>array('//PresentacionesSub3')),
 );
 
 ?>

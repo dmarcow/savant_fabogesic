@@ -28,6 +28,8 @@
  * @property string $Text11
  * @property string $Text12
  * @property string $Text13
+ * @property string $Prospecto1ImageUrl
+ * @property string $Prospecto2ImageUrl
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
@@ -49,12 +51,12 @@ class PresentacionesSub3 extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text1, Text2, Text3, Text4, Text5, Text6, BtnImageUrl1, BtnImageUrl2, Text9, Text10, Text11, Text12, Text13, FechaCreacion, FechaModificacion', 'required'),
-			array('Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text2, Text3, BtnImageUrl1, BtnImageUrl2', 'length', 'max'=>200),
+			array('Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text1, Text2, Text3, Text4, Text5, Text6, BtnImageUrl1, BtnImageUrl2, Text9, Text10, Text11, Text12, Text13, Prospecto1ImageUrl, Prospecto2ImageUrl', 'required'),
+			array('Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text2, Text3, BtnImageUrl1, BtnImageUrl2, Prospecto1ImageUrl, Prospecto2ImageUrl', 'length', 'max'=>200),
 			array('Text1', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text1, Text2, Text3, Text4, Text5, Text6, BtnImageUrl1, BtnImageUrl2, Text9, Text10, Text11, Text12, Text13, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('id, Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text1, Text2, Text3, Text4, Text5, Text6, BtnImageUrl1, BtnImageUrl2, Text9, Text10, Text11, Text12, Text13, Prospecto1ImageUrl, Prospecto2ImageUrl, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -99,6 +101,8 @@ class PresentacionesSub3 extends CActiveRecord
 			'Text11' => 'Text11',
 			'Text12' => 'Text12',
 			'Text13' => 'Text13',
+			'Prospecto1ImageUrl' => 'Prospecto1 Image Url',
+			'Prospecto2ImageUrl' => 'Prospecto2 Image Url',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);
@@ -146,6 +150,8 @@ class PresentacionesSub3 extends CActiveRecord
 		$criteria->compare('Text11',$this->Text11,true);
 		$criteria->compare('Text12',$this->Text12,true);
 		$criteria->compare('Text13',$this->Text13,true);
+		$criteria->compare('Prospecto1ImageUrl',$this->Prospecto1ImageUrl,true);
+		$criteria->compare('Prospecto2ImageUrl',$this->Prospecto2ImageUrl,true);
 		$criteria->compare('FechaCreacion',$this->FechaCreacion,true);
 		$criteria->compare('FechaModificacion',$this->FechaModificacion,true);
 
