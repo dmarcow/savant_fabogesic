@@ -1,2 +1,4 @@
 
 *.log
+*.log
+app/protected/runtime/application.log
