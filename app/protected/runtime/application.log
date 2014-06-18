@@ -10159,3 +10159,618 @@ Stack trace:
 REQUEST_URI=/Savant/savant_fabogesic/app/presentacionesSub3/admin
 HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/presentacionesSub3/index
 ---
+2014/06/18 16:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "prospecto.html".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('prospecto.html')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('prospecto.html')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/prospecto....')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/prospecto.html
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/queEsIbuprofeno
+---
+2014/06/18 16:52:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('queEsIbuprofeno...')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/queEsIbuprofeno/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/QueEsIbuprofeno
+---
+2014/06/18 17:07:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "prospecto.html".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('prospecto.html')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('prospecto.html')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/prospecto....')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/prospecto.html
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/queEsIbuprofeno
+---
+2014/06/18 17:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "prospecto.html".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('prospecto.html')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('prospecto.html')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/prospecto....')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/prospecto.html
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/queEsIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/btn-beneficios.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-maxima-potencia.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-maxima-potencia.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/btn-beneficios.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-maxima-potencia.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/btn-beneficios.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-maxima-potencia.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/btn-beneficios.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-maxima-potencia.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-rapida-accion.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-facil-tomar.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/icon-indicaciones.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:22:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/title-ver-cuadro.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:22:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('site/assets/img...')
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/site/assets/img/cuadro-capsulas.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---
+2014/06/18 17:42:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('prospectoIbupro...')
+#9 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/prospectoIbuprofeno/admin
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/prospectoIbuprofeno/index
+---
+2014/06/18 13:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/fabogesic/img/cuadro-capsulas1.png".' in /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/fabogesi...')
+#1 /Applications/MAMP/htdocs/Savant/savant_fabogesic/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Savant/savant_fabogesic/app/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/Savant/savant_fabogesic/app/themes/fabogesic/img/cuadro-capsulas1.png
+HTTP_REFERER=http://localhost/Savant/savant_fabogesic/app/site/prospectoIbuprofeno
+---

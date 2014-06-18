@@ -80,10 +80,22 @@ class SiteController extends Controller
 	public function actionQueEsIbuprofeno(){
 
 		$this->layout="queEsIbuprofeno";
+		$model = QueEsIbuprofeno::model()->findByPk(1);
+
 		$this->render('queEsIbuprofeno',array(
-			//'contentEdModel'=>$model,
+			'ibuproModel'=>$model,
 		));
 	}	
+
+	public function actionProspectoIbuprofeno(){
+
+		$this->layout="prospectoIbuprofeno";
+		$model = ProspectoIbuprofeno::model()->findByPk(1);
+
+		$this->render('prospectoIbuprofeno',array(
+			'prospectoModel'=>$model,
+		));
+	}
 
 	public function actionUsosMasFrecuentes(){
 
