@@ -15,6 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 
+	<!-- Favicon -->
+    <link rel="icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 

@@ -10,6 +10,9 @@
     <meta name="description" content="" />
     <meta name="author" content="ClaPat Studio">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.min.css">
     <!-- Optional theme -->
