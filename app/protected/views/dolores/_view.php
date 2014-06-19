@@ -66,30 +66,6 @@
 	<?php echo CHtml::encode($data->MenstrualesSub3); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaImageUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaImageUrl); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaSubtitle')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaSubtitle); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaSub1')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaSub1); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaSub2')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaSub2); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaSub3')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaSub3); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CabezaSub4')); ?>:</b>
-	<?php echo CHtml::encode($data->CabezaSub4); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ArticularesImageUrl')); ?>:</b>
 	<?php echo CHtml::encode($data->ArticularesImageUrl); ?>
 	<br />

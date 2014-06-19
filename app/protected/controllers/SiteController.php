@@ -139,7 +139,7 @@ class SiteController extends Controller
 	public function actionDoloresCabeza(){
 
 		$this->layout="usosFrecuentes";
-		$model = Dolores::model()->findByPk(1);
+		$model = DoloresCabeza::model()->findByPk(1);
 
 		$this->render('doloresCabeza',array(
 			'doloresModel'=>$model,
