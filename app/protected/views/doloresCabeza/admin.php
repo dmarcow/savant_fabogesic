@@ -1,15 +1,15 @@
 <?php
-/* @var $this DoloresController */
-/* @var $model Dolores */
+/* @var $this DoloresCabezaController */
+/* @var $model DoloresCabeza */
 
 $this->breadcrumbs=array(
-	'Dolores'=>array('index'),
+	'Dolores Cabezas'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List Dolores', 'url'=>array('index')),
-	array('label'=>'Create Dolores', 'url'=>array('create')),
+	array('label'=>'List DoloresCabeza', 'url'=>array('index')),
+	array('label'=>'Create DoloresCabeza', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#dolores-grid').yiiGridView('update', {
+	$('#dolores-cabeza-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Dolores</h1>
+<h1>Manage Dolores Cabezas</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -41,36 +41,17 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'dolores-grid',
+	'id'=>'dolores-cabeza-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'MuscularesImageUrl',
-		'MuscularesSubtitle',
-		'MuscularesSub1',
-		'PosturalesImageUrl',
-		'PostularesSubtitle',
-		/*
-		'PostularesSub1',
-		'PostularesSub2',
-		'PostularesSub3',
-		'MenstrualesImageUrl',
-		'MenstrualesSubtitle',
-		'MenstrualesSub1',
-		'MenstrualesSub2',
-		'MenstrualesSub2ImageUrl',
-		'MenstrualesSub3',
-		'ArticularesImageUrl',
-		'ArticularesSubtitle',
-		'ArticularesSub1',
-		'ArticularesSub2',
-		'ArticularesSub3',
-		'ArticularesSub4',
-		'ArticularesSub5',
-		'FechaCreacion',
-		'FechaModificacion',
-		*/
+		'ImageUrl',
+		'Subtitle',
+		'Text1',
+		'Text2',
+		'Text3',
+		'Text4',
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -104,42 +104,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaImageUrl'); ?>
-		<?php echo $form->textField($model,'CabezaImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'CabezaImageUrl'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaSubtitle'); ?>
-		<?php echo $form->textField($model,'CabezaSubtitle',array('size'=>60,'maxlength'=>400)); ?>
-		<?php echo $form->error($model,'CabezaSubtitle'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaSub1'); ?>
-		<?php echo $form->textArea($model,'CabezaSub1',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'CabezaSub1'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaSub2'); ?>
-		<?php echo $form->textArea($model,'CabezaSub2',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'CabezaSub2'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaSub3'); ?>
-		<?php echo $form->textArea($model,'CabezaSub3',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'CabezaSub3'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CabezaSub4'); ?>
-		<?php echo $form->textArea($model,'CabezaSub4',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'CabezaSub4'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'ArticularesImageUrl'); ?>
 		<?php echo $form->textField($model,'ArticularesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'ArticularesImageUrl'); ?>

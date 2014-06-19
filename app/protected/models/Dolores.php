@@ -19,12 +19,6 @@
  * @property string $MenstrualesSub2
  * @property string $MenstrualesSub2ImageUrl
  * @property string $MenstrualesSub3
- * @property string $CabezaImageUrl
- * @property string $CabezaSubtitle
- * @property string $CabezaSub1
- * @property string $CabezaSub2
- * @property string $CabezaSub3
- * @property string $CabezaSub4
  * @property string $ArticularesImageUrl
  * @property string $ArticularesSubtitle
  * @property string $ArticularesSub1
@@ -53,12 +47,12 @@ class Dolores extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, CabezaImageUrl, CabezaSubtitle, CabezaSub1, CabezaSub2, CabezaSub3, CabezaSub4, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5', 'required'),
-			array('MuscularesImageUrl, PosturalesImageUrl, MenstrualesImageUrl, MenstrualesSub2ImageUrl, CabezaImageUrl, ArticularesImageUrl', 'length', 'max'=>200),
-			array('MuscularesSubtitle, PostularesSubtitle, MenstrualesSubtitle, CabezaSubtitle, ArticularesSubtitle', 'length', 'max'=>400),
+			array('MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, FechaCreacion, FechaModificacion', 'required'),
+			array('MuscularesImageUrl, PosturalesImageUrl, MenstrualesImageUrl, MenstrualesSub2ImageUrl, ArticularesImageUrl', 'length', 'max'=>200),
+			array('MuscularesSubtitle, PostularesSubtitle, MenstrualesSubtitle, ArticularesSubtitle', 'length', 'max'=>400),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, CabezaImageUrl, CabezaSubtitle, CabezaSub1, CabezaSub2, CabezaSub3, CabezaSub4, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('id, MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -94,12 +88,6 @@ class Dolores extends CActiveRecord
 			'MenstrualesSub2' => 'Menstruales Sub2',
 			'MenstrualesSub2ImageUrl' => 'Menstruales Sub2 Image Url',
 			'MenstrualesSub3' => 'Menstruales Sub3',
-			'CabezaImageUrl' => 'Cabeza Image Url',
-			'CabezaSubtitle' => 'Cabeza Subtitle',
-			'CabezaSub1' => 'Cabeza Sub1',
-			'CabezaSub2' => 'Cabeza Sub2',
-			'CabezaSub3' => 'Cabeza Sub3',
-			'CabezaSub4' => 'Cabeza Sub4',
 			'ArticularesImageUrl' => 'Articulares Image Url',
 			'ArticularesSubtitle' => 'Articulares Subtitle',
 			'ArticularesSub1' => 'Articulares Sub1',
@@ -145,12 +133,6 @@ class Dolores extends CActiveRecord
 		$criteria->compare('MenstrualesSub2',$this->MenstrualesSub2,true);
 		$criteria->compare('MenstrualesSub2ImageUrl',$this->MenstrualesSub2ImageUrl,true);
 		$criteria->compare('MenstrualesSub3',$this->MenstrualesSub3,true);
-		$criteria->compare('CabezaImageUrl',$this->CabezaImageUrl,true);
-		$criteria->compare('CabezaSubtitle',$this->CabezaSubtitle,true);
-		$criteria->compare('CabezaSub1',$this->CabezaSub1,true);
-		$criteria->compare('CabezaSub2',$this->CabezaSub2,true);
-		$criteria->compare('CabezaSub3',$this->CabezaSub3,true);
-		$criteria->compare('CabezaSub4',$this->CabezaSub4,true);
 		$criteria->compare('ArticularesImageUrl',$this->ArticularesImageUrl,true);
 		$criteria->compare('ArticularesSubtitle',$this->ArticularesSubtitle,true);
 		$criteria->compare('ArticularesSub1',$this->ArticularesSub1,true);

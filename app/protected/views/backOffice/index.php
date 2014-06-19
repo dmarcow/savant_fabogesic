@@ -15,6 +15,7 @@ $this->menu=array(
 	array('label'=>'ABM Prospecto Ibuprofeno', 'url'=>array('//prospectoIbuprofeno')),
 	array('label'=>'ABM Usos Mas Frecuentes', 'url'=>array('//usosMasFrecuentes')),
 	array('label'=>'ABM Usos Dolores', 'url'=>array('//dolores')),
+	array('label'=>'ABM Usos Dolores Cabeza', 'url'=>array('//doloresCabeza')),
 );
 
 ?>

@@ -87,36 +87,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'CabezaImageUrl'); ?>
-		<?php echo $form->textField($model,'CabezaImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'CabezaSubtitle'); ?>
-		<?php echo $form->textField($model,'CabezaSubtitle',array('size'=>60,'maxlength'=>400)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'CabezaSub1'); ?>
-		<?php echo $form->textArea($model,'CabezaSub1',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'CabezaSub2'); ?>
-		<?php echo $form->textArea($model,'CabezaSub2',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'CabezaSub3'); ?>
-		<?php echo $form->textArea($model,'CabezaSub3',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'CabezaSub4'); ?>
-		<?php echo $form->textArea($model,'CabezaSub4',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'ArticularesImageUrl'); ?>
 		<?php echo $form->textField($model,'ArticularesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
