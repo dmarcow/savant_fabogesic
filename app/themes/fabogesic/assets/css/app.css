@@ -23,9 +23,10 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 #menuLogged li a{
- padding-left: 15px;
- padding-right: 15px;
- font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+  text-transform: lowercase;
 }
 
 .navbar-wrapper {
@@ -572,6 +573,20 @@ a > .producto{
   right: -10px;
 }
 
+/* LOGIN 
+---------------------------------------------------*/
+
+.login{
+  text-align: center;
+  padding: 25px 50px;
+  background-color: #014C73;
+  border-radius: 10px;
+  color: #fff;
+  margin: 100px auto 0;
+  width: 95%;
+  max-width: 600px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -696,6 +711,13 @@ a > .producto{
 }
 
 @media (min-width: 992px) {
+
+  #menuLogged li a{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 
   .featurette-heading {
     margin-top: 120px;
@@ -849,6 +871,12 @@ a > .producto{
 
   .navbar-nav > li:last-child > a{
     padding-right: 41px;
+  }
+
+  #menuLogged li a{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
   }
 
   .carousel .item {
