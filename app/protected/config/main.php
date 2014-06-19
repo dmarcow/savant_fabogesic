@@ -102,7 +102,13 @@ return array(
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'root',
-		),
+		),	
+		/*'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=developw_fabogesic',
+			'emulatePrepare' => true,
+			'username' => 'developw_fabo',
+			'password' => 'w1r4ll',
+		), */
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

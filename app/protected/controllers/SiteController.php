@@ -177,24 +177,73 @@ class SiteController extends Controller
 	{
 		$this->layout="contacto";
 		$model=new ContactForm;
+
+		$contactModel = Contacto::model()->findByPk(1);
+
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
-			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
-
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
+			if($model->validate()){
+				$this->sendEmail($model);
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('contact',array(
+			'model'=>$model,
+			'contactModel'=>$contactModel,
+		));
+	}
+
+	private function sendEmail($user){
+
+		Yii::import('application.extensions.phpmailer.JPhpMailer');
+
+		$mail = new JPhpMailer;
+		$mail->IsSMTP();
+		$mail->Host = 'smtp.googlemail.com:465';
+		//$mail->Host = 'localhost';
+		//$mail->SMTPSecure = "ssl";
+		//$mail->SMTPAuth = true;
+		$mail->SMTPAuth = false;
+		$mail->Username = 'desarrollowirall1@gmail.com';
+		//$mail->Username = '';
+		$mail->Password = 'P4ss10nfru1t';
+		//$mail->Password = '';
+		$mail->SetFrom('moyanotomasi@gmail.com', 'Fabogesic');
+		$mail->Subject = 'Contacto';
+		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
+
+		$body = '
+				<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+				<html xmlns="http://www.w3.org/1999/xhtml">
+				<head>
+				  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				  <title>Subastas Solidarias</title>
+				</head>
+				<body bgcolor="#F1F1F2" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+				    <table bgcolor="#fff" border="0" align="center" cellpadding="10" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;">
+				        <tr>
+				            <td width="580" align="center" valign="middle"><img style="display: block;" src="' . HTTP_AND_SERVER_CONST . Yii::app()->request->baseUrl . '/img/logo.png" alt="Subasta Solidaria" /></td>
+				        </tr>
+				        <tr>
+				        	<td>Nombre: <strong> ' . utf8_decode($user->name). '</strong>.</td>
+				        </tr>
+				        <tr>
+				        	<td>Apellido: <strong> ' . utf8_decode($user->lastname) . '</strong>.</td>
+				        </tr>
+				        <tr>
+				        	<td>Email: <strong> ' . $user->subject . '</strong>.</td>
+				        </tr>
+				        <tr>
+				        	<td><strong>' . utf8_decode($user->body) . '</strong></td>
+				        </tr>
+				    </table>
+				</body>
+				</html>
+		';
+
+		$mail->MsgHTML($body);
+		$mail->AddAddress("tomas@wirallinteractive.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
+		$mail->Send();
 	}
 
 	/**

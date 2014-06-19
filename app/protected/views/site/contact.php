@@ -1,53 +1,68 @@
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
+<?php
+/* @var $this SiteController */
+/* @var $model ContactForm */
+/* @var $form CActiveForm */
 
+$this->pageTitle=Yii::app()->name . ' - Contacto';
+?>
 <div class="container contacto">
 
   <div class="row">
 
-
-
     <div class="col-xs-12 col-sm-6">
-      <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/bg-contact-form.png'?> " alt="Contacto" />
+      <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $contactModel->ImageUrl?>" alt="Contacto" />
     </div>
 
     <div class="col-xs-12 col-sm-6">
+     
+      <?php echo $contactModel->Title ?>
 
-      <h3 class="text-center">Por cualquier consulta o inquietud lo invitamos a ponerse en contacto con nosotros</h3>
-      <form role="form" action="contact-form.php" method="post" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-        
-        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-          <label>Nombre</label>
-          <input type="text" name="name" class="form-control" ng-model="name" required>
-          <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Campo obligatorio.</p>
+      <div role="form" class="form">
+
+      <?php $form=$this->beginWidget('CActiveForm', array(
+        'id'=>'contact-form',
+        'enableClientValidation'=>true,
+        'clientOptions'=>array(
+          'validateOnSubmit'=>true,
+        ),
+      )); ?>
+
+        <?php echo $form->errorSummary($model); ?>
+
+        <div class="form-group">
+          <?php echo $form->labelEx($model,'name'); ?>
+          <?php echo $form->textField($model,'name', array( 'class'=>'form-control')); ?>
+          <?php echo $form->error($model,'name'); ?>
         </div>
 
-        <div class="form-group" ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }">
-          <label>Apellido</label>
-          <input type="text" name="lastname" class="form-control" ng-model="lastname" required>
-          <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Campo obligatorio.</p>
+        <div class="form-group">
+          <?php echo $form->labelEx($model,'lastname'); ?>
+          <?php echo $form->textField($model,'lastname',array( 'class'=>'form-control')); ?>
+          <?php echo $form->error($model,'lastname'); ?>
         </div>
 
-        <div class="form-group" ng-class="{ 'has-error' : userForm.subject.$invalid && !userForm.subject.$pristine }">
-          <label>Asunto</label>
-          <input type="text" name="subject" class="form-control" ng-model="subject" required>
-          <p ng-show="userForm.subject.$invalid && !userForm.subject.$pristine" class="help-block">Campo obligatorio.</p>
+        <div class="form-group">
+          <?php echo $form->labelEx($model,'subject'); ?>
+          <?php echo $form->textField($model,'subject',array( 'class'=>'form-control')); ?>
+          <?php echo $form->error($model,'subject'); ?>
         </div>
 
-        <div class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
-          <label>Mensaje</label>
-          <textarea class="form-control" rows="3" name="message" class="form-control" ng-model="message" required></textarea>
-          <p ng-show="userForm.message.$invalid && !userForm.message.$pristine" class="help-block">Campo obligatorio.</p>
+        <div class="form-group">
+          <?php echo $form->labelEx($model,'body'); ?>
+          <?php echo $form->textArea($model,'body', array( 'class'=>'form-control')); ?>
+          <?php echo $form->error($model,'body'); ?>
         </div>
 
         <div class="form-group">
           <p class="text-right">
-            <button type="submit" class="btn btn-default" ng-disabled="userForm.$invalid">Enviar</button>
+            <?php echo CHtml::submitButton('Enviar',array('class'=>'btn btn-default')); ?>
           </p>
         </div>
-        
-      </form>
+
+      <?php $this->endWidget(); ?>
+
+      </div><!-- form -->
+
     </div>
 
   </div>
