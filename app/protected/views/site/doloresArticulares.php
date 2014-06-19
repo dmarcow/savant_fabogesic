@@ -32,9 +32,7 @@
             <div id="collapseOne" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
-                  
-                  <p>La artritis no tiene edad y la desintegración del cartílago puede darse por varias razones, incluyendo lesiones, herencia o enfermedad. La osteoartritis  se vuelve más frecuente con la edad, sin embargo, personas de todas las edades pueden ser afectadas por diferentes tipos de artritis.</p>
-
+                  <?php echo $doloresModel->ArticularesSub1 ?>
                 </div>
 
               </div>
@@ -57,9 +55,7 @@
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
-                  
-                  <p>En algunas personas, la ruptura inicial de cartílago no provoca ningún dolor mientras que en otros casos el dolor se manifiesta sobre todo cuando te movés o tenés un largo período de inmovilidad, como a primera hora de la mañana o después de ver una película de larga duración o un viaje prolongado.</p>
-
+                  <?php echo $doloresModel->ArticularesSub2 ?>
                 </div>
 
               </div>
@@ -91,13 +87,7 @@
             <div id="collapseThree" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
-                  
-                  <p>- Incapacidad para mover una articulación normalmente.<br />
-                    - Dolor recurrente o sensibilidad en cualquier articulación.<br />
-                    - Hinchazón en una o más articulaciones.<br />
-                    - Enrojecimiento o calor en la articulación.<br />
-                    Si experimentás alguno de estos síntomas, debés consultar a tu médico tan pronto como sea posible.  El diagnóstico y tratamiento temprano pueden ayudar a limitar el daño y controlar los síntomas.</p>
-
+                  <?php echo $doloresModel->ArticularesSub3 ?> 
                 </div>
 
               </div>
@@ -120,10 +110,7 @@
             <div id="collapseFour" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
-                  
-                  <p>Una combinación de ejercicio, algunos cambios de estilo de vida menores, una dieta adecuada y la medicación ayudan a controlar el dolor y los síntomas de la artritis.<br />
-                  El ejercicio te ayuda a fortalecer los músculos que rodean la articulación afectada y colaboran a estabilizar la zona. Pequeños cambios en tu estilo de vida como tomar los objetos con las dos manos sumado a una dieta adecuada, que ayuda a sacar peso innecesario de tus articulaciones, contribuirán a tu salud en general y a tu estado de ánimo. Fabogesic puede ayudarte a aliviar temporalmente los dolores menores asociados con la artritis.</p>
-
+                  <?php echo $doloresModel->ArticularesSub4 ?> 
                 </div>
               </div>
             </div>
@@ -153,9 +140,7 @@
             <div id="collapseFive" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
-                  
-                  <p>Si sentís algunos de los síntomas antes explicados no dudes en consultar a un médico que puede diagnosticarte correctamente y ayudarte con un tratamiento adecuado o eventualmente derivarte con un médico reumatólogo o traumatólogo.</p>
-
+                  <?php echo $doloresModel->ArticularesSub5 ?> 
                 </div>
 
               </div>

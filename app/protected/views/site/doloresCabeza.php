@@ -27,33 +27,26 @@
 
             <div id="collapseOne" class="panel-collapse collapse">
               <div class="panel-body">
-                <div class="col-sm-12 text-left">
-                  
+               
+
+                <div class="col-sm-12 text-left">                  
                   <p>Un dolor de cabeza es causado generalmente por arterias y vasos sanguíneos dilatados en tu cerebro. <br /><strong>Los más frecuentes son:</strong></p>
-
                 </div>
-
-                <div class="col-sm-12">
-                  
-                  <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6">
-                      
+                <div class="col-sm-12">                  
+                  <div class="row">                    
+                    <div class="col-xs-12 col-sm-6">                      
                       <ul>
                         <li class="tick tick-white">Leves</li>
                         <li class="tick tick-white">Tensionales</li>
                         <li class="tick tick-white">Migrañas</li>
                       </ul>
-
                     </div>
-
                   </div>
-
                 </div>
+
 
               </div>
             </div>
-
           </div>
 
         </div>
@@ -70,41 +63,33 @@
 
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
+
+
                 <div class="col-sm-12 text-left">
-                  
                   <p>Los dolores de cabeza se deben a distintas razones. Algunos de los factores desencadenantes pueden ser:</p>
-
                 </div>
-
                 <div class="col-sm-12">
-                  
                   <div class="row">
-                    
                     <div class="col-xs-12 col-sm-6">
-                      
                       <ul>
                         <li class="tick tick-white">Malas posturas</li>
                         <li class="tick tick-white">Olores ambientales fuertes</li>
                         <li class="tick tick-white">Fatiga</li>
                         <li class="tick tick-white">Cambios en el clima</li>
                       </ul>
-
                     </div>
-
                     <div class="col-xs-12 col-sm-6">
-                      
                       <ul>
                         <li class="tick tick-white">Estrés</li>
                         <li class="tick tick-white">Depresión y ansiedad</li>
                         <li class="tick tick-white">Períodos menstruales</li>
                         <li class="tick tick-white">Deshidratación</li>
                       </ul>
-
                     </div>
-
                   </div>
-
                 </div>
+
+
 
               </div>
             </div>
@@ -169,7 +154,7 @@
               <div class="panel-body">
                 <div class="col-sm-12 text-left">
                   
-                  <p>No dejes de consultar a tu médico si percibís dolores anormales en forma prolongada.</p>
+                  <?php echo $doloresModel->CabezaSub4 ?>
 
                 </div>
               </div>
