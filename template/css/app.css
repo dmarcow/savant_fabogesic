@@ -126,7 +126,7 @@ body {
 .carousel .item {
   height: 0;
   background-color: #fff;
-  padding: 0 0 42%;
+  padding: 0 0 41%;
 }
 
 .carousel-inner > .item > img {
@@ -815,6 +815,10 @@ a > .producto{
     background-image: url("../assets/img/curiosidades.png");
     background-color: transparent;
     padding: 30px 15px;
+  }
+
+  .contacto{
+    margin: 60px auto 0;
   }
 
 
