@@ -847,6 +847,7 @@ a > .producto{
     margin: 60px auto 0;
   }
 
+
 }
 
 @media (min-width: 1200px){
@@ -874,12 +875,6 @@ a > .producto{
 
   .navbar-nav > li:last-child > a{
     padding-right: 41px;
-  }
-
-  #menuLogged li a{
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 14px;
   }
 
   .carousel .item {

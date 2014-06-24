@@ -25,7 +25,7 @@
 
         <div id="collapse" class="panel-collapse collapse">
           <div class="panel-body">
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12 text-left">
               <?php echo $doloresModel->MuscularesSub1  ?>
             </div>
           </div>
