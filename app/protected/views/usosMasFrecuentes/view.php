@@ -32,6 +32,8 @@ $this->menu=array(
 		'Text4',
 		'Image5Url',
 		'Text5',
+		'Image6Url',
+		'Text6',
 		'FechaCreacion',
 		'FechaModificacion',
 	),
