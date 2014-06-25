@@ -2,22 +2,44 @@
 -- version 4.1.8
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost:8889
--- Tiempo de generación: 19-06-2014 a las 17:44:52
--- Versión del servidor: 5.5.34
--- Versión de PHP: 5.5.10
+-- Host: localhost:8889
+-- Generation Time: Jun 24, 2014 at 06:08 PM
+-- Server version: 5.5.34
+-- PHP Version: 5.5.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Base de datos: `fabogesic`
+-- Database: `fabogesic`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Dolores`
+-- Table structure for table `Contacto`
+--
+
+CREATE TABLE `Contacto` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `ImageUrl` varchar(200) NOT NULL,
+  `Title` varchar(400) NOT NULL,
+  `FechaCreacion` datetime NOT NULL,
+  `FechaModificacion` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `Contacto`
+--
+
+INSERT INTO `Contacto` (`id`, `ImageUrl`, `Title`, `FechaCreacion`, `FechaModificacion`) VALUES
+(1, 'bg-contact-form.png', '<h3 class="text-center">Por cualquier consulta o inquietud lo invitamos a ponerse en contacto con nosotros</h3>', '2014-06-19 18:07:48', '2014-06-19 18:15:05');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Dolores`
 --
 
 CREATE TABLE `Dolores` (
@@ -46,19 +68,19 @@ CREATE TABLE `Dolores` (
   `FechaCreacion` datetime NOT NULL,
   `FechaModificacion` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `Dolores`
+-- Dumping data for table `Dolores`
 --
 
 INSERT INTO `Dolores` (`id`, `MuscularesImageUrl`, `MuscularesSubtitle`, `MuscularesSub1`, `PosturalesImageUrl`, `PostularesSubtitle`, `PostularesSub1`, `PostularesSub2`, `PostularesSub3`, `MenstrualesImageUrl`, `MenstrualesSubtitle`, `MenstrualesSub1`, `MenstrualesSub2`, `MenstrualesSub2ImageUrl`, `MenstrualesSub3`, `ArticularesImageUrl`, `ArticularesSubtitle`, `ArticularesSub1`, `ArticularesSub2`, `ArticularesSub3`, `ArticularesSub4`, `ArticularesSub5`, `FechaCreacion`, `FechaModificacion`) VALUES
-(1, 'header-dolores-musculares.jpg', 'Â¿Te golpeaste practicando algÃºn deporte? Â¿O quedaste dolorido despuÃ©s de hacer fuerza en el trabajo o en la casa?<br />Millones de personas cada aÃ±o se lesionan haciendo deportes o mientras realizan sus tareas diarias.<br /><br /><strong>DescubrÃ­ mÃ¡s sobre los dolores musculares y la forma de tratarlos:</strong>', '                  <p><strong>Descanso / Reposo.</strong></p>\r\n                  <p>La lesiÃ³n debe permanecer inmÃ³vil y no apliques fuerza adicional en el sitio del esguince. En el caso de un esguince de tobillo por ejemplo, evitÃ¡ caminar.</p>\r\n\r\n                  <p><strong>Hielo.</strong></p>\r\n                  <p>AplicÃ¡ hielo inmediatamente despuÃ©s del esguince para reducir el dolor eÂ hinchazÃ³nÂ producidos por la lesiÃ³n. Lo podes aplicar durante 10-15 minutos (una aplicaciÃ³n mÃ¡s prolongada puede agravar la lesiÃ³n en lugar de curarla). UtilizÃ¡ hielo 3 Ã³ 4 veces al dÃ­a. En algunas ocasiones, ademÃ¡s, se puede utilizar unÂ vendajeÂ para proporcionar soporte a la zona afectada.</p>\r\n\r\n                  <p><strong>ElevaciÃ³n.</strong></p>\r\n                  <p>MantenÃ© elevada la zona afectada en relaciÃ³n con el resto del cuerpo para minimizar aÃºn mÃ¡s la hinchazÃ³n y los moretones.</p>\r\n\r\n                  <p>Tomar Fabogesic te ayuda a aliviar el dolor y a reducir la inflamaciÃ³n.</p>\r\n\r\n                  <p>Se recomienda que consultes al mÃ©dico si sentÃ­s un dolor intenso, un mÃºsculo o articulaciÃ³n muy inflamado, o si el movimiento se encuentra restringido.</p>', 'header-dolores-posturales.jpg', '<strong>Â¿Alguna vez tuviste dolores de espalda por malas posturas?</strong><br />La migraÃ±a, o dolor de cabeza localizado, en ocasiones puede ser causada por una mala postura al dormir o  al permanecer sentado,  ademÃ¡s del estrÃ©s y la falta de descanso. Una postura incorrecta tambiÃ©n puede producir dolor de espalda, Ã©ste es un problema muy comÃºn que sufre el 80% de las personas en algÃºn mo', '                <div class="col-sm-12 text-left">\r\n                  \r\n                  <p>Aparte de las lesiones o tensiones en la espalda producidos por el esfuerzo de los mÃºsculos o ligamentos, algunos problemas de espalda pueden gestarse a raÃ­z de un movimiento brusco. Algunas de las causas mÃ¡s comunes de dolor de espalda son:</p>\r\n\r\n                </div>\r\n\r\n                <div class="col-sm-12">\r\n                  \r\n                  <div class="row">\r\n                    \r\n                    <div class="col-xs-12 col-sm-6">\r\n                      \r\n                      <ul>\r\n                        <li class="tick tick-white">Levantar incorrectamente.</li>\r\n                        <li class="tick tick-white">TorsiÃ³n o estiramiento excesivo.</li>\r\n                        <li class="tick tick-white">Mala postura al caminar o estando sentado.</li>\r\n                      </ul>\r\n\r\n                    </div>\r\n\r\n                    <div class="col-xs-12 col-sm-6">\r\n                      \r\n                      <ul>\r\n                        <li class="tick tick-white">Dormir en mala postura o en un colchÃ³n demasiado blando.</li>\r\n                        <li class="tick tick-white">Estar excedido de peso.</li>\r\n                        <li class="tick tick-white">Inactividad o sedentarismo.</li>\r\n                      </ul>\r\n\r\n                    </div>\r\n\r\n                  </div>\r\n               </div>', '                  <p>Cualquier procedimiento de frÃ­o/calor sobre los mÃºsculos doloridos te ayudarÃ¡ a relajarlos y aliviarlos. Los analgÃ©sicos anti-inflamatorios como Fabogesic son muy eficaces tambiÃ©n.</p>', '                    <div class="col-sm-6">\r\n                        \r\n                        <p><strong>LevantÃ¡ los objetos correctamente. </strong>MantenÃ© la espalda recta, flexionÃ¡ las rodillas hasta que estÃ© al mismo nivel que el objeto, y levantÃ¡ de manera lenta y constante el objeto ayudÃ¡ndote con tus piernas. EvitÃ¡ levantar cualquier objeto pesado por encima de los hombros.</p>\r\n\r\n                        <p><strong>RevisÃ¡ tu posiciÃ³n frente al escritorio.</strong>Â Sentate con los dos pies en el suelo y las rodillas tan alto como las caderas, y posicionate  firmemente contra el respaldo de la silla. CambiÃ¡ de posiciÃ³n con frecuencia y tomÃ¡ descansos para evitar la sobrecarga en la espalda.</p>\r\n\r\n                        <p><strong>CuidÃ¡ tu postura.</strong> TratÃ¡ de pararte tanto como sea posible, caminÃ¡ con la postura erguida y llevÃ¡ calzado cÃ³modo.</p>\r\n\r\n                        <p><strong>EvitÃ¡ agacharte durante largos perÃ­odos de tiempo.</strong> En lugar de agacharte encorvando tu espalda, intentÃ¡ ponerte en cuclillas manteniendo la espalda recta. Si tenÃ©s que arrodillarte no olvides levantarte periÃ³dicamente y estirar tus piernas. Nunca gires mientras te levantas. </p>\r\n\r\n                    </div>\r\n\r\n                    <div class="col-sm-6">\r\n\r\n                      <p><strong>EvitÃ¡ generar una torcedura.</strong> MovÃ© los pies y las piernas suavemente antes de salir de un vehÃ­culo o al levantarte de la cama.</p>\r\n\r\n                      <p><strong>No te apresures al subir y bajar escaleras.</strong> Incluso si te encontrÃ¡s en un apuro, es prudente que des un paso (escalÃ³n) a la vez y mantener tu espalda recta.</p>\r\n\r\n                      <p><strong>TenÃ© cuidado al cargar bolsas y mochilas.</strong> AlternÃ¡ el peso de las bolsas sobre ambos brazos y vas a evitar que se sobrecargue uno de los lados.  Si es posible, utilizÃ¡ mochilas que permitan equilibrar el peso en ambos lados.</p>\r\n\r\n                      <p><strong>TenÃ© hÃ¡bitos saludables.</strong> HacÃ© ejercicios todos los dÃ­as y mantenÃ© un peso saludable.</p>\r\n\r\n                      <p><strong>Â¿CuÃ¡ndo debo consultar al mÃ©dico?</strong> No dejes de consultar a tu mÃ©dico si percibÃ­s dolores anormales en forma prolongada.</p>\r\n                      \r\n                    </div>', 'header-dolores-menstruales.jpg', '<strong>Lo que necesitÃ¡s saber:</strong><br />Para muchas mujeres el dolor menstrual no es tan severo como para influir con su vida diaria. Sin embargo, para otras significa tomarse el dÃ­a libre de cualquier actividad hasta que el dolor desaparezca. <strong>Si los dolores menstruales interrumpen tu actividad diaria, tenemos algunos consejos para ayudarte a calmar el malestar:</strong>', '<p>El dolor menstrual es causado por contracciones del Ãºtero o matriz que ayudan a deshacerse de su revestimiento para que uno nuevo puede crecer. Para ayudar a iniciar las contracciones el cuerpo necesita liberar sustancias quÃ­micas llamadas prostaglandinas que son productos quÃ­micos y que causan el dolor.</p>', '<p>El calor es una buena manera de ayudar a calmar y relajar los mÃºsculos del Ãºtero. Tomar un baÃ±o o utilizar una bolsa de agua caliente son soluciones tradicionales que realmente funcionan. Nadar suavemente, caminar o andar en bicicleta tambiÃ©n pueden ayudarte a aliviar el dolor. Fabogesic  es particularmente eficaz, ya que tiene efectos anti-prostaglandinas inhiben la ciclo oxigenasa evitando que se segregue prostaglandina (lo que genera dolor)</p>', 'simbolo-mujer.png', '<p>Se recomienda que consultes al mÃ©dico si los dolores menstruales son mÃ¡s graves de lo normal, sobretodo en mujeres de edades avanzadas. Necesitas estar atenta y analizar si tus perÃ­odos se retrasan, son mÃ¡s pesados o irregulares.</p>', 'header-dolores-articulares.jpg', 'Las inflamaciones de las articulaciones son  un sÃ­ntoma con una variedad de causas y sus formatos mÃ¡s comunes son la osteoartritis.<br />La osteoartritis es una enfermedad, donde el cartÃ­lago que amortigua los huesos se desgasta, dejando la articulaciÃ³n sin protecciÃ³n.  Esto provoca dolor y  produce deformaciÃ³n articular.', '                  <p>La artritis no tiene edad y la desintegraciÃ³n del cartÃ­lago puede darse por varias razones, incluyendo lesiones, herencia o enfermedad. La osteoartritis  se vuelve mÃ¡s frecuente con la edad, sin embargo, personas de todas las edades pueden ser afectadas por diferentes tipos de artritis.</p>', '                  <p>En algunas personas, la ruptura inicial de cartÃ­lago no provoca ningÃºn dolor mientras que en otros casos el dolor se manifiesta sobre todo cuando te movÃ©s o tenÃ©s un largo perÃ­odo de inmovilidad, como a primera hora de la maÃ±ana o despuÃ©s de ver una pelÃ­cula de larga duraciÃ³n o un viaje prolongado.</p>', '                  <p>- Incapacidad para mover una articulaciÃ³n normalmente.<br />\r\n                    - Dolor recurrente o sensibilidad en cualquier articulaciÃ³n.<br />\r\n                    - HinchazÃ³n en una o mÃ¡s articulaciones.<br />\r\n                    - Enrojecimiento o calor en la articulaciÃ³n.<br />\r\n                    Si experimentÃ¡s alguno de estos sÃ­ntomas, debÃ©s consultar a tu mÃ©dico tan pronto como sea posible.  El diagnÃ³stico y tratamiento temprano pueden ayudar a limitar el daÃ±o y controlar los sÃ­ntomas.</p>', '                  <p>Una combinaciÃ³n de ejercicio, algunos cambios de estilo de vida menores, una dieta adecuada y la medicaciÃ³n ayudan a controlar el dolor y los sÃ­ntomas de la artritis.<br />\r\n                  El ejercicio te ayuda a fortalecer los mÃºsculos que rodean la articulaciÃ³n afectada y colaboran a estabilizar la zona. PequeÃ±os cambios en tu estilo de vida como tomar los objetos con las dos manos sumado a una dieta adecuada, que ayuda a sacar peso innecesario de tus articulaciones, contribuirÃ¡n a tu salud en general y a tu estado de Ã¡nimo. Fabogesic puede ayudarte a aliviar temporalmente los dolores menores asociados con la artritis.</p>', '                  <p>Si sentÃ­s algunos de los sÃ­ntomas antes explicados no dudes en consultar a un mÃ©dico que puede diagnosticarte correctamente y ayudarte con un tratamiento adecuado o eventualmente derivarte con un mÃ©dico reumatÃ³logo o traumatÃ³logo.</p>', '2014-06-18 17:04:25', '2014-06-19 12:21:02');
+(1, 'header-dolores-musculares.jpg', 'Â¿Te golpeaste practicando algÃºn deporte? Â¿O quedaste dolorido despuÃ©s de hacer fuerza en el trabajo o en la casa?<br />Millones de personas cada aÃ±o se lesionan haciendo deportes o mientras realizan sus tareas diarias.<br /><br /><strong>DescubrÃ­ mÃ¡s sobre los dolores musculares y la forma de tratarlos:</strong>', '                  <p><strong>Descanso / Reposo.</strong></p>\r\n                  <p>La lesiÃ³n debe permanecer inmÃ³vil y no apliques fuerza adicional en el sitio del esguince. En el caso de un esguince de tobillo por ejemplo, evitÃ¡ caminar.</p>\r\n\r\n                  <p><strong>Hielo.</strong></p>\r\n                  <p>AplicÃ¡ hielo inmediatamente despuÃ©s del esguince para reducir el dolor eÂ hinchazÃ³nÂ producidos por la lesiÃ³n. Lo podes aplicar durante 10-15 minutos (una aplicaciÃ³n mÃ¡s prolongada puede agravar la lesiÃ³n en lugar de curarla). UtilizÃ¡ hielo 3 Ã³ 4 veces al dÃ­a. En algunas ocasiones, ademÃ¡s, se puede utilizar unÂ vendajeÂ para proporcionar soporte a la zona afectada.</p>\r\n\r\n                  <p><strong>ElevaciÃ³n.</strong></p>\r\n                  <p>MantenÃ© elevada la zona afectada en relaciÃ³n con el resto del cuerpo para minimizar aÃºn mÃ¡s la hinchazÃ³n y los moretones.</p>\r\n\r\n                  <p>Tomar Fabogesic te ayuda a aliviar el dolor y a reducir la inflamaciÃ³n.</p>\r\n\r\n                  <p>Se recomienda que consultes al mÃ©dico si sentÃ­s un dolor intenso, un mÃºsculo o articulaciÃ³n muy inflamado, o si el movimiento se encuentra restringido.</p>', 'header-dolores-posturales.jpg', '<strong>Â¿Alguna vez tuviste dolores de espalda por malas posturas?</strong><br />La migraÃ±a, o dolor de cabeza localizado, en ocasiones puede ser causada por una mala postura al dormir o  al permanecer sentado,  ademÃ¡s del estrÃ©s y la falta de descanso. Una postura incorrecta tambiÃ©n puede producir dolor de espalda, Ã©ste es un problema muy comÃºn que sufre el 80% de las personas en algÃºn mo', '                <div class="col-sm-12 text-left">\r\n                  \r\n                  <p>Aparte de las lesiones o tensiones en la espalda producidos por el esfuerzo de los mÃºsculos o ligamentos, algunos problemas de espalda pueden gestarse a raÃ­z de un movimiento brusco. Algunas de las causas mÃ¡s comunes de dolor de espalda son:</p>\r\n\r\n                </div>\r\n\r\n                <div class="col-sm-12">\r\n                  \r\n                  <div class="row">\r\n                    \r\n                    <div class="col-xs-12 col-sm-6">\r\n                      \r\n                      <ul>\r\n                        <li class="tick tick-white">Levantar incorrectamente.</li>\r\n                        <li class="tick tick-white">TorsiÃ³n o estiramiento excesivo.</li>\r\n                        <li class="tick tick-white">Mala postura al caminar o estando sentado.</li>\r\n                      </ul>\r\n\r\n                    </div>\r\n\r\n                    <div class="col-xs-12 col-sm-6">\r\n                      \r\n                      <ul>\r\n                        <li class="tick tick-white">Dormir en mala postura o en un colchÃ³n demasiado blando.</li>\r\n                        <li class="tick tick-white">Estar excedido de peso.</li>\r\n                        <li class="tick tick-white">Inactividad o sedentarismo.</li>\r\n                      </ul>\r\n\r\n                    </div>\r\n\r\n                  </div>\r\n               </div>', '                  <p>Cualquier procedimiento de frÃ­o/calor sobre los mÃºsculos doloridos te ayudarÃ¡ a relajarlos y aliviarlos. Los analgÃ©sicos anti-inflamatorios como Fabogesic son muy eficaces tambiÃ©n.</p>', '                    <div class="col-sm-6">\r\n                        \r\n                        <p><strong>LevantÃ¡ los objetos correctamente. </strong>MantenÃ© la espalda recta, flexionÃ¡ las rodillas hasta que estÃ© al mismo nivel que el objeto, y levantÃ¡ de manera lenta y constante el objeto ayudÃ¡ndote con tus piernas. EvitÃ¡ levantar cualquier objeto pesado por encima de los hombros.</p>\r\n\r\n                        <p><strong>RevisÃ¡ tu posiciÃ³n frente al escritorio.</strong>Â Sentate con los dos pies en el suelo y las rodillas tan alto como las caderas, y posicionate  firmemente contra el respaldo de la silla. CambiÃ¡ de posiciÃ³n con frecuencia y tomÃ¡ descansos para evitar la sobrecarga en la espalda.</p>\r\n\r\n                        <p><strong>CuidÃ¡ tu postura.</strong> TratÃ¡ de pararte tanto como sea posible, caminÃ¡ con la postura erguida y llevÃ¡ calzado cÃ³modo.</p>\r\n\r\n                        <p><strong>EvitÃ¡ agacharte durante largos perÃ­odos de tiempo.</strong> En lugar de agacharte encorvando tu espalda, intentÃ¡ ponerte en cuclillas manteniendo la espalda recta. Si tenÃ©s que arrodillarte no olvides levantarte periÃ³dicamente y estirar tus piernas. Nunca gires mientras te levantas. </p>\r\n\r\n                    </div>\r\n\r\n                    <div class="col-sm-6">\r\n\r\n                      <p><strong>EvitÃ¡ generar una torcedura.</strong> MovÃ© los pies y las piernas suavemente antes de salir de un vehÃ­culo o al levantarte de la cama.</p>\r\n\r\n                      <p><strong>No te apresures al subir y bajar escaleras.</strong> Incluso si te encontrÃ¡s en un apuro, es prudente que des un paso (escalÃ³n) a la vez y mantener tu espalda recta.</p>\r\n\r\n                      <p><strong>TenÃ© cuidado al cargar bolsas y mochilas.</strong> AlternÃ¡ el peso de las bolsas sobre ambos brazos y vas a evitar que se sobrecargue uno de los lados.  Si es posible, utilizÃ¡ mochilas que permitan equilibrar el peso en ambos lados.</p>\r\n\r\n                      <p><strong>TenÃ© hÃ¡bitos saludables.</strong> HacÃ© ejercicios todos los dÃ­as y mantenÃ© un peso saludable.</p>\r\n\r\n                      <p><strong>Â¿CuÃ¡ndo debo consultar al mÃ©dico?</strong> No dejes de consultar a tu mÃ©dico si percibÃ­s dolores anormales en forma prolongada.</p>\r\n                      \r\n                    </div>', 'header-dolores-menstruales.jpg', '<strong>Lo que necesitÃ¡s saber:</strong><br />Para muchas mujeres el dolor menstrual no es tan severo como para influir con su vida diaria. Sin embargo, para otras significa tomarse el dÃ­a libre de cualquier actividad hasta que el dolor desaparezca. <strong>Si los dolores menstruales interrumpen tu actividad diaria, tenemos algunos consejos para ayudarte a calmar el malestar:</strong>', '<p>El dolor menstrual es causado por contracciones del Ãºtero o matriz que ayudan a deshacerse de su revestimiento para que uno nuevo puede crecer. Para ayudar a iniciar las contracciones el cuerpo necesita liberar sustancias quÃ­micas llamadas prostaglandinas que son productos quÃ­micos y que causan el dolor.</p>', '<p>El calor es una buena manera de ayudar a calmar y relajar los mÃºsculos del Ãºtero. Tomar un baÃ±o o utilizar una bolsa de agua caliente son soluciones tradicionales que realmente funcionan. Nadar suavemente, caminar o andar en bicicleta tambiÃ©n pueden ayudarte a aliviar el dolor. Fabogesic  es particularmente eficaz, ya que tiene efectos anti-prostaglandinas inhiben la ciclo oxigenasa evitando que se segregue prostaglandina (lo que genera dolor)</p>', 'simbolo-mujer.png', '<p>Se recomienda que consultes al mÃ©dico si los dolores menstruales son mÃ¡s graves de lo normal, sobretodo en mujeres de edades avanzadas. Necesitas estar atenta y analizar si tus perÃ­odos se retrasan, son mÃ¡s pesados o irregulares.</p>', 'header-dolores-articulares.jpg', 'Las inflamaciones de las articulaciones son  un sÃ­ntoma con una variedad de causas y sus formatos mÃ¡s comunes son la osteoartritis.<br />La osteoartritis es una enfermedad, donde el cartÃ­lago que amortigua los huesos se desgasta, dejando la articulaciÃ³n sin protecciÃ³n.  Esto provoca dolor y  produce deformaciÃ³n articular.', '                  <p>La artritis no tiene edad y la desintegraciÃ³n del cartÃ­lago puede darse por varias razones, incluyendo lesiones, herencia o enfermedad. La osteoartritis  se vuelve mÃ¡s frecuente con la edad, sin embargo, personas de todas las edades pueden ser afectadas por diferentes tipos de artritis.</p>', '                  <p>En algunas personas, la ruptura inicial de cartÃ­lago no provoca ningÃºn dolor mientras que en otros casos el dolor se manifiesta sobre todo cuando te movÃ©s o tenÃ©s un largo perÃ­odo de inmovilidad, como a primera hora de la maÃ±ana o despuÃ©s de ver una pelÃ­cula de larga duraciÃ³n o un viaje prolongado.</p>', '                  <p>- Incapacidad para mover una articulaciÃ³n normalmente.<br />\r\n                    - Dolor recurrente o sensibilidad en cualquier articulaciÃ³n.<br />\r\n                    - HinchazÃ³n en una o mÃ¡s articulaciones.<br />\r\n                    - Enrojecimiento o calor en la articulaciÃ³n.<br />\r\n                    Si experimentÃ¡s alguno de estos sÃ­ntomas, debÃ©s consultar a tu mÃ©dico tan pronto como sea posible.  El diagnÃ³stico y tratamiento temprano pueden ayudar a limitar el daÃ±o y controlar los sÃ­ntomas.</p>', '                  <p>Una combinaciÃ³n de ejercicio, algunos cambios de estilo de vida menores, una dieta adecuada y la medicaciÃ³n ayudan a controlar el dolor y los sÃ­ntomas de la artritis.<br />\r\n                  El ejercicio te ayuda a fortalecer los mÃºsculos que rodean la articulaciÃ³n afectada y colaboran a estabilizar la zona. PequeÃ±os cambios en tu estilo de vida como tomar los objetos con las dos manos sumado a una dieta adecuada, que ayuda a sacar peso innecesario de tus articulaciones, contribuirÃ¡n a tu salud en general y a tu estado de Ã¡nimo. Fabogesic puede ayudarte a aliviar temporalmente los dolores menores asociados con la artritis.</p>', '                  <p>Si sentÃ­s algunos de los sÃ­ntomas antes explicados no dudes en consultar a un mÃ©dico que puede diagnosticarte correctamente y ayudarte con un tratamiento adecuado o eventualmente derivarte con un mÃ©dico reumatÃ³logo o traumatÃ³logo.</p>', '2014-06-18 17:04:25', '2014-06-19 12:21:02');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `DoloresCabeza`
+-- Table structure for table `DoloresCabeza`
 --
 
 CREATE TABLE `DoloresCabeza` (
@@ -75,7 +97,7 @@ CREATE TABLE `DoloresCabeza` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `DoloresCabeza`
+-- Dumping data for table `DoloresCabeza`
 --
 
 INSERT INTO `DoloresCabeza` (`id`, `ImageUrl`, `Subtitle`, `Text1`, `Text2`, `Text3`, `Text4`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -84,7 +106,7 @@ INSERT INTO `DoloresCabeza` (`id`, `ImageUrl`, `Subtitle`, `Text1`, `Text2`, `Te
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `EditableContent`
+-- Table structure for table `EditableContent`
 --
 
 CREATE TABLE `EditableContent` (
@@ -97,7 +119,7 @@ CREATE TABLE `EditableContent` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `EditableContent`
+-- Dumping data for table `EditableContent`
 --
 
 INSERT INTO `EditableContent` (`id`, `homeA1`, `presentacionesA1`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -106,7 +128,7 @@ INSERT INTO `EditableContent` (`id`, `homeA1`, `presentacionesA1`, `FechaCreacio
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PresentacionesEditable`
+-- Table structure for table `PresentacionesEditable`
 --
 
 CREATE TABLE `PresentacionesEditable` (
@@ -123,7 +145,7 @@ CREATE TABLE `PresentacionesEditable` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `PresentacionesEditable`
+-- Dumping data for table `PresentacionesEditable`
 --
 
 INSERT INTO `PresentacionesEditable` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub2ImageUrl`, `Sub2Text`, `Sub3ImageUrl`, `Sub3Text`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -132,7 +154,7 @@ INSERT INTO `PresentacionesEditable` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub2Ima
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PresentacionesSub1`
+-- Table structure for table `PresentacionesSub1`
 --
 
 CREATE TABLE `PresentacionesSub1` (
@@ -158,7 +180,7 @@ CREATE TABLE `PresentacionesSub1` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `PresentacionesSub1`
+-- Dumping data for table `PresentacionesSub1`
 --
 
 INSERT INTO `PresentacionesSub1` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub1Link`, `Sub2ImageUrl`, `Sub2Text`, `Sub2Link`, `Sub3ImageUrl`, `Sub3Text`, `Sub3Link`, `Sub4ImageUrl`, `Sub4Text`, `Sub4Link`, `Sub5ImageUrl`, `Sub5Text`, `Sub5Link`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -167,7 +189,7 @@ INSERT INTO `PresentacionesSub1` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub1Link`, 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PresentacionesSub2`
+-- Table structure for table `PresentacionesSub2`
 --
 
 CREATE TABLE `PresentacionesSub2` (
@@ -187,7 +209,7 @@ CREATE TABLE `PresentacionesSub2` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `PresentacionesSub2`
+-- Dumping data for table `PresentacionesSub2`
 --
 
 INSERT INTO `PresentacionesSub2` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub1Link`, `Sub2ImageUrl`, `Sub2Text`, `Sub2Link`, `Sub3ImageUrl`, `Sub3Text`, `Sub3Link`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -196,7 +218,7 @@ INSERT INTO `PresentacionesSub2` (`id`, `Sub1ImageUrl`, `Sub1Text`, `Sub1Link`, 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PresentacionesSub3`
+-- Table structure for table `PresentacionesSub3`
 --
 
 CREATE TABLE `PresentacionesSub3` (
@@ -232,16 +254,16 @@ CREATE TABLE `PresentacionesSub3` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `PresentacionesSub3`
+-- Dumping data for table `PresentacionesSub3`
 --
 
 INSERT INTO `PresentacionesSub3` (`id`, `Image1Url`, `Image2Url`, `Image3Url`, `Image4Url`, `Image5Url`, `Image6Url`, `Image7Url`, `Image8Url`, `Image9Url`, `Image10Url`, `Text1`, `Text2`, `Text3`, `Text4`, `Text5`, `Text6`, `BtnImageUrl1`, `BtnImageUrl2`, `Text9`, `Text10`, `Text11`, `Text12`, `Text13`, `Prospecto1ImageUrl`, `Prospecto2ImageUrl`, `FechaCreacion`, `FechaModificacion`) VALUES
-(1, 'seccion-pedriatica.jpg', 'header-seccion-pediatrica.jpg', 'seccion-pediatrica-tip.jpg', 'caja-ninos-400x10.png', 'txt-venta-libre.png', 'nena.png', 'caja-ninos-400x20.png', 'txt-venta-libre.png', 'vaquita.png', 'nene.png', '<strong class="text-primary">Fabogesic niÃ±os</strong> es un tratamiento eficaz y rÃ¡pido para reducir el dolor y la fiebre.', '400mg x 90 cÃ¡psulas de gelatina blanda', '400mg x 20 cÃ¡psulas de gelatina blanda', '              <li class="tick">\r\n                <p>comienza a actuar en 15 minutos para bajar la temperatura</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>alivia la fiebre por 8 horas</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>alivia doloresÂ  de cualquier tipo, como ser: dolor de oÃ­do, por golpes y fiebre asociada con la denticiÃ³n</p>\r\n              </li>', '              <li class="tick">\r\n                <p>no produce picazÃ³n en la garganta de tu niÃ±o</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>Es libre de AzÃºcar.</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>contiene un prÃ¡ctico vaso dosificador que permite administrar la dosis exacta</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>disponible en sabor Tutti Frutti y Banana-Cereza</p>\r\n              </li>', 'Los niÃ±os en etapa de crecimiento pueden sufrir golpes que producen dolor y un estado de  insatisfacciÃ³n que se transmite a los padres, quienes no desean ver a sus hijos asÃ­. El dolor es la manera que el cuerpo tiene para decirnos que necesita un poco de atenciÃ³n.  Pero, Â¿cÃ³mo reacciona tu hijo ante el dolor? Â¿Para quÃ© sirve? Te ayudaremos a entender mejor las causas y consecuencias del dolor:', 'pregunta1.png', 'pregunta2.png', '                  <p>A lo largo del cuerpo de tu hijo existen millones de fibras nerviosas donde algunas se conectan con receptores del dolor, llamados Nociceptores, que le avisan lo que estÃ¡ pasando en su cuerpo. Cuando tu hijo se enferma o golpea, estos Nociceptores trasmiten seÃ±ales de dolor al cerebro a travÃ©s de la medula espinal mientras que sustancias quÃ­micas sensibilizan los nervios amplificando el dolor y asegurÃ¡ndose que el cerebro los escuche. </p>\r\n                  <p>Recordemos que los niÃ±os requieren permanentemente  amor y  atenciÃ³n por parte de su  familia , especialmente en estos momentos.</p>', '                  <p>El Ibuprofeno es el analgÃ©sico mÃ¡s recomendado por pediatras porque actÃºa rÃ¡pidamente bajando la fiebre y calmando el dolor. El efecto tiene una duraciÃ³n de 8hs por lo que se debe tomar 3 veces por dÃ­a.</p>\r\n                  <p>No obstante, los padres deben hablar con el pediatra para determinar el uso correcto del medicamento. </p>', 'Una pregunta bÃ¡sica que muchos padres pueden tener es, Â¿cuÃ¡l es la diferencia entre el <strong>ibuprofeno</strong>, el medicamento de la Infancia Advil Â®, y el <strong>acetaminofÃ©n</strong>, el medicamento en los niÃ±os Tylenol Â®? <br /><strong>Estas son algunas cosas que los padres pueden querer saber antes de ir a la farmacia:</strong>', '                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno es el nÂ° 1 recomendado por los pediatras antipirÃ©tico / analgÃ©sico.</p>\r\n                  </li>\r\n                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno y el acetaminofÃ©n son los Ãºnicos ingredientes activos utilizados en venta libre para aliviar el dolor de los niÃ±os / antifebriles.</p>\r\n                  </li>\r\n                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno (el ingrediente activo en Fabogesic NiÃ±os) dura mÃ¡s tiempo que el acetaminofeno . El ibuprofeno tiene una duraciÃ³n de hasta 8 horas, mientras que el paracetamol dura 4-6 horas.</p>\r\n                  </li>', '                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno es seguro cuando se toma segÃºn las indicaciones. Sin embargo, como con cualquier medicamento, los padres deben hablar con el pediatra de su hijo para hablar sobre lo que puede ser mejor para su hijo.</p>\r\n                  </li>', 'fabo_ninos_2.png', 'fabo_ninos_4.png', '2014-06-17 18:00:00', '2014-06-18 16:10:28');
+(1, 'seccion-pedriatica.jpg', 'header-seccion-pediatrica.jpg', 'seccion-pediatrica-tip.jpg', 'caja-ninos-400x10.png', 'txt-venta-libre.png', 'nena.png', 'caja-ninos-400x20.png', 'txt-venta-libre.png', 'vaquita.png', 'nene.png', '<strong class="text-primary">Fabogesic niÃ±os</strong> es un tratamiento eficaz y rÃ¡pido para reducir el dolor y la fiebre.', '400mg x 90 cÃ¡psulas de gelatina blanda', '400mg x 20 cÃ¡psulas de gelatina blanda', '              <li class="tick">\r\n                <p>comienza a actuar en 15 minutos para bajar la temperatura</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>alivia la fiebre por 8 horas</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>alivia doloresÂ  de cualquier tipo, como ser: dolor de oÃ­do, por golpes y fiebre asociada con la denticiÃ³n</p>\r\n              </li>', '              <li class="tick">\r\n                <p>no produce picazÃ³n en la garganta de tu niÃ±o</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>Es libre de AzÃºcar.</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>contiene un prÃ¡ctico vaso dosificador que permite administrar la dosis exacta</p>\r\n              </li>\r\n              <li class="tick">\r\n                <p>disponible en sabor Tutti Frutti y Banana-Cereza</p>\r\n              </li>', 'Los niÃ±os en etapa de crecimiento pueden sufrir golpes que producen dolor y un estado de  insatisfacciÃ³n que se transmite a los padres, quienes no desean ver a sus hijos asÃ­. El dolor es la manera que el cuerpo tiene para decirnos que necesita un poco de atenciÃ³n.  Pero, Â¿cÃ³mo reacciona tu hijo ante el dolor? Â¿Para quÃ© sirve? Te ayudaremos a entender mejor las causas y consecuencias del dolor:', 'pregunta1.png', 'pregunta2.png', '                  <p>A lo largo del cuerpo de tu hijo existen millones de fibras nerviosas donde algunas se conectan con receptores del dolor, llamados Nociceptores, que le avisan lo que estÃ¡ pasando en su cuerpo. Cuando tu hijo se enferma o golpea, estos Nociceptores trasmiten seÃ±ales de dolor al cerebro a travÃ©s de la medula espinal mientras que sustancias quÃ­micas sensibilizan los nervios amplificando el dolor y asegurÃ¡ndose que el cerebro los escuche. </p>\r\n                  <p>Recordemos que los niÃ±os requieren permanentemente  amor y  atenciÃ³n por parte de su  familia , especialmente en estos momentos.</p>', '                  <p>El Ibuprofeno es el analgÃ©sico mÃ¡s recomendado por pediatras porque actÃºa rÃ¡pidamente bajando la fiebre y calmando el dolor. El efecto tiene una duraciÃ³n de 8hs por lo que se debe tomar 3 veces por dÃ­a.</p>\r\n                  <p>No obstante, los padres deben hablar con el pediatra para determinar el uso correcto del medicamento. </p>', 'Una pregunta bÃ¡sica que muchos padres pueden tener es, Â¿cuÃ¡l es la diferencia entre el <strong>ibuprofeno</strong>, el medicamento de la Infancia Advil Â®, y el <strong>acetaminofÃ©n</strong>, el medicamento en los niÃ±os Tylenol Â®? <br /><strong>Estas son algunas cosas que los padres pueden querer saber antes de ir a la farmacia:</strong>', '                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno es el nÂ° 1 recomendado por los pediatras antipirÃ©tico / analgÃ©sico.</p>\r\n                  </li>\r\n                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno y el acetaminofÃ©n son los Ãºnicos ingredientes activos utilizados en venta libre para aliviar el dolor de los niÃ±os / antifebriles.</p>\r\n                  </li>\r\n                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno (el ingrediente activo en Fabogesic NiÃ±os) dura mÃ¡s tiempo que el acetaminofeno . El ibuprofeno tiene una duraciÃ³n de hasta 8 horas, mientras que el paracetamol dura 4-6 horas.</p>\r\n                  </li>', '                  <li class="tick tick-blue">\r\n                    <p>El ibuprofeno es seguro cuando se toma segÃºn las indicaciones. Sin embargo, como con cualquier medicamento, los padres deben hablar con el pediatra de su hijo para hablar sobre lo que puede ser mejor para su hijo.</p>\r\n                  </li>', 'fabo_ninos_2.png', 'fabo_ninos_4.png', '2014-06-17 18:00:00', '2014-06-18 16:10:28');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ProspectoIbuprofeno`
+-- Table structure for table `ProspectoIbuprofeno`
 --
 
 CREATE TABLE `ProspectoIbuprofeno` (
@@ -264,7 +286,7 @@ CREATE TABLE `ProspectoIbuprofeno` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `ProspectoIbuprofeno`
+-- Dumping data for table `ProspectoIbuprofeno`
 --
 
 INSERT INTO `ProspectoIbuprofeno` (`id`, `Title`, `Subtitle`, `Text1`, `TextIcon1`, `ImageIcon1Url`, `TextIcon2`, `ImageIcon2Url`, `TextIcon3`, `ImageIcon3Url`, `TextIcon4`, `ImageIcon4Url`, `GraphicImageUrl`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -273,7 +295,7 @@ INSERT INTO `ProspectoIbuprofeno` (`id`, `Title`, `Subtitle`, `Text1`, `TextIcon
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `QueEsIbuprofeno`
+-- Table structure for table `QueEsIbuprofeno`
 --
 
 CREATE TABLE `QueEsIbuprofeno` (
@@ -290,7 +312,7 @@ CREATE TABLE `QueEsIbuprofeno` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `QueEsIbuprofeno`
+-- Dumping data for table `QueEsIbuprofeno`
 --
 
 INSERT INTO `QueEsIbuprofeno` (`id`, `Title`, `SubTitle`, `Text1`, `Text2`, `Image1Url`, `Image2Url`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -299,7 +321,7 @@ INSERT INTO `QueEsIbuprofeno` (`id`, `Title`, `SubTitle`, `Text1`, `Text2`, `Ima
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Slider`
+-- Table structure for table `Slider`
 --
 
 CREATE TABLE `Slider` (
@@ -312,7 +334,7 @@ CREATE TABLE `Slider` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
--- Volcado de datos para la tabla `Slider`
+-- Dumping data for table `Slider`
 --
 
 INSERT INTO `Slider` (`id`, `ImageUrl`, `LinkUrl`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -323,7 +345,7 @@ INSERT INTO `Slider` (`id`, `ImageUrl`, `LinkUrl`, `FechaCreacion`, `FechaModifi
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `UsosMasFrecuentes`
+-- Table structure for table `UsosMasFrecuentes`
 --
 
 CREATE TABLE `UsosMasFrecuentes` (
@@ -344,7 +366,7 @@ CREATE TABLE `UsosMasFrecuentes` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Volcado de datos para la tabla `UsosMasFrecuentes`
+-- Dumping data for table `UsosMasFrecuentes`
 --
 
 INSERT INTO `UsosMasFrecuentes` (`id`, `Image1Url`, `Text1`, `Image2Url`, `Text2`, `Image3Url`, `Text3`, `Image4Url`, `Text4`, `Image5Url`, `Text5`, `FechaCreacion`, `FechaModificacion`) VALUES
@@ -353,7 +375,7 @@ INSERT INTO `UsosMasFrecuentes` (`id`, `Image1Url`, `Text1`, `Image2Url`, `Text2
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `Usuario`
+-- Table structure for table `Usuario`
 --
 
 CREATE TABLE `Usuario` (
@@ -369,7 +391,7 @@ CREATE TABLE `Usuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Volcado de datos para la tabla `Usuario`
+-- Dumping data for table `Usuario`
 --
 
 INSERT INTO `Usuario` (`id`, `Nombre`, `Apellido`, `Email`, `Password`, `EsAdministrador`, `FechaCreacion`, `FechaModificacion`) VALUES
