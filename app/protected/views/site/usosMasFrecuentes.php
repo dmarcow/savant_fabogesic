@@ -31,24 +31,17 @@
 
   <div class="row">
     <?php $url4 = Yii::app()->createUrl('site/doloresCabeza/'); ?>
-    <a href="<?php echo $url4 ?>" class="col-sm-4">
+    <a href="<?php echo $url4 ?>" class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
       <div class="producto usos-frecuentes">
         <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $usosModel->Image4Url ?> " alt="Dolores de cabeza" />
         <p><?php echo $usosModel->Text4 ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
     <?php $url5 = Yii::app()->createUrl('site/doloresArticulares/'); ?>
-    <a href="<?php echo $url5 ?>" class="col-sm-4">
+    <a href="<?php echo $url5 ?>" class="col-xs-12 col-sm-6 col-md-4">
       <div class="producto usos-frecuentes">
          <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $usosModel->Image5Url ?> " alt="Dolores articulares" />
         <p><?php echo $usosModel->Text5 ?></p>
-      </div>
-    </a><!-- /.col-sm-4 -->
-    <?php $url6 = Yii::app()->createUrl('site/presentacionesSub3/'); ?>
-    <a href="<?php echo $url6 ?>" class="col-sm-4">
-      <div class="producto usos-frecuentes">
-         <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $usosModel->Image6Url ?> " alt="Dolores en niños" />
-        <p><?php echo $usosModel->Text6 ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
     <!-- <a href="seccion-pediatrica.html" class="col-sm-4">

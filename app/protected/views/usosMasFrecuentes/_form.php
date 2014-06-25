@@ -79,18 +79,6 @@
 		<?php echo $form->error($model,'Text5'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Image6Url'); ?>
-		<?php echo $form->textField($model,'Image6Url',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'Image6Url'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'Text6'); ?>
-		<?php echo $form->textField($model,'Text6',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'Text6'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

@@ -67,16 +67,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Image6Url'); ?>
-		<?php echo $form->textField($model,'Image6Url',array('size'=>60,'maxlength'=>200)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'Text6'); ?>
-		<?php echo $form->textField($model,'Text6',array('size'=>60,'maxlength'=>200)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'FechaCreacion'); ?>
 		<?php echo $form->textField($model,'FechaCreacion',array('size'=>60,'maxlength'=>200)); ?>
 	</div>

@@ -33,7 +33,7 @@
 	<?php echo CHtml::encode($data->Text3); ?>
 	<br />
 
-	
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Image4Url')); ?>:</b>
 	<?php echo CHtml::encode($data->Image4Url); ?>
 	<br />
@@ -50,15 +50,6 @@
 	<?php echo CHtml::encode($data->Text5); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Image6Url')); ?>:</b>
-	<?php echo CHtml::encode($data->Image6Url); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Text6')); ?>:</b>
-	<?php echo CHtml::encode($data->Text6); ?>
-	<br />
-
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaCreacion')); ?>:</b>
 	<?php echo CHtml::encode($data->FechaCreacion); ?>
 	<br />
