@@ -35,13 +35,13 @@
         <div class="panel-footer">
           <div class="row info-box">
 
-            <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12 col-md-10">
               <h4><?php echo $presSub3Model->Text2; ?></h4>
             </div>
-            <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12 col-md-10">
               <div class="row">
-                <div class="col-md-6"><p><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image5Url ?>" alt="VENTA LIBRE" /></p></p></div>
-                <div class="col-md-5"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
+                <div class="col-md-8"><p><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image5Url ?>" alt="VENTA LIBRE" /></p></p></div>
+                <div class="col-md-4"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
               </div> 
             </div>
             <img class="img-responsive nena" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image6Url ?>" alt="" />
@@ -64,7 +64,7 @@
             </div>
             <div class="col-xs-12 col-md-10">
               <div class="row">
-                <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image8Url ?>" alt="VENTA LIBRE">
+                <div class="col-md-8"><p><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image8Url ?>" alt="VENTA LIBRE"></p></div>
                 <div class="col-md-4"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a></div>
               </div> 
             </div>

@@ -56,7 +56,7 @@
             <div class="col-sm-12 text-left">
               <?php echo $doloresModel->MenstrualesSub2 ?>
               <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $doloresModel->MenstrualesSub2ImageUrl ?> " alt="" />
-              <img src="assets/img/simbolo-mujer.png" alt="" class="img-responsive" />
+              <!-- <img src="assets/img/simbolo-mujer.png" alt="" class="img-responsive" /> -->
 
             </div>
           </div>
