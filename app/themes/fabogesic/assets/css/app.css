@@ -414,7 +414,7 @@ a > .producto{
   background: url("../../img/tick-white.png") no-repeat 0 0;
 }
 
-.tick p{
+.ventajas .tick p{
   font-size: 16px;
 }
 
@@ -823,18 +823,9 @@ a > .producto{
     text-align: left;
   }
 
-  .ventajas-left{
-    background-image: url("../../img/ventajas-1.png");
-    background-color: transparent;
-  }
-
-  .ventajas-right{
-    background-image: url("../../img/ventajas-2.png");
-    background-color: transparent;
-  }
-
-  .tick p{
-    font-size: 12px;
+  .ventajas .tick p {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .curiosidades .panel-body{
@@ -903,9 +894,19 @@ a > .producto{
     padding-top: 45px;
     padding-bottom: 45px;
   }
-  
-  .tick p{
-    font-size: 16px;
+
+  .ventajas-left{
+    background-image: url("../../img/ventajas-1.png");
+    background-color: transparent;
   }
+
+  .ventajas-right{
+    background-image: url("../../img/ventajas-2.png");
+    background-color: transparent;
+  }
+  
+  /*.ventajas .tick p{
+    font-size: 16px;
+  }*/
 
 }
