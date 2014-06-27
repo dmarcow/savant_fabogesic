@@ -828,12 +828,6 @@ a > .producto{
     line-height: 22px;
   }
 
-  .curiosidades .panel-body{
-    background-image: url("../../img/curiosidades.png");
-    background-color: transparent;
-    padding: 30px 15px;
-  }
-
   .contacto{
     margin: 60px auto 0;
   }
@@ -903,6 +897,12 @@ a > .producto{
   .ventajas-right{
     background-image: url("../../img/ventajas-2.png");
     background-color: transparent;
+  }
+
+  .curiosidades .panel-body{
+    background-image: url("../../img/curiosidades.png");
+    background-color: transparent;
+    padding: 50px 15px;
   }
   
   /*.ventajas .tick p{
