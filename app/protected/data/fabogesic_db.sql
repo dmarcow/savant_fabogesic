@@ -360,6 +360,8 @@ CREATE TABLE `UsosMasFrecuentes` (
   `Text4` varchar(200) NOT NULL,
   `Image5Url` varchar(200) NOT NULL,
   `Text5` varchar(200) NOT NULL,
+  `Image6Url` varchar(200) NOT NULL,
+  `Text6` varchar(200) NOT NULL,
   `FechaCreacion` varchar(200) NOT NULL,
   `FechaModificacion` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
@@ -369,8 +371,8 @@ CREATE TABLE `UsosMasFrecuentes` (
 -- Dumping data for table `UsosMasFrecuentes`
 --
 
-INSERT INTO `UsosMasFrecuentes` (`id`, `Image1Url`, `Text1`, `Image2Url`, `Text2`, `Image3Url`, `Text3`, `Image4Url`, `Text4`, `Image5Url`, `Text5`, `FechaCreacion`, `FechaModificacion`) VALUES
-(1, 'dolores-musculares.png', 'Dolores musculares e inflamaciÃ³n', 'dolores-posturales.png', 'Dolores posturales', 'dolores-menstruales.png', 'Dolores menstruales', 'dolores-cabeza.png', 'Dolores de cabeza', 'dolores-articulares.png', 'Dolores articulares', '2014-06-18 16:06:20', '2014-06-18 16:08:54');
+INSERT INTO `UsosMasFrecuentes` (`id`, `Image1Url`, `Text1`, `Image2Url`, `Text2`, `Image3Url`, `Text3`, `Image4Url`, `Text4`, `Image5Url`, `Text5`, `Image6Url`, `Text6`, `FechaCreacion`, `FechaModificacion`) VALUES
+(1, 'dolores-musculares.png', 'Dolores musculares e inflamaciÃ³n', 'dolores-posturales.png', 'Dolores posturales', 'dolores-menstruales.png', 'Dolores menstruales', 'dolores-cabeza.png', 'Dolores de cabeza', 'dolores-articulares.png', 'Dolores articulares', 'dolores-ninos.png', 'Dolores en niños','2014-06-18 16:06:20', '2014-06-18 16:08:54');
 
 -- --------------------------------------------------------
 
