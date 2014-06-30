@@ -15,6 +15,8 @@
  * @property string $Text4
  * @property string $Image5Url
  * @property string $Text5
+ * @property string $Image6Url
+ * @property string $Text6
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
@@ -36,11 +38,11 @@ class UsosMasFrecuentes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5', 'required'),
-			array('Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, FechaCreacion, FechaModificacion', 'length', 'max'=>200),
+			array('Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, Image6Url, Text6,', 'required'),
+			array('Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, Image6Url, Text6, FechaCreacion, FechaModificacion', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('id, Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, Image6Url, Text6, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,6 +74,8 @@ class UsosMasFrecuentes extends CActiveRecord
 			'Text4' => 'Text4',
 			'Image5Url' => 'Image5 Url',
 			'Text5' => 'Text5',
+			'Image6Url' => 'Image6 Url',
+			'Text6' => 'Text6',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);
@@ -104,8 +108,10 @@ class UsosMasFrecuentes extends CActiveRecord
 		$criteria->compare('Text3',$this->Text3,true);
 		$criteria->compare('Image4Url',$this->Image4Url,true);
 		$criteria->compare('Text4',$this->Text4,true);
-		$criteria->compare('Image5Url',$this->Image5Url,true);
+		$criteria->compare('',$this->Image5Url,true);
 		$criteria->compare('Text5',$this->Text5,true);
+		$criteria->compare('Image6Url',$this->Image6Url,true);
+		$criteria->compare('Text6',$this->Text6,true);
 		$criteria->compare('FechaCreacion',$this->FechaCreacion,true);
 		$criteria->compare('FechaModificacion',$this->FechaModificacion,true);
 

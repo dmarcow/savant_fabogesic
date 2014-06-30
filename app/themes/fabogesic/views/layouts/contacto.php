@@ -1,9 +1,9 @@
 <?php /* @var $this Controller */ ?>
 <!DOCTYPE html>
-<html>
+<html ng-app='Fabogesic'>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="en">
+  <meta name="language" content="es">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> -->
@@ -14,7 +14,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
 
-    <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.min.css">
     <!-- Optional theme -->
@@ -30,7 +29,7 @@
   <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body ng-app="validationApp" ng-controller="mainController">
+<body>
 
   <?php
     $UserName = "";
@@ -89,6 +88,10 @@
   <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap.min.js"></script>
   <!-- My App Scripts -->
   <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/holder.js"></script>
+
+  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/angular.min.js"></script>
+
+  <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
   <!-- Google Analytics -->
   <script>

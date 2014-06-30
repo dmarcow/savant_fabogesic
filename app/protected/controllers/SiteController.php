@@ -182,10 +182,18 @@ class SiteController extends Controller
 
 		if(isset($_POST['ContactForm']))
 		{
+			
 			$model->attributes=$_POST['ContactForm'];
+			
+			foreach($_POST['ContactForm'] as $name=>$value)
+			{
+			    $model->$name=$value;
+			}
+
 			if($model->validate()){
 				$this->sendEmail($model);
 			}
+
 		}
 		$this->render('contact',array(
 			'model'=>$model,
@@ -199,16 +207,18 @@ class SiteController extends Controller
 
 		$mail = new JPhpMailer;
 		$mail->IsSMTP();
-		$mail->Host = 'smtp.googlemail.com:465';
+
+		$mail->SMTPAuth   = true;                  // enable SMTP authentication
+		$mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+		$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+		$mail->Port       = 465;                   // set the SMTP port for the GMAIL server
+		$mail->Username   = "desarrollowirall1@gmail.com";  // GMAIL username
+		$mail->Password   = "P4ss10nfru1t";            // GMAIL password
+
 		//$mail->Host = 'localhost';
-		//$mail->SMTPSecure = "ssl";
-		//$mail->SMTPAuth = true;
-		$mail->SMTPAuth = false;
-		$mail->Username = 'desarrollowirall1@gmail.com';
 		//$mail->Username = '';
-		$mail->Password = 'P4ss10nfru1t';
 		//$mail->Password = '';
-		$mail->SetFrom('moyanotomasi@gmail.com', 'Fabogesic');
+		$mail->SetFrom('desarrollowirall1@gmail.com', 'Fabogesic');
 		$mail->Subject = 'Contacto';
 		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
 
@@ -242,8 +252,9 @@ class SiteController extends Controller
 		';
 
 		$mail->MsgHTML($body);
-		$mail->AddAddress("tomas@wirallinteractive.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
+		$mail->AddAddress("damian@wirallinteractive.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
 		$mail->Send();
+
 	}
 
 	/**
