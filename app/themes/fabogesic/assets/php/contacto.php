@@ -11,18 +11,10 @@
 		"mensaje" 	=> $JSonData->mensaje
 		);
 
-	$body		= file_get_contents('email-contacto-tmp.php');
-	$body		= eregi_replace("[\]",'',$body);
-	
-	$vars 		= array('{nombre}','{apellido}','{asunto}','{mensaje}');
-	$values 	= array($JSonData->nombre,$JSonData->apellido,$JSonData->asunto,$JSonData->mensaje);
-	
-	$body 		= str_replace($vars,$values,$body);
-
 
 	$para      	= 'damian@wirallinteractive.com.ar';
 	$titulo    	= $JSonData->asunto;
-	$mensaje   	= $body;
+	$mensaje   	= $JSonData->mensaje;
 	$cabeceras 	= 'From: webmaster@example.com' . "\r\n" .
 	    		  'Reply-To: webmaster@example.com' . "\r\n" .
 	    		  'X-Mailer: PHP/' . phpversion();

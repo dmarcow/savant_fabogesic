@@ -66,6 +66,7 @@ return array(
 	),
 
 	// application components
+	'language'=>'es',
 	'components'=>array(
 		'coreMessages'=>array(
 			'basePath'=>'protected/messages'

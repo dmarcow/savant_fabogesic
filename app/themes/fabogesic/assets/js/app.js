@@ -134,7 +134,7 @@ function loginCtrl($scope, $http) {
             //usaremos el metodo POST para enviar los datos
             method: 'POST', 
             //seleccionamos a  que URL llegara la informacion
-            url: 'http://www.fabogesic.com/app/themes/fabogesic/assets/php/contacto.php',
+            url: 'http://localhost/Savant/savant_fabogesic/app/themes/fabogesic/assets/php/contacto.php',
             //codificamos el contenido
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             //esta es la informacion que vamos a mandar
@@ -142,6 +142,9 @@ function loginCtrl($scope, $http) {
         }).
         // si la peticion ajax se realizo con exito se ejecuta success
         success(function(data, status) {
+
+            console.log(data);
+            return false;
 
             //$scope.data = data;
             if(data.response == 'Sent'){

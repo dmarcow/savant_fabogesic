@@ -227,12 +227,12 @@ class SiteController extends Controller
 				<html xmlns="http://www.w3.org/1999/xhtml">
 				<head>
 				  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-				  <title>Subastas Solidarias</title>
+				  <title>Formulario Contacto</title>
 				</head>
 				<body bgcolor="#F1F1F2" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 				    <table bgcolor="#fff" border="0" align="center" cellpadding="10" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;">
 				        <tr>
-				            <td width="580" align="center" valign="middle"><img style="display: block;" src="' . HTTP_AND_SERVER_CONST . Yii::app()->request->baseUrl . '/img/logo.png" alt="Subasta Solidaria" /></td>
+				            <td width="580" align="center" valign="middle"><img style="display: block;" src="' . HTTP_AND_SERVER_CONST . Yii::app()->request->baseUrl . '/img/logo.png"/></td>
 				        </tr>
 				        <tr>
 				        	<td>Nombre: <strong> ' . utf8_decode($user->name). '</strong>.</td>

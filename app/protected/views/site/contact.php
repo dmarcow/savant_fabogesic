@@ -20,7 +20,7 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
 
       <div role="form" class="form">
         
-        
+        <!--
         <form class="form-signin" role="form" ng-controller="loginCtrl">
 
             <div class="form-group {{usererror}}">
@@ -52,8 +52,8 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
             <div>{{aviso}}</div>
           
         </form>
+        -->
         
-        <!--
         <?php $form=$this->beginWidget('CActiveForm', array(
           'id'=>'contact-form',
           'enableClientValidation'=>true,
@@ -98,7 +98,7 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
           </p>
         </div>
 
-        <?php $this->endWidget(); ?>-->
+        <?php $this->endWidget(); ?>
 
       </div><!-- form -->
 
