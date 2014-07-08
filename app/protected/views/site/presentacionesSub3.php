@@ -67,7 +67,7 @@
                 <div class="col-md-4"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
               </div> 
             </div>
-            <img class="img-responsive nena" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image6Url ?>" alt="" />
+            <!-- <img class="img-responsive nena" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image6Url ?>" alt="" /> -->
           </div>
 
         </div>
