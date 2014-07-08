@@ -108,7 +108,7 @@ class UsosMasFrecuentes extends CActiveRecord
 		$criteria->compare('Text3',$this->Text3,true);
 		$criteria->compare('Image4Url',$this->Image4Url,true);
 		$criteria->compare('Text4',$this->Text4,true);
-		$criteria->compare('',$this->Image5Url,true);
+		$criteria->compare('Image5Url',$this->Image5Url,true);
 		$criteria->compare('Text5',$this->Text5,true);
 		$criteria->compare('Image6Url',$this->Image6Url,true);
 		$criteria->compare('Text6',$this->Text6,true);

@@ -19,6 +19,17 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+	<?php echo CHtml::form('','post',array('enctype'=>'multipart/form-data')); ?>
+
+	<h4>400mg</h4>
+
+	<!-- <div class="row">
+		<?php echo $form->labelEx($model,'Sub1ImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->Sub1ImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'Sub1ImageUrl'); ?>  
+		<?php echo $form->error($model,'Sub1ImageUrl'); ?>
+	</div> -->
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'Sub1ImageUrl'); ?>
 		<?php echo $form->textField($model,'Sub1ImageUrl',array('size'=>60,'maxlength'=>200)); ?>
@@ -31,17 +42,17 @@
 		<?php echo $form->error($model,'Sub1Text'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub1Link'); ?>
 		<?php echo $form->textField($model,'Sub1Link',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub1Link'); ?>
-	</div>
+	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub2ImageUrl'); ?>
 		<?php echo $form->textField($model,'Sub2ImageUrl',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub2ImageUrl'); ?>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Sub2Text'); ?>
@@ -49,17 +60,17 @@
 		<?php echo $form->error($model,'Sub2Text'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub2Link'); ?>
 		<?php echo $form->textField($model,'Sub2Link',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub2Link'); ?>
-	</div>
+	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub3ImageUrl'); ?>
 		<?php echo $form->textField($model,'Sub3ImageUrl',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub3ImageUrl'); ?>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Sub3Text'); ?>
@@ -67,11 +78,21 @@
 		<?php echo $form->error($model,'Sub3Text'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub3Link'); ?>
 		<?php echo $form->textField($model,'Sub3Link',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub3Link'); ?>
-	</div>
+	</div> -->
+
+	<hr>
+	<h4>600mg</h4>
+
+	<!-- <div class="row">
+		<?php echo $form->labelEx($model,'Sub4ImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->Sub4ImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'Sub4ImageUrl'); ?>  
+		<?php echo $form->error($model,'Sub4ImageUrl'); ?>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Sub4ImageUrl'); ?>
@@ -85,17 +106,18 @@
 		<?php echo $form->error($model,'Sub4Text'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub4Link'); ?>
 		<?php echo $form->textField($model,'Sub4Link',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub4Link'); ?>
-	</div>
+	</div> -->
 
-	<div class="row">
+
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub5ImageUrl'); ?>
 		<?php echo $form->textField($model,'Sub5ImageUrl',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub5ImageUrl'); ?>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Sub5Text'); ?>
@@ -103,11 +125,32 @@
 		<?php echo $form->error($model,'Sub5Text'); ?>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub5Link'); ?>
 		<?php echo $form->textField($model,'Sub5Link',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub5Link'); ?>
+	</div> -->
+
+	<hr>
+	<h4>Prospectos</h4>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Sub1Link'); ?>
+		<!-- <img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . $model->Sub1Link; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'Sub1Link'); ?>  -->
+		<?php echo $form->textField($model,'Sub1Link',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->error($model,'Sub1Link'); ?>
 	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Sub4Link'); ?>
+		<!-- <img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . $model->Sub4Link; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'Sub4Link'); ?>  -->
+		<?php echo $form->textField($model,'Sub4Link',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->error($model,'Sub4Link'); ?>
+	</div>
+
+	<hr>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

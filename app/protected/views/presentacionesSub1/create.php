@@ -3,7 +3,7 @@
 /* @var $model PresentacionesSub1 */
 
 $this->breadcrumbs=array(
-	'Presentaciones Sub1s'=>array('index'),
+	'Cápsulas blandas'=>array('index'),
 	'Create',
 );
 

@@ -76,14 +76,29 @@ body {
   background: radial-gradient(#064f75 50%, #135578 67%, #28617f 100%);
 }
 
+.navbar-default {
+  background: #f1f0f0; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YxZjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ4ZDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #f1f0f0 0%, #d9d8d8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f0f0), color-stop(100%,#d9d8d8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f1f0f0 0%,#d9d8d8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f1f0f0 0%,#d9d8d8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f1f0f0 0%,#d9d8d8 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f1f0f0 0%,#d9d8d8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f0f0', endColorstr='#d9d8d8',GradientType=0 ); /* IE6-8 */
+}
+
 .navbar-default .navbar-nav> .active > a, 
 .navbar-default .navbar-nav> li > a:hover, 
 .navbar-default .navbar-nav> li > a:focus{
   border-radius: 0;
-  background: -webkit-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%);
+  background-color: #ededed;
+  -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.55);
+     -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.55);
+       -o-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.55);
+      -ms-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.55);
+          box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.55);
   color: #00476d;
   font-weight: 700;
 }
@@ -285,7 +300,8 @@ a > .producto{
   }
 
   .descripcion-producto{
-    margin: 30px 0;
+    /*margin: 30px 0;*/
+    margin: 0;
     text-align: left;
   }
 
@@ -382,7 +398,7 @@ a > .producto{
 
 .ventajas ul, .curiosidades ul, .usos-internas ul{
   list-style: none;
-  padding: 25px;
+  padding: 5px;
 }
 
 .ventajas ul{
@@ -448,7 +464,7 @@ a > .producto{
   margin: 10px 0;
 }
 
-.ibuprofeno .contentinner{
+/*.ibuprofeno .contentinner{
   background: #fff;
   padding: 35px;
   border-radius: 10px 10px 0 0;
@@ -460,7 +476,7 @@ a > .producto{
   color: #353535;
   font-size: 15px;
   line-height: 25px;
-}
+}*/
 
 .margin30{
   margin: 0 0 30px; 
@@ -487,9 +503,7 @@ a > .producto{
 }
 
 .bg-half{
-  background-image: url("../../img/bg-half.jpg");
-  background-repeat: repeat-x;
-  background-position: left top;
+  background-color: #093b54;
 }
 
 /* Custom Buttons */
@@ -501,7 +515,7 @@ a > .producto{
 /* HELPER CLASSES */
 
 .bordered{
-  border-bottom: 1px solid #102a43;
+  /*border-bottom: 1px solid #102a43;*/
   border-top: 1px solid #102a43;  
 }
 
@@ -842,11 +856,11 @@ a > .producto{
   }
 
   .navbar-nav > li:first-child{
-    border-left: 1px solid #000;
+    border-left: 1px solid #014162;
   }
 
   .navbar-nav > li{
-    border-right: 1px solid #000;
+    border-right: 1px solid #014162;
   }
 
   .navbar-nav > li:last-child{
@@ -889,7 +903,7 @@ a > .producto{
     padding-bottom: 45px;
   }
 
-  .ventajas-left{
+  /*.ventajas-left{
     background-image: url("../../img/ventajas-1.png");
     background-color: transparent;
   }
@@ -897,7 +911,7 @@ a > .producto{
   .ventajas-right{
     background-image: url("../../img/ventajas-2.png");
     background-color: transparent;
-  }
+  }*/
 
   .curiosidades .panel-body{
     background-image: url("../../img/curiosidades.png");

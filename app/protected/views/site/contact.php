@@ -14,6 +14,8 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
       <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $contactModel->ImageUrl?>" alt="Contacto" />
     </div>
 
+    
+
     <div class="col-xs-12 col-sm-6">
      
       <?php echo $contactModel->Title ?>
@@ -103,6 +105,11 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
       </div><!-- form -->
 
     </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <p class="text-center">O llamenos al 0810 444 32267</p>
+    </div>
+    
 
   </div>
 

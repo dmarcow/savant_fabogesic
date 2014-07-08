@@ -54,8 +54,8 @@ $this->pageTitle=Yii::app()->name;
       <!-- Four columns of text below the carousel -->
         
         <div class="col-md-3 bg-primary">
-          <h4>PRESENTACIONES</h4>
-          <p>Conocé las distintas presentaciones de Fabogesic: Cápsulas blandas, comprimidos y Solución oral, en sus distintas versiones.</p>
+          <h4>PRODUCTO</h4>
+          <p>Conocé las distintas versiones de Fabogesic: cápsulas blandas, comprimidos, solución oral, en sus distintas presentaciones.</p>
           <?php $url1 = Yii::app()->createUrl('site/presentaciones/'); ?>
           <a class="btn btn-warning" href="<?php echo $url1?>" role="button">VER MÁS</a>
           <img src="<?php echo Yii::app()->theme->baseUrl . '/img/fabogesic-cajas.png'?> " alt="PRESENTACIONES">
@@ -63,7 +63,7 @@ $this->pageTitle=Yii::app()->name;
         
         <div class="col-md-3 bg-warning">
           <h4>¿QUÉ ES IBUPROFENO?</h4>
-          <p>Fabogesic es un ibuprofeno que te ayuda a aliviar cualquier tipo de dolor que puede presentarse en tu organismo como los dolores de cabeza, posturales y muchos otros. Conocé los beneficios.</p>
+          <p>El ibuprofeno es un analgésico seguro y eficaz, que forma parte de una clase de medicamentos. Conocé sus beneficios.</p>
           <?php $url2 = Yii::app()->createUrl('site/queEsIbuprofeno/'); ?>
           <a class="btn btn-primary" href="<?php echo $url2 ?>" role="button">VER MÁS</a>
           <img src="<?php echo Yii::app()->theme->baseUrl . '/img/fabogesic-capsulas.png'?> " alt="¿QUÉ ES IBUPROFENO?">
@@ -78,8 +78,8 @@ $this->pageTitle=Yii::app()->name;
         </div> <!-- /.col-md-3 -->
 
         <div class="col-md-3 bg-warning">
-          <h4>¿QUIENES SOMOS?</h4>
-          <p>Conocé nuestros otros productos en nuestro sitio web.</p>
+          <h4>CERTEZA DE CALIDAD</h4>
+          <p>Fabogesic es producido y comercializado por SAVANT.</p>
           <a class="btn btn-default" href="http://www.savant.com.ar" target="_blank" role="button">VER MÁS</a>
         </div> <!-- /.col-xs-6 .col-sm-3 -->
 

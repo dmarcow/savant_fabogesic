@@ -30,7 +30,30 @@
     <div class="col-xs-12 col-sm-6">
       <div class="panel panel-default">
         <div class="panel-body">
-          <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image4Url ?>" alt="400mg x 10 cápsulas de gelatina blanda">
+          <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image7Url ?>" >
+        </div>
+        <div class="panel-footer">
+          <div class="row info-box">
+
+            <div class="col-xs-12 col-md-10">
+              <h4><?php echo $presSub3Model->Text3; ?></h4>
+            </div>
+            <div class="col-xs-12 col-md-10">
+              <div class="row">
+                <div class="col-md-8"><p><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image8Url ?>" alt="VENTA LIBRE"></p></div>
+                <div class="col-md-4"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a></div>
+              </div> 
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image4Url ?>" >
         </div>
         <div class="panel-footer">
           <div class="row info-box">
@@ -51,29 +74,6 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image7Url ?>" alt="400mg x 20 cápsulas de gelatina blanda">
-        </div>
-        <div class="panel-footer footer-logo">
-          <div class="row info-box">
-
-            <div class="col-xs-12 col-md-10">
-              <h4><?php echo $presSub3Model->Text3; ?></h4>
-            </div>
-            <div class="col-xs-12 col-md-10">
-              <div class="row">
-                <div class="col-md-8"><p><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image8Url ?>" alt="VENTA LIBRE"></p></div>
-                <div class="col-md-4"><a class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a></div>
-              </div> 
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
 
   </div>
 

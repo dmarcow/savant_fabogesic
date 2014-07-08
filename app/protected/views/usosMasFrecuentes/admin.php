@@ -51,15 +51,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'Image2Url',
 		'Text2',
 		'Image3Url',
-		/*
 		'Text3',
 		'Image4Url',
-		'Text4',
-		'Image5Url',
-		'Text5',
+		// 'Text4',
+		// 'Image5Url',
+		// 'Text5',
+		// 'Image6Url',
+		// 'Text6',
 		'FechaCreacion',
 		'FechaModificacion',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

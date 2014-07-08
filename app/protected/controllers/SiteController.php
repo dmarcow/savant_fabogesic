@@ -208,16 +208,19 @@ class SiteController extends Controller
 		$mail = new JPhpMailer;
 		$mail->IsSMTP();
 
-		$mail->SMTPAuth   = true;                  // enable SMTP authentication
-		$mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
-		$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-		$mail->Port       = 465;                   // set the SMTP port for the GMAIL server
+		/*$mail->SMTPAuth   = true;                  			// enable SMTP authentication
+		$mail->SMTPSecure = "ssl";                 			// sets the prefix to the servier
+		$mail->Host       = "smtp.gmail.com";      			// sets GMAIL as the SMTP server
+		$mail->Port       = 465;                  			// set the SMTP port for the GMAIL server
 		$mail->Username   = "desarrollowirall1@gmail.com";  // GMAIL username
-		$mail->Password   = "P4ss10nfru1t";            // GMAIL password
+		$mail->Password   = "P4ss10nfru1t";            		// GMAIL password*/
 
-		//$mail->Host = 'localhost';
-		//$mail->Username = '';
-		//$mail->Password = '';
+		$mail->SMTPAuth   = false;                  		// enable SMTP authentication
+		$mail->Host       = "200.45.85.226";      			// sets GMAIL as the SMTP server
+		$mail->Port       = 25;                  			// set the SMTP port for the GMAIL server
+		$mail->Username   = "fabogesic";  					// GMAIL username
+		$mail->Password   = "Fa0553Ic";            			// GMAIL password
+
 		$mail->SetFrom('desarrollowirall1@gmail.com', 'Fabogesic');
 		$mail->Subject = 'Contacto';
 		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';

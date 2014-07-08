@@ -29,7 +29,7 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body class="bg-half">
+<body class="bg-primary bg-presentaciones">
 
 	<?php
 		$UserName = "";

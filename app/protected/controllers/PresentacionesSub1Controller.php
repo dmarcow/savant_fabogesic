@@ -91,8 +91,36 @@ class PresentacionesSub1Controller extends Controller
 		{
 			$model->attributes=$_POST['PresentacionesSub1'];
        	  	$model->FechaModificacion = date("Y-m-d H:i:s");
+
+       	  	// $uploadedFile1 = CUploadedFile::getInstance($model,'Sub1ImageUrl');
+           //  $model->Sub1ImageUrl = $uploadedFile1;
+
+           //  $uploadedFile2 = CUploadedFile::getInstance($model,'Sub2ImageUrl');
+           //  $model->Sub2ImageUrl = $uploadedFile2;
+
+           //  $uploadedFile3 = CUploadedFile::getInstance($model,'Sub1Link');
+           //  $model->Sub1Link = $uploadedFile3;
+
+           //  $uploadedFile4 = CUploadedFile::getInstance($model,'Sub4Link');
+           //  $model->Sub4Link = $uploadedFile4;
        	  	
 			if($model->save())
+				// if(!empty($uploadedFile1))
+    //             {
+    //                 $uploadedFile1->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile1);
+    //             }
+    //             if(!empty($uploadedFile2))
+    //             {
+    //                 $uploadedFile2->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile2);
+    //             }
+    //             if(!empty($uploadedFile3))
+    //             {
+    //                 $uploadedFile3->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile3);
+    //             }
+    //             if(!empty($uploadedFile4))
+    //             {
+    //                 $uploadedFile4->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile4);
+    //             }
 				$this->redirect(array('view','id'=>$model->id));
 		}
 

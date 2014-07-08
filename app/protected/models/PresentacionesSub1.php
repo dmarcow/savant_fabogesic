@@ -41,11 +41,17 @@ class PresentacionesSub1 extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			
 			array('Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, Sub4ImageUrl, Sub4Text, Sub4Link, Sub5ImageUrl, Sub5Text, Sub5Link, FechaCreacion, FechaModificacion', 'required'),
 			array('Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, Sub4ImageUrl, Sub4Text, Sub4Link, Sub5ImageUrl, Sub5Text, Sub5Link', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, Sub4ImageUrl, Sub4Text, Sub4Link, Sub5ImageUrl, Sub5Text, Sub5Link, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			
+			//array('Sub1ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			//array('Sub4ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			//array('Sub1Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			//array('Sub4Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
 		);
 	}
 
@@ -67,21 +73,28 @@ class PresentacionesSub1 extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Sub1ImageUrl' => 'Sub1 Image Url',
-			'Sub1Text' => 'Sub1 Text',
-			'Sub1Link' => 'Sub1 Link',
+
+			'Sub1ImageUrl' => 'Imagen Principal',
+			'Sub1Text' => 'Descripción 1',
+
 			'Sub2ImageUrl' => 'Sub2 Image Url',
-			'Sub2Text' => 'Sub2 Text',
-			'Sub2Link' => 'Sub2 Link',
+			'Sub2Text' => 'Descripción 2',
+			// 'Sub2Link' => 'Sub2 Link',
+
 			'Sub3ImageUrl' => 'Sub3 Image Url',
-			'Sub3Text' => 'Sub3 Text',
-			'Sub3Link' => 'Sub3 Link',
-			'Sub4ImageUrl' => 'Sub4 Image Url',
-			'Sub4Text' => 'Sub4 Text',
-			'Sub4Link' => 'Sub4 Link',
+			'Sub3Text' => 'Descripción 3',
+			// 'Sub3Link' => 'Sub3 Link',
+
+			'Sub4ImageUrl' => 'Imagen Principal',
+			'Sub4Text' => 'Descripción 1',
+
 			'Sub5ImageUrl' => 'Sub5 Image Url',
-			'Sub5Text' => 'Sub5 Text',
-			'Sub5Link' => 'Sub5 Link',
+			'Sub5Text' => 'Descripción 2',
+			// 'Sub5Link' => 'Sub5 Link',
+			
+			'Sub1Link' => '400mg',
+			'Sub4Link' => '600mg',
+
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);
