@@ -7,124 +7,107 @@
 
   <h3>Comprimidos</h3>
 
+
   <!-- ROW -->
   <div class="row">
-
-
-    <div class="col-sm-6">
-      <div class="descripcion-producto">        
-        <div class="row">
-          <div class="col-md-12">
-            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub1ImageUrl ?>" alt="400mg x 90 comprimidos">
-          </div>
-          <div class="col-md-12">            
-            <div class="row info-box bordered">
-              <div class="col-xs-12 col-md-12">
-                <p><?php echo $presSub2Model->Sub1Text; ?></p>
-                <p class="text-warning"><strong>VENTA LIBRE</strong></p>
+    <div class="col-xs-6 col-md-6">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="descripcion-producto">        
+            <div class="row">
+              <div class="col-md-12">
+                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub1ImageUrl ?>" alt="400mg x 90 comprimidos">
               </div>
-              <!-- <div class="col-xs-12 col-md-12">
-                <div class="row">
-                  <div class="col-xs-12 col-md-7"><p class="text-warning"><strong>VENTA LIBRE</strong></p></div>
-                  <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a></div>
-                </div> 
+              <div class="col-md-12">            
+                <div class="row info-box bordered">
+                  <div class="col-xs-12 col-md-12">
+                    <p><?php echo $presSub2Model->Sub1Text; ?></p>
+                    <p class="text-warning"><strong>VENTA LIBRE</strong></p>
+                  </div>
+                  <!-- <div class="col-xs-12 col-md-12">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-7"><p class="text-warning"><strong>VENTA LIBRE</strong></p></div>
+                      <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a></div>
+                    </div> 
+                  </div> -->
+                </div>            
+              </div>  
+            </div>        
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a>
+          </div>
+        </div> 
+      </div>        
+    </div>
+
+
+    <div class="col-xs-6 col-md-6">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="descripcion-producto">
+            <div class="row">          
+              <div class="col-md-12">
+                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub2ImageUrl ?>" alt="600mg x 20 comprimidos">
+              </div>
+              <div class="col-md-12">            
+                <div class="row info-box bordered">
+                  <div class="col-xs-12 col-md-12">
+                    <p><?php echo $presSub2Model->Sub2Text; ?></p>
+                    <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
+                  </div>
+                  <!-- <div class="col-xs-12 col-md-12">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-7"><p class="text-success"><strong>VENTA BAJO RECETA</strong></p></div>
+                      <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
+                    </div> 
+                  </div> -->  
+                </div>            
+              </div>
+            </div>        
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-12">
+          <div class="descripcion-producto">        
+            <div class="row">          
+              <!-- <div class="col-md-12">
+                <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub3ImageUrl ?>" alt="600mg x 90 comprimidos">
               </div> -->
-            </div>            
-          </div>  
-        </div>        
-      </div>
-    </div><!-- /.col-sm-6 -->
-
-    <div class="col-sm-6">
-      <div class="descripcion-producto">
-        <div class="row">          
-          <div class="col-md-12">
-            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub2ImageUrl ?>" alt="600mg x 20 comprimidos">
-          </div>
-          <div class="col-md-12">            
-            <div class="row info-box bordered">
-              <div class="col-xs-12 col-md-12">
-                <p><?php echo $presSub2Model->Sub2Text; ?></p>
-                <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
+              <div class="col-md-12">            
+                <div class="row info-box bordered">
+                  <div class="col-xs-12 col-md-12">
+                    <p><?php echo $presSub2Model->Sub3Text; ?></p>
+                    <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
+                  </div>
+                  <!-- <div class="col-xs-12 col-md-12">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-7"><p class="text-success"><strong>VENTA BAJO RECETA</strong></p></div>
+                      <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
+                    </div> 
+                  </div> -->
+                </div>            
               </div>
-              <!-- <div class="col-xs-12 col-md-12">
-                <div class="row">
-                  <div class="col-xs-12 col-md-7"><p class="text-success"><strong>VENTA BAJO RECETA</strong></p></div>
-                  <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
-                </div> 
-              </div> -->  
-            </div>            
+            </div>        
           </div>
-        </div>        
-      </div>
-    </div><!-- /.col-sm-6 -->
-
-
-
-    
-  </div><!-- /.row -->
-  
-
-
-  <!-- ROW -->
-  <div class="row">
-
-    <div class="col-sm-6">   
-      <div class="col-xs-12 col-md-5">
-        <a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal1">Ver prospecto</a>
-      </div>
-    </div> 
-    
-    <div class="col-sm-6">
-      <div class="descripcion-producto">        
-        <div class="row">          
-          <!-- <div class="col-md-12">
-            <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub3ImageUrl ?>" alt="600mg x 90 comprimidos">
-          </div> -->
-          <div class="col-md-12">            
-            <div class="row info-box bordered">
-              <div class="col-xs-12 col-md-12">
-                <p><?php echo $presSub2Model->Sub3Text; ?></p>
-                <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
-              </div>
-              <!-- <div class="col-xs-12 col-md-12">
-                <div class="row">
-                  <div class="col-xs-12 col-md-7"><p class="text-success"><strong>VENTA BAJO RECETA</strong></p></div>
-                  <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
-                </div> 
-              </div> -->
-            </div>            
+          <div class="col-xs-12 col-md-5">
+            <a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a>
           </div>
-        </div>        
-      </div>
-    </div><!-- /.col-sm-6 -->
-    
-
-  </div><!-- /.row -->
+        </div>
 
 
-
-
-
-
-
-  <!-- ROW -->
-  <div class="row">
-
-    <div class="col-sm-6"></div> 
-    
-    <div class="col-sm-6">   
-      <div class="col-xs-12 col-md-5">
-        <a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a>
       </div>
     </div>
-    
-
-  </div><!-- /.row -->
 
 
 
-  
+
+
+  </div><!-- /.col-sm-6 -->
+
+
+
+
 
 
 
