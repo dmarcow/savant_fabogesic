@@ -118,11 +118,12 @@
       
       <div class="row">
         
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-5">
           <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image9Url ?>" alt="" />
         </div>
 
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 col-sm-7">
+          <br>
           <p class="text-center"> <?php echo $presSub3Model->Text6; ?> </p>
         </div>
 
@@ -186,7 +187,7 @@
   
   </div>
 
-  <div class="row dudas">
+  <!-- <div class="row dudas">
 
     <div class="col-xs-12 col-sm-4">
       <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub3Model->Image10Url ?>" alt="" />
@@ -234,7 +235,7 @@
 
     </div>
 
-  </div>
+  </div> -->
 
   <div class="col-sm-12 btn-back">
     <p class="text-center">
@@ -273,4 +274,4 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-</div><!-- /.container -->
+</div><!-- /.container
