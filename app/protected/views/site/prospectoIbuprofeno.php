@@ -6,7 +6,7 @@
 
 <!-- Three columns of text below the carousel -->
 <div class="row">
-  <h1>CARACTERÍSTICAS Y BENEFICIOS</h1>
+  <h1>RÁPIDA ACCIÓN</h1>
   
   <div class="col-md-12">
     <p class="header-description"><?php echo $prospectoModel->Subtitle ?> </p>

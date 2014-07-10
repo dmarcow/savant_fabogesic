@@ -45,7 +45,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'PostularesSubtitle'); ?>
-		<?php echo $form->textField($model,'PostularesSubtitle',array('size'=>60,'maxlength'=>400)); ?>
+		<?php echo $form->textField($model,'PostularesSubtitle',array('size'=>60,'maxlength'=>999)); ?>
 		<?php echo $form->error($model,'PostularesSubtitle'); ?>
 	</div>
 

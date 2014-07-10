@@ -43,6 +43,11 @@ body {
   padding-left: 0;
 }
 
+.navbar-static-top {
+  border-color: #d9d8d8;
+  border-width: 1px;
+}
+
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
@@ -464,6 +469,15 @@ a > .producto{
   margin: 10px 0;
 }
 
+@media (max-width: 768px) {
+
+  /* Navbar positioning foo */
+  .ibuprofeno .row img[class="img-responsive"]{
+    margin-bottom: 120px;
+  }
+
+}
+
 /*.ibuprofeno .contentinner{
   background: #fff;
   padding: 35px;
@@ -856,11 +870,11 @@ a > .producto{
   }
 
   .navbar-nav > li:first-child{
-    border-left: 1px solid #014162;
+    border-left: 1px solid #527485;
   }
 
   .navbar-nav > li{
-    border-right: 1px solid #014162;
+    border-right: 1px solid #527485;
   }
 
   .navbar-nav > li:last-child{
