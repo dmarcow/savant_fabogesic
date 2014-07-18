@@ -40,7 +40,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'HOME', 'url'=>array('/site/index')),
-				array('label'=>'PRESENTACIONES', 'url'=>array('/site/presentaciones')),
+				array('label'=>'PRODUCTOS', 'url'=>array('/site/presentaciones')),
 				array('label'=>'¿QUÉ ES EL IBUPROFENO?', 'url'=>array('/site/queEsIbuprofeno')),
 				array('label'=>'¿USOS MÁS FRECUENTES', 'url'=>array('/site/usosMasFrecuentes')),
 				array('label'=>'CONTACTO', 'url'=>array('/site/contact')),
