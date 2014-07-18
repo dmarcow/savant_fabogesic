@@ -57,7 +57,7 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" <?php if(!Yii::app()->user->isGuest){ echo "id = menuLogged";}?>>
-              	<li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRESENTACIONES</a></li>
+              	<li><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRODUCTOS</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
                 <li><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
