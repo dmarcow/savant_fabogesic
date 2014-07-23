@@ -1,0 +1,18 @@
+{
+  "brand": {
+      "name": "Fagogesic",
+      "logo": "img/logo.jpg"
+  },
+  "menu": {
+      "name": "Home",
+      "url": "#home"
+  },
+  "menu": {
+      "name": "Who",
+      "url": "#who"
+  },
+  "menu": {
+      "name": "Contact",
+      "url": "#contact"
+  }
+}
