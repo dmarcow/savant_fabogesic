@@ -1,0 +1,885 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  /*padding-bottom: 40px;*/
+  color: #5a5a5a;
+  font-family: 'Lato', sans-serif;
+}
+
+.img-responsive{
+  margin: 0 auto;
+}
+
+.header{
+  margin-bottom: 30px; 
+  margin-top: 15px; 
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+#menuLogged li a{
+ padding-left: 15px;
+ padding-right: 15px;
+ font-size: 12px;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-inverse{
+  background-color: #014c73;
+  background-image: none;
+  border-color: #014c73;
+}
+
+.navbar-brand{
+  padding: 5px;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a{
+  text-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus{
+  border-radius: 0;
+  background: -webkit-radial-gradient(#064f75 50%, #135578 67%, #28617f 100%); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#064f75 50%, #135578 67%, #28617f 100%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#064f75 50%, #135578 67%, #28617f 100%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#064f75 50%, #135578 67%, #28617f 100%);
+}
+
+.navbar-default .navbar-nav> .active > a, 
+.navbar-default .navbar-nav> li > a:hover, 
+.navbar-default .navbar-nav> li > a:focus{
+  border-radius: 0;
+  background: -webkit-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#e9eaeb 50%, #e9eaeb 67%, #B1B2B2 100%);
+  color: #00476d;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav> li > a,
+.navbar-default .navbar-nav> .active > a,
+.navbar-default .navbar-nav> .active > a:hover{
+  color: #00476d;
+  font-weight: 700;
+}
+
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus{
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover > .icon-bar, 
+.navbar-inverse .navbar-toggle:focus > .icon-bar{
+  background-color: #014c73;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /*height: 601px;*/
+  overflow: hidden;
+}
+
+.carousel-inner{
+  margin-top: 50px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 0;
+  background-color: #fff;
+  padding: 0 0 41%;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 1446px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.carousel-indicators li{
+  background-color: #cccccc;
+  border: none;
+  margin: 0 10px;
+}
+
+.carousel-indicators .active{
+  background-color: #ff8710;
+  width: 11px;
+  height: 11px;
+  margin: 0 10px;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+  background-image: none;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 0;
+  padding-left: 0;
+  border-top: 2px solid #fff;
+}
+
+.marketing > div{
+  padding: 20px;
+  position: relative;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-md-3 {
+  text-align: left;
+}
+
+.marketing h4 {
+  font-weight: bold;
+}
+
+.marketing > div img{
+  position: absolute;
+  bottom: -10%;
+  right: 5px;
+  z-index: 999;
+  height: 25%;
+  width: auto;
+}
+
+.marketing > div:last-child{
+  background-image: url("../assets/img/savant-home.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.marketing > div:last-child p{
+  width: 75%;
+}
+
+/* PRESENTACIONES CONTENT
+-------------------------------------------------- */
+
+.presentaciones{
+  margin: 0 auto 240px;
+}
+
+.presentaciones h3:before{
+  content: "►";
+  font-size: 20px;
+  margin: 0 5px 0 0;
+}
+
+a > .producto{
+  position: relative;
+  text-decoration: none;
+}
+
+.producto{
+  background-image: url("../assets/img/bg-producto.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 370px;
+  text-align: center;
+}
+
+  .producto img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -65%) scale(1);
+    -moz-transform: translate(-50%, -65%) scale(1);
+    -ms-transform: translate(-50%, -65%) scale(1);
+    -o-transform: translate(-50%, -65%) scale(1);
+    transform: translate(-50%, -65%) scale(1);
+    transition: all 0.3s ease;
+    width: inherit;
+  }
+
+    .producto:hover img{
+      -webkit-transform: translate(-50%, -65%) scale(1.1);
+      -moz-transform: translate(-50%, -65%) scale(1.1);
+      -ms-transform: translate(-50%, -65%) scale(1.1);
+      -o-transform: translate(-50%, -65%) scale(1.1);
+      transform: translate(-50%, -65%) scale(1.1);
+    }
+
+  .producto p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .producto p:before{
+    content: '▼';
+    position: absolute;
+    font-size: 14px;
+    bottom: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .descripcion-producto{
+    margin: 30px 0;
+    text-align: left;
+  }
+
+  .info-box{
+    margin: 0 10px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .pediatria .info-box{
+    text-align: left;
+  }
+
+  .nena{
+    position: absolute;
+    bottom: -10px;
+    right: -20px;
+    width: 25%;
+  }
+
+  .vta-bjo-receta{
+    max-width: 227px;
+    width: 80%;
+  }
+
+  .footer-logo{
+    background-image: url("../assets/img/bg-logo-savant.png");
+    background-position:  right bottom;
+    background-repeat:  no-repeat;
+  }
+
+
+/* SECCION PEDIATRICA
+-------------------------------------------------- */
+
+.pediatria, .contacto{
+  margin: 30px auto 0;
+}
+
+.header-description{
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
+
+.buen-padre{
+  margin: 30px 0;
+}
+
+.buen-padre p, .dudas p{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.buen-padre-top{
+  background: url("../assets/img/bg-buen-padre-top.png") center top no-repeat;
+  background-size: 100%;
+  height: 128px;
+  margin-bottom: -80px;
+}
+
+.buen-padre-bottom{
+   background: url("../assets/img/bg-buen-padre-bottom.png") center bottom no-repeat;
+   background-size: 100%;
+   height: 128px; 
+   margin-top: -80px;
+}
+
+.desplegable{
+  margin-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.desplegable p{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.desplegable a{
+  display: block;
+  padding: 15px 0;
+}
+
+.ventajas{
+  margin-top: 30px; 
+}
+
+/*.ventajas h4{
+  color: #1d5284;
+  background: #c6db0c;
+  padding: 10px 25px;
+}*/
+
+.ventajas ul, .curiosidades ul, .usos-internas ul{
+  list-style: none;
+  padding: 25px;
+}
+
+.ventajas ul{
+  padding: 15px 15px 20px;
+}
+
+.ventajas .tick p{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.ventajas-left, .ventajas-right, .curiosidades .panel-body{
+  background-color: #CDE217;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+.tick{
+  background: url("../assets/img/tick.png") no-repeat 0 0;
+  padding: 0 0 0 25px;
+}
+
+.tick-blue{
+  background: url("../assets/img/tick-blue.png") no-repeat 0 0;
+}
+
+.tick-white{
+  background: url("../assets/img/tick-white.png") no-repeat 0 0;
+}
+
+.tick p{
+  font-size: 16px;
+}
+
+.tick-blue p{
+  color: #1d5284;
+}
+
+.curiosidades .panel-title{
+  margin-bottom: 15px;
+}
+
+/* QUE ES EL IBUPROFENO */
+
+.ibuprofeno{
+  text-align: center;
+}
+
+.ibuprofeno .header-description{
+  padding-top: 0;
+}
+
+.ibuprofeno h1{
+  color: #f58738;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 60px 0;
+}
+
+.ibuprofeno p{
+  color: #fff;
+  margin: 10px 0;
+}
+
+.ibuprofeno .contentinner{
+  background: #fff;
+  padding: 35px;
+  border-radius: 10px 10px 0 0;
+  text-align: left;
+  overflow: hidden;
+}
+
+.ibuprofeno .contentinner p{
+  color: #353535;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.margin30{
+  margin: 0 0 30px; 
+}
+
+.caracteristicas{
+  margin: 20px 0;
+}
+
+/* Custom Backgrounds for Fabogesic */
+.bg-primary{
+  background-color: #093b54;
+}
+
+.bg-presentaciones{
+  background-image: url("../assets/img/bg-presentaciones.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.bg-warning{
+  background-color: #fff;
+  color: #005783;
+}
+
+.bg-half{
+  background-image: url("../assets/img/bg-half.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+
+/* Custom Buttons */
+
+.btn{
+  border-radius: 20px;
+}
+
+/* HELPER CLASSES */
+
+.bordered{
+  border-bottom: 1px solid #102a43;
+  border-top: 1px solid #102a43;  
+}
+
+.btn-back{
+  padding: 45px 0;
+}
+
+.margin30{
+  margin: 0 0 30px; 
+}
+
+
+/* USOS FRECUENTES */
+
+.producto.usos-frecuentes{
+  background-image: none;
+  transition: all 0.3s ease;
+}
+
+.producto.usos-frecuentes:hover{
+  -webkit-transform: background-size 100%;
+  -moz-transform: background-size 100%;
+  -ms-transform: background-size 100%;
+  -o-transform: background-size 100%;
+  transform: background-size 100%;
+}
+
+.usos-internas p{
+  font-size: 18px;
+}
+
+/* Modal
+------------------------- */
+
+.modal{
+  z-index: 99999;
+  background: rgba(81,134,156,.7);
+}
+
+.modal-content{
+  border-radius: 0;
+  color: #fff;
+  background-color: #053e56;
+  text-align: center;
+  box-shadow: none;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-header{
+  border-bottom: 0;
+}
+
+.modal-footer{
+  border-top: 0;
+  text-align: center;
+}
+
+.modal-header .close{
+  background-color: #fea44b;
+  color: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  padding: 0px 6px 3px;
+  font-size: 21px;
+  top: -10px;
+  position: absolute;
+  right: -10px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 10px;
+  }
+
+  .navbar>.container .navbar-brand, 
+  .navbar>.container-fluid .navbar-brand{
+    margin: 0;
+  }
+
+  .navbar-nav > li:first-child{
+    border-left: none;
+  }
+
+  .navbar-nav > li > a{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+  }
+
+  .navbar-nav > li.active:last-child a,
+  .navbar-default .navbar-nav > li:last-child > a:hover, 
+  .navbar-default .navbar-nav > li:last-child > a:focus,
+  .navbar-inverse .navbar-nav > li:last-child > a:hover, 
+  .navbar-inverse .navbar-nav > li:last-child > a:focus{
+    border-radius: 0 10px 10px 0;
+  }
+
+  .carousel-inner{
+    margin-top: 0;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .marketing > div img{
+    height: 60%;
+    bottom: -20%;
+  }
+
+  .presentaciones{
+    margin: 60px auto;
+  }
+
+  .producto{
+    background-size: 90%;
+    height: 310px;
+  }
+
+  .producto p{
+    font-size: 22px;
+    bottom: 40px;
+  }
+
+  .producto img{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -65%) scale(.8);
+    -moz-transform: translate(-50%, -65%) scale(.8);
+    -ms-transform: translate(-50%, -65%) scale(.8);
+    -o-transform: translate(-50%, -65%) scale(.8);
+    transform: translate(-50%, -65%) scale(.8);
+    transition: all 0.3s ease;
+    width: inherit;
+  }
+
+    .producto:hover img{
+      -webkit-transform: translate(-50%, -65%) scale(.9);
+      -moz-transform: translate(-50%, -65%) scale(.9);
+      -ms-transform: translate(-50%, -65%) scale(.9);
+      -o-transform: translate(-50%, -65%) scale(.9);
+      transform: translate(-50%, -65%) scale(.9);
+    }
+
+  .presentaciones h3{
+    margin-bottom: 30px;
+  }
+
+  .ibuprofeno h1{
+    font-size: 38px;
+  }
+
+  .usos-internas .header{
+    margin-top: 60px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+  .navbar-nav > li > a{
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 14px; 
+  }
+
+  .marketing > div:hover{
+    top: -30px;
+  }
+
+  /* Boxes in Home
+  -------------------------- */
+  .marketing{
+    margin-bottom: 120px;
+  }
+
+  .marketing > div{
+    position: relative;
+    padding: 30px 20px 35px;
+    bottom: 0;
+    top: 0;
+    height: 160px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 9999;
+  }
+
+  .marketing > div a{
+    position: absolute;
+    bottom: 35px;
+  }
+
+  .marketing > div:hover{
+    height: 190px;
+    bottom: 0;
+    top: -30px;
+    padding: 10px 20px 35px;
+  }
+
+  .marketing > div > p{
+    display: none;
+    font-family: arial;
+    font-size: 11px;
+    line-height: 1.2;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+
+  .marketing > div:hover > p{
+    display: block;
+  }
+
+  .marketing > div img{
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: 5px;
+    height: auto;
+    width: auto;
+  }
+
+  .producto{
+    height: 350px;
+  }
+
+  .producto p{
+    bottom: 35px;
+  }
+
+  .producto img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -65%) scale(1);
+    -moz-transform: translate(-50%, -65%) scale(1);
+    -ms-transform: translate(-50%, -65%) scale(1);
+    -o-transform: translate(-50%, -65%) scale(1);
+    transform: translate(-50%, -65%) scale(1);
+    transition: all 0.3s ease;
+    width: inherit;
+  }
+
+    .producto:hover img{
+      -webkit-transform: translate(-50%, -65%) scale(1.1);
+      -moz-transform: translate(-50%, -65%) scale(1.1);
+      -ms-transform: translate(-50%, -65%) scale(1.1);
+      -o-transform: translate(-50%, -65%) scale(1.1);
+      transform: translate(-50%, -65%) scale(1.1);
+    }
+
+  .info-box{
+    text-align: left;
+  }
+
+  .ventajas-left{
+    background-image: url("../assets/img/ventajas-1.png");
+    background-color: transparent;
+  }
+
+  .ventajas-right{
+    background-image: url("../assets/img/ventajas-2.png");
+    background-color: transparent;
+  }
+
+  .tick p{
+    font-size: 12px;
+  }
+
+  .curiosidades .panel-body{
+    background-image: url("../assets/img/curiosidades.png");
+    background-color: transparent;
+    padding: 30px 15px;
+  }
+
+  .contacto{
+    margin: 60px auto 0;
+  }
+
+
+}
+
+@media (min-width: 1200px){
+  
+  .navbar-brand{
+    padding: 5px 60px 0 45px;
+  }
+
+  .navbar-nav > li:first-child{
+    border-left: 1px solid #000;
+  }
+
+  .navbar-nav > li{
+    border-right: 1px solid #000;
+  }
+
+  .navbar-nav > li:last-child{
+    border-right: 0;
+  }
+
+  .navbar-nav > li > a{
+    padding-left: 38px;
+    padding-right: 38px; 
+  }
+
+  .navbar-nav > li:last-child > a{
+    padding-right: 41px;
+  }
+
+  .carousel .item {
+    height: 560px;
+    background-color: #fff;
+    padding: 0;
+  }
+  
+  .carousel-inner > .item > img{
+    height: 100%;
+    width: auto;
+  }
+
+  .marketing{
+    margin: 0 auto 120px;
+    max-width: 1345px;
+    min-width: 1200px;
+  }
+
+  .producto{
+    height: 430px;
+  }
+
+
+  .header-description{
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  
+  .tick p{
+    font-size: 16px;
+  }
+
+}
