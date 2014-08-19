@@ -102,7 +102,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=fabogesic',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => 'sqlw1r4ll',
 		),	
 		/*'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=developw_fabogesic',

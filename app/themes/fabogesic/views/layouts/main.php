@@ -91,11 +91,18 @@
 	<!-- My App Scripts -->
 	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
-	<script>
-	  $('#myModal').modal({
-	      show: true
-	  });
-	</script>
+    <?php if (!isset($_COOKIE['modal'])){
+        setcookie("modal", "true", time()+86400, "/");
+    ?>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#myModal').modal({
+                  show: true
+              });
+            });
+        </script>
+
+    <? } ?>
 
 	<!-- Google Analytics -->
 	<script>

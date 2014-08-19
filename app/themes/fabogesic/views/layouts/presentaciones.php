@@ -96,9 +96,9 @@
 	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
 	<script>
-	  $('#myModal').modal({
-	      show: true
-	  });
+	//   $('#myModal').modal({
+	//       show: true
+	//   });
 	</script>
 
 	<!-- Google Analytics -->
