@@ -20,18 +20,19 @@ $this->pageTitle=Yii::app()->name;
   			}
     	}?>
       </ol>
+
       <div class="carousel-inner">
 
       	<?php 
       		for($i = 0; $i < count($sliders); $i++){
-        	
 	        	$url = HTTP_AND_SERVER_CONST . Yii::app()->baseUrl . "/" . SLIDE_IMAGES_PATH . $sliders[$i]->ImageUrl;
+            $link = $sliders[$i]->LinkUrl;
 		        if($i == 0){
 		          echo '<div class="item active">';
 		        }else{
 		          echo '<div class="item">';
 		        }
-		         echo '<img src="' .  $url . '" alt="Slide">
+		         echo '<a href="' . $link . '"><img src="' .  $url . '" alt="Slide"></a>
 		          <div class="container">
 		            <div class="carousel-caption">
 		            </div>
