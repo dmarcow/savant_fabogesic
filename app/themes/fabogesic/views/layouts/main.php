@@ -119,5 +119,13 @@
 
 	</script>
 
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+              interval: 3000
+            })
+        });
+    </script>
+
 </body>
 </html>

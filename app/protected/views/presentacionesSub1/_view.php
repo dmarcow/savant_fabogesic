@@ -17,11 +17,11 @@
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1Text')); ?>:</dt>
       <dd><?php echo $data->Sub1Text; ?></dd>
       
-      <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</dt>
+      <!-- <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</dt>
       <dd><?php echo $data->Sub2Text; ?></dd>
 
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub3Text')); ?>:</dt>
-      <dd><?php echo $data->Sub3Text; ?></dd>
+      <dd><?php echo $data->Sub3Text; ?></dd> -->
     
     </dl>
 
@@ -36,8 +36,8 @@
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub4Text')); ?>:</dt>
       <dd><?php echo $data->Sub4Text; ?></dd>
       
-      <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub5Text')); ?>:</dt>
-      <dd><?php echo $data->Sub5Text; ?></dd>
+      <!-- <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub5Text')); ?>:</dt>
+      <dd><?php echo $data->Sub5Text; ?></dd> -->
     
     </dl>
 

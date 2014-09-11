@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -54,11 +54,11 @@
 		<?php echo $form->error($model,'Sub2ImageUrl'); ?>
 	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub2Text'); ?>
 		<?php echo $form->textField($model,'Sub2Text',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub2Text'); ?>
-	</div>
+	</div> -->
 
 	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub2Link'); ?>
@@ -72,11 +72,11 @@
 		<?php echo $form->error($model,'Sub3ImageUrl'); ?>
 	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub3Text'); ?>
 		<?php echo $form->textField($model,'Sub3Text',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub3Text'); ?>
-	</div>
+	</div> -->
 
 	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub3Link'); ?>
@@ -119,11 +119,11 @@
 		<?php echo $form->error($model,'Sub5ImageUrl'); ?>
 	</div> -->
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub5Text'); ?>
 		<?php echo $form->textField($model,'Sub5Text',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Sub5Text'); ?>
-	</div>
+	</div> -->
 
 	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'Sub5Link'); ?>
