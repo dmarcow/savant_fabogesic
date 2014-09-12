@@ -4,18 +4,14 @@
 
 $this->breadcrumbs=array(
 	'Prospecto Ibuprofenos'=>array('index'),
-	$model->Title=>array('view','id'=>$model->id),
-	'Update',
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List ProspectoIbuprofeno', 'url'=>array('index')),
-	array('label'=>'Create ProspectoIbuprofeno', 'url'=>array('create')),
-	array('label'=>'View ProspectoIbuprofeno', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage ProspectoIbuprofeno', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update ProspectoIbuprofeno <?php echo $model->id; ?></h1>
+<h1>Modificar Prospecto Ibuprofenos</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

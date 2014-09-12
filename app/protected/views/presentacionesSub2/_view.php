@@ -5,52 +5,49 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
+	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
+	<br />-->
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub1ImageUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub1ImageUrl); ?>
-	<br />
+    <h4>400mg</h4>
+    
+    <dl class="dl-horizontal">
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1ImageUrl')); ?>:</dt>
+        <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . CHtml::encode($data->Sub1ImageUrl) ?>" width="80px" height="auto"></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1Text')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Sub1Text); ?></dd>
+    </dl>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub1Text')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub1Text); ?>
-	<br />
+	<hr />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub1Link')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub1Link); ?>
-	<br />
+    <h4>600mg</h4>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub2ImageUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub2ImageUrl); ?>
-	<br />
+    <dl class="dl-horizontal">
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2ImageUrl')); ?>:</dt>
+        <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . CHtml::encode($data->Sub2ImageUrl) ?>" width="80px" height="auto"></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Sub2Text); ?></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub3Text')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Sub3Text); ?></dd>
+        <dt></dt>
+        <dd></dd>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub2Text); ?>
-	<br />
+    </dl>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub2Link')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub2Link); ?>
-	<br />
+    <hr />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub3ImageUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub3ImageUrl); ?>
-	<br />
+    <h4>Prospectos</h4>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub3Text')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub3Text); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Sub3Link')); ?>:</b>
-	<?php echo CHtml::encode($data->Sub3Link); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaCreacion')); ?>:</b>
-	<?php echo CHtml::encode($data->FechaCreacion); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaModificacion')); ?>:</b>
-	<?php echo CHtml::encode($data->FechaModificacion); ?>
-	<br />
-	
+    <dl class="dl-horizontal">
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Link')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Sub2Link); ?></dd>
+        <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . $data->Sub2Link; ?>" width="80px" height="auto"></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Prospecto')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Prospecto); ?></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1Link')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Sub1Link); ?></dd>
+        <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . CHtml::encode($data->Sub1Link) ?>" width="80px" height="auto"></dd>
+        <dt><?php echo CHtml::encode($data->getAttributeLabel('Prospecto2')); ?>:</dt>
+        <dd><?php echo CHtml::encode($data->Prospecto2); ?></dd>
+    </dl>
 </div>

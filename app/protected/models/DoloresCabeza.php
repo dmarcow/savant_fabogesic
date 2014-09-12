@@ -16,6 +16,7 @@
  */
 class DoloresCabeza extends CActiveRecord
 {
+	public $FImageUrl;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -38,6 +39,8 @@ class DoloresCabeza extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, ImageUrl, Subtitle, Text1, Text2, Text3, Text4, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -59,12 +62,12 @@ class DoloresCabeza extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'ImageUrl' => 'Image Url',
-			'Subtitle' => 'Subtitle',
-			'Text1' => 'Text1',
-			'Text2' => 'Text2',
-			'Text3' => 'Text3',
-			'Text4' => 'Text4',
+			'ImageUrl' => 'Imagen',
+			'Subtitle' => 'Subtítulo',
+			'Text1' => 'Párrafo 1',
+			'Text2' => 'Párrafo 2',
+			'Text3' => 'Párrafo 3',
+			'Text4' => 'Párrafo 4',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

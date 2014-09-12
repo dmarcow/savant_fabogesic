@@ -3,16 +3,15 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Usos Mas Frecuentes',
+	'Usos Más Frecuentes',
 );
 
 $this->menu=array(
-	array('label'=>'Create UsosMasFrecuentes', 'url'=>array('create')),
-	array('label'=>'Manage UsosMasFrecuentes', 'url'=>array('admin')),
+	array('label'=>'Modificar Usos Más Frecuentes', 'url'=>array('usosMasFrecuentes/update/1')),
 );
 ?>
 
-<h1>Usos Mas Frecuentes</h1>
+<h1>Usos Más Frecuentes</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -22,7 +22,6 @@
                 <div class="row info-box bordered">
                   <div class="col-xs-12 col-md-12">
                     <p><?php echo $presSub2Model->Sub1Text; ?></p>
-                    <p class="text-warning"><strong>VENTA LIBRE</strong></p>
                   </div>
                   <!-- <div class="col-xs-12 col-md-12">
                     <div class="row">
@@ -54,7 +53,6 @@
                 <div class="row info-box bordered">
                   <div class="col-xs-12 col-md-12">
                     <p><?php echo $presSub2Model->Sub2Text; ?></p>
-                    <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
                   </div>
                   <!-- <div class="col-xs-12 col-md-12">
                     <div class="row">
@@ -69,27 +67,26 @@
         </div>
 
         <div class="col-xs-12 col-md-12">
-          <div class="descripcion-producto">        
+          <!-- <div class="descripcion-producto">        
             <div class="row">          
               <!-- <div class="col-md-12">
                 <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presSub2Model->Sub3ImageUrl ?>" alt="600mg x 90 comprimidos">
-              </div> -->
+              </div> 
               <div class="col-md-12">            
                 <div class="row info-box bordered">
                   <div class="col-xs-12 col-md-12">
                     <p><?php echo $presSub2Model->Sub3Text; ?></p>
-                    <p class="text-success"><strong>VENTA BAJO RECETA</strong></p>
                   </div>
                   <!-- <div class="col-xs-12 col-md-12">
                     <div class="row">
                       <div class="col-xs-12 col-md-7"><p class="text-success"><strong>VENTA BAJO RECETA</strong></p></div>
                       <div class="col-xs-12 col-md-5"><a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a></div>
                     </div> 
-                  </div> -->
+                  </div> 
                 </div>            
               </div>
             </div>        
-          </div>
+          </div> -->
           <div class="col-xs-12 col-md-5">
             <a class="btn btn-primary btn-xs" role="button" data-toggle="modal" data-target="#modal2">Ver prospecto</a>
           </div>
@@ -129,9 +126,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <?php $url400 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Sub1Link ?>
+        <?php
+            $url400 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Sub1Link;
+            $url400pdf =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Prospecto;
+        ?>
         <p><img class="img-responsive" src="<?php echo $url400 ?>" /></p>
-        <a role="button" class="btn btn-primary" href="<?php echo $url400 ?>" target="_blank">Descargar</a>
+        <a role="button" class="btn btn-primary" href="<?php echo $url400pdf ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -144,9 +144,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <?php $url600 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Sub3Link ?>
+        <?php
+            $url600 =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Sub3Link;
+            $url600pdf =  Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub2Model->Prospecto2;
+        ?>
         <p><img class="img-responsive" src="<?php echo $url600 ?>" /></p>
-        <a role="button" class="btn btn-primary" href="<?php echo $url600 ?>" target="_blank">Descargar</a>
+        <a role="button" class="btn btn-primary" href="<?php echo $url600pdf ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

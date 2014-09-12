@@ -5,25 +5,30 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
+  <a name="<?php echo CHtml::encode($data->id) ?>"><h4>Slider</h4></a>
+  
+  <dl class="dl-horizontal">
+	  <dt><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</dt>
+	  <dd><?php echo CHtml::encode($data->id); ?></dd>
+  </dl>    
+  
+  <dl class="dl-horizontal">
+    <dt><?php echo CHtml::encode($data->getAttributeLabel('ImageUrl')); ?>:</dt>
+    <dd><img src="<?php echo Yii::app()->baseUrl . '/upload/images/slides/' . CHtml::encode($data->ImageUrl) ?>" width="250px" height="auto"></dd>
+  </dl>  
+  
+  <dl class="dl-horizontal">
+    <dt><?php echo CHtml::encode($data->getAttributeLabel('LinkUrl')); ?>:</dt>
+    <dd><?php echo CHtml::encode($data->LinkUrl); ?></dd>
+  </dl>    
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('ImageUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->ImageUrl); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('LinkUrl')); ?>:</b>
-	<?php echo CHtml::encode($data->LinkUrl); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaCreacion')); ?>:</b>
+	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('FechaCreacion')); ?>:</b>
 	<?php echo CHtml::encode($data->FechaCreacion); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FechaModificacion')); ?>:</b>
 	<?php echo CHtml::encode($data->FechaModificacion); ?>
-	<br />
-
+	<br />-->
+    <b><?php echo CHtml::link(CHtml::encode('Modificar'), array('update', 'id'=>$data->id)); ?></b>
 
 </div>

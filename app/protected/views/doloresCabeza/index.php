@@ -3,16 +3,15 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Dolores Cabezas',
+	'Dolores Cabeza',
 );
 
 $this->menu=array(
-	array('label'=>'Create DoloresCabeza', 'url'=>array('create')),
-	array('label'=>'Manage DoloresCabeza', 'url'=>array('admin')),
+  array('label'=>'Modificar Dolores Cabeza', 'url'=>array('doloresCabeza/update/1')),
 );
 ?>
 
-<h1>Dolores Cabezas</h1>
+<h1>Dolores Cabeza</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

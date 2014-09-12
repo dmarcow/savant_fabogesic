@@ -26,11 +26,23 @@
  * @property string $ArticularesSub3
  * @property string $ArticularesSub4
  * @property string $ArticularesSub5
+ * @property string $NinosImageUrl
+ * @property string $NinosSubtitle
+ * @property string $NinosSub1
+ * @property string $NinosSub2
+ * @property string $NinosSub3
+ * @property string $NinosSub4
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
 class Dolores extends CActiveRecord
 {
+	public $FMuscularesImageUrl;
+	public $FPosturalesImageUrl;
+	public $FMenstrualesImageUrl;
+	public $FMenstrualesSub2ImageUrl;
+	public $FArticularesImageUrl;
+	public $FNinosImageUrl;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -47,12 +59,20 @@ class Dolores extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, FechaCreacion, FechaModificacion', 'required'),
-			array('MuscularesImageUrl, PosturalesImageUrl, MenstrualesImageUrl, MenstrualesSub2ImageUrl, ArticularesImageUrl', 'length', 'max'=>200),
-			array('MuscularesSubtitle, PostularesSubtitle, MenstrualesSubtitle, ArticularesSubtitle', 'length', 'max'=>400),
+			array('MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, NinosImageUrl, NinosSubtitle, NinosSub1, NinosSub2, NinosSub3, NinosSub4, FechaCreacion, FechaModificacion', 'required'),
+			array('MuscularesImageUrl, PosturalesImageUrl, MenstrualesImageUrl, MenstrualesSub2ImageUrl, ArticularesImageUrl, NinosImageUrl', 'length', 'max'=>200),
+			array('MuscularesSubtitle, MenstrualesSubtitle, ArticularesSubtitle, NinosSubtitle', 'length', 'max'=>400),
+			array('PostularesSubtitle', 'length', 'max'=>999),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('id, MuscularesImageUrl, MuscularesSubtitle, MuscularesSub1, PosturalesImageUrl, PostularesSubtitle, PostularesSub1, PostularesSub2, PostularesSub3, MenstrualesImageUrl, MenstrualesSubtitle, MenstrualesSub1, MenstrualesSub2, MenstrualesSub2ImageUrl, MenstrualesSub3, ArticularesImageUrl, ArticularesSubtitle, ArticularesSub1, ArticularesSub2, ArticularesSub3, ArticularesSub4, ArticularesSub5, NinosImageUrl, NinosSubtitle, NinosSub1, NinosSub2, NinosSub3, NinosSub4, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FMuscularesImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FPosturalesImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FMenstrualesImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FMenstrualesSub2ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FArticularesImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FNinosImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -74,27 +94,33 @@ class Dolores extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'MuscularesImageUrl' => 'Musculares Image Url',
-			'MuscularesSubtitle' => 'Musculares Subtitle',
-			'MuscularesSub1' => 'Musculares Sub1',
-			'PosturalesImageUrl' => 'Posturales Image Url',
-			'PostularesSubtitle' => 'Postulares Subtitle',
-			'PostularesSub1' => 'Postulares Sub1',
-			'PostularesSub2' => 'Postulares Sub2',
-			'PostularesSub3' => 'Postulares Sub3',
-			'MenstrualesImageUrl' => 'Menstruales Image Url',
-			'MenstrualesSubtitle' => 'Menstruales Subtitle',
-			'MenstrualesSub1' => 'Menstruales Sub1',
-			'MenstrualesSub2' => 'Menstruales Sub2',
-			'MenstrualesSub2ImageUrl' => 'Menstruales Sub2 Image Url',
-			'MenstrualesSub3' => 'Menstruales Sub3',
-			'ArticularesImageUrl' => 'Articulares Image Url',
-			'ArticularesSubtitle' => 'Articulares Subtitle',
-			'ArticularesSub1' => 'Articulares Sub1',
-			'ArticularesSub2' => 'Articulares Sub2',
-			'ArticularesSub3' => 'Articulares Sub3',
-			'ArticularesSub4' => 'Articulares Sub4',
-			'ArticularesSub5' => 'Articulares Sub5',
+			'MuscularesImageUrl' => 'Imagen Musculares',
+			'MuscularesSubtitle' => 'SubTítulo Musculares',
+			'MuscularesSub1' => 'Musculares Párrafo 1',
+			'PosturalesImageUrl' => 'Imagen Posturales',
+			'PostularesSubtitle' => 'Subtítulo Posturales',
+			'PostularesSub1' => 'Posturales Párrafo 1',
+			'PostularesSub2' => 'Posturales Párrafo 2',
+			'PostularesSub3' => 'Posturales Párrafo 3',
+			'MenstrualesImageUrl' => 'Imagen Menstruales',
+			'MenstrualesSubtitle' => 'SubTítulo Menstruales',
+			'MenstrualesSub1' => 'Menstruales Párrafo 1',
+			'MenstrualesSub2' => 'Menstruales Párrafo 2',
+			'MenstrualesSub2ImageUrl' => 'Imagen Símbolo Femenino',
+			'MenstrualesSub3' => 'Menstruales Párrafo 3',
+			'ArticularesImageUrl' => 'Imagen Articulares',
+			'ArticularesSubtitle' => 'SubTítulo Articulares',
+			'ArticularesSub1' => 'Articulares Párrafo 1',
+			'ArticularesSub2' => 'Articulares Párrafo 2',
+			'ArticularesSub3' => 'Articulares Párrafo 3',
+			'ArticularesSub4' => 'Articulares Párrafo 4',
+			'ArticularesSub5' => 'Articulares Párrafo 5',
+			'NinosImageUrl' => 'Imagen Ninos',
+			'NinosSubtitle' => 'SubTítulo Niños',
+			'NinosSub1' => 'Niños Párrafo 1',
+			'NinosSub2' => 'Niños Párrafo 2',
+			'NinosSub3' => 'Niños Párrafo 3',
+			'NinosSub4' => 'Niños Párrafo 4',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);
@@ -140,6 +166,12 @@ class Dolores extends CActiveRecord
 		$criteria->compare('ArticularesSub3',$this->ArticularesSub3,true);
 		$criteria->compare('ArticularesSub4',$this->ArticularesSub4,true);
 		$criteria->compare('ArticularesSub5',$this->ArticularesSub5,true);
+		$criteria->compare('NinosImageUrl',$this->NinosImageUrl,true);
+		$criteria->compare('NinosSubtitle',$this->NinosSubtitle,true);
+		$criteria->compare('NinosSub1',$this->NinosSub1,true);
+		$criteria->compare('NinosSub2',$this->NinosSub2,true);
+		$criteria->compare('NinosSub3',$this->NinosSub3,true);
+		$criteria->compare('NinosSub4',$this->NinosSub4,true);
 		$criteria->compare('FechaCreacion',$this->FechaCreacion,true);
 		$criteria->compare('FechaModificacion',$this->FechaModificacion,true);
 

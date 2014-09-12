@@ -27,10 +27,10 @@
         <p><?php echo utf8_encode($presModel->Sub2Text); ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
-    <?php $url3 = Yii::app()->createUrl('site/presentacionesSub3/'); ?>
+    <?php $url3 = Yii::app()->createUrl('site/presentacionesSub4/'); ?>
     <a href="<?php echo $url3 ?>" class="col-sm-4">
       <div class="producto">
-        <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presModel->Sub3ImageUrl ?> " alt="Suspensión oral">
+        <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $presModel->Sub3ImageUrl ?> " alt="Solución Pediátrica">
         <p><?php echo utf8_encode($presModel->Sub3Text); ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
@@ -43,12 +43,12 @@
 </div><!-- /.container -->
 
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="true"> -->
+ <!-- <div class="modal-dialog"> -->
+   <!-- <div class="modal-content"> -->
+    <!--  <div class="modal-header"> -->
         <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-        <h4 class="modal-title" id="myModalLabel"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/main-logo.png'?>" alt="Fabogesic"></h4>
+     <!--   <h4 class="modal-title" id="myModalLabel"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/main-logo.png'?>" alt="Fabogesic"></h4>
       </div>
       <div class="modal-body">
         <p>El contenido de esta página web es únicamente de carácter informativo general.</p> 
@@ -57,11 +57,11 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-success" data-dismiss="modal" data-role="button">ACEPTAR</a>
-      </div>
+      </div> 
     </div>
-  </div>
+  </div>  
 </div>
-
+--> 
 <script>
 $( document ).ready(function() {
 	$( "body" ).addClass("bg-primary");

@@ -30,10 +30,12 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$model=EditableContent::model()->findByPk(1);
 		$sliderModel = Slider::model()->findAll();
+        $hbModel = HomeBoxes::model()->findAll();
 
 		$this->render('index',array(
 			'contentEdModel'=>$model,
 			'sliders'=>$sliderModel,
+            'hboxes'=>$hbModel,
 		));
 	}
 
@@ -74,6 +76,16 @@ class SiteController extends Controller
 
 		$this->render('presentacionesSub3',array(
 			'presSub3Model'=>$model,
+		));
+	}
+
+	public function actionPresentacionesSub4(){
+
+		$this->layout="presentaciones";
+		$model = PresentacionesSub4::model()->findByPk(1);
+
+		$this->render('presentacionesSub4',array(
+			'presSub4Model'=>$model,
 		));
 	}
 
@@ -156,6 +168,16 @@ class SiteController extends Controller
 		));
 	}
 
+	public function actionDoloresNinos(){
+
+		$this->layout="usosFrecuentes";
+		$model = Dolores::model()->findByPk(1);
+		
+		$this->render('doloresNinos',array(
+			'doloresModel'=>$model,
+		));
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -177,6 +199,8 @@ class SiteController extends Controller
 	{
 		$this->layout="contacto";
 		$model=new ContactForm;
+		
+		$attempt = $sent = false;
 
 		$contactModel = Contacto::model()->findByPk(1);
 
@@ -191,17 +215,24 @@ class SiteController extends Controller
 			}
 
 			if($model->validate()){
-				$this->sendEmail($model);
+				$attempt = true;
+				$sent = $this->sendEmail($model);
+				if($sent)
+					$model=new ContactForm;
 			}
 
 		}
 		$this->render('contact',array(
 			'model'=>$model,
 			'contactModel'=>$contactModel,
+			'sent'=>$sent,
+			'attempt'=>$attempt,
 		));
 	}
 
 	private function sendEmail($user){
+
+		$retcode = false;
 
 		Yii::import('application.extensions.phpmailer.JPhpMailer');
 
@@ -217,11 +248,12 @@ class SiteController extends Controller
 
 		$mail->SMTPAuth   = false;                  		// enable SMTP authentication
 		$mail->Host       = "200.45.85.226";      			// sets GMAIL as the SMTP server
-		$mail->Port       = 25;                  			// set the SMTP port for the GMAIL server
-		$mail->Username   = "fabogesic";  					// GMAIL username
-		$mail->Password   = "Fa0553Ic";            			// GMAIL password
+		//$mail->Host		= "190.210.142.82";
+		//$mail->Port       = 25;                  			// set the SMTP port for the GMAIL server
+		//$mail->Username   = "fabogesic";  					// GMAIL username
+		//$mail->Password   = "Fa0553Ic";            			// GMAIL password
 
-		$mail->SetFrom('desarrollowirall1@gmail.com', 'Fabogesic');
+		$mail->SetFrom('comunicaciones@savant.com.ar', 'Fabogesic');
 		$mail->Subject = 'Contacto';
 		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
 
@@ -235,29 +267,33 @@ class SiteController extends Controller
 				<body bgcolor="#F1F1F2" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 				    <table bgcolor="#fff" border="0" align="center" cellpadding="10" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;">
 				        <tr>
-				            <td width="580" align="center" valign="middle"><img style="display: block;" src="' . HTTP_AND_SERVER_CONST . Yii::app()->request->baseUrl . '/img/logo.png"/></td>
+				            <td width="580" align="center" valign="middle"><img style="display: block;" src="' . HTTP_AND_SERVER_CONST . Yii::app()->theme->baseUrl . '/img/main-logo-inverse.png"/></td>
 				        </tr>
 				        <tr>
-				        	<td>Nombre: <strong> ' . utf8_decode($user->name). '</strong>.</td>
+				        	<td>Nombre: <strong> ' . $user->name. '</strong>.</td>
 				        </tr>
 				        <tr>
-				        	<td>Apellido: <strong> ' . utf8_decode($user->lastname) . '</strong>.</td>
+				        	<td>Apellido: <strong> ' . $user->lastname . '</strong>.</td>
 				        </tr>
 				        <tr>
 				        	<td>Email: <strong> ' . $user->subject . '</strong>.</td>
 				        </tr>
 				        <tr>
-				        	<td><strong>' . utf8_decode($user->body) . '</strong></td>
+				        	<td><strong>' . $user->body . '</strong></td>
 				        </tr>
 				    </table>
 				</body>
 				</html>
 		';
 
-		$mail->MsgHTML($body);
-		$mail->AddAddress("damian@wirallinteractive.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
-		$mail->Send();
-
+		$mail->MsgHTML($body); 
+		$mail->AddAddress("comunicaciones@savant.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
+        //$mail->AddAddress("guillermo@wirallinteractive.com.ar", $user->limpiar($user->name) . " " . $user->limpiar($user->lastname));
+		//$mail->SMTPDebug = 2; // 2 to enable SMTP debug information
+		//$mail->Debugoutput = 'html';
+		$retcode = $mail->Send();
+		
+		return $retcode;
 	}
 
 	/**

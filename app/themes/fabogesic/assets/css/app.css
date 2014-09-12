@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-wrapper .navbar {
-  padding-right: 15px;
+  padding-right: 0px;
   padding-left: 15px;
 }
 
@@ -70,6 +70,11 @@ body {
 .navbar-inverse .navbar-nav > li > a{
   color: #fff;
   font-weight: 700;
+}
+
+.navbar-nav > li:last-child > a {
+    padding-right: 21px;
+    padding-left: 21px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, 
@@ -150,8 +155,7 @@ body {
   padding: 0 0 41%;
 }
 
-/*.carousel-inner > .item > img,*/
-.carousel-inner > .item > a > img{
+.carousel-inner > .item > a >img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -562,6 +566,10 @@ a > .producto{
   font-size: 18px;
 }
 
+.usos-internas .header .img-responsive{
+  width: 85%;
+}
+
 /* Modal
 ------------------------- */
 
@@ -576,7 +584,7 @@ a > .producto{
   background-color: #053e56;
   text-align: center;
   box-shadow: none;
-  max-width: 400px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -628,7 +636,7 @@ a > .producto{
 
   .navbar-wrapper .container {
     padding-right: 15px;
-    padding-left:  15px;
+    padding-left:  0px;
   }
 
   .navbar-wrapper .navbar {
@@ -758,6 +766,11 @@ a > .producto{
     font-size: 14px; 
   }
 
+  .navbar-nav > li:last-child > a {
+    padding-right: 44px;
+    padding-left: 43px;
+  }
+
   .marketing > div:hover{
     top: -30px;
   }
@@ -867,7 +880,7 @@ a > .producto{
 @media (min-width: 1200px){
   
   .navbar-brand{
-    padding: 5px 60px 0 45px;
+    padding: 5px 59px 0 45px;
   }
 
   .navbar-nav > li:first-child{
@@ -888,7 +901,8 @@ a > .producto{
   }
 
   .navbar-nav > li:last-child > a{
-    padding-right: 41px;
+    padding-left: 58px;
+    padding-right: 58px;
   }
 
   .carousel .item {
@@ -912,10 +926,17 @@ a > .producto{
     height: 430px;
   }
 
+  .producto.usos-frecuentes{
+    height: 350px;
+    width: 85%;
+  }
+
 
   .header-description{
+    margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 45px;
+    width: 85%;
   }
 
   /*.ventajas-left{

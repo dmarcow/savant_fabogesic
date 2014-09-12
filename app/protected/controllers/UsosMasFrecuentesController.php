@@ -93,8 +93,61 @@ class UsosMasFrecuentesController extends Controller
 			$now = date("Y-m-d H:i:s"); 
 	        $model->FechaModificacion = $now;
 	        
+            $basePath = Yii::app()->theme->basePath . '/img/';
+
+            $uploadedFile1 = CUploadedFile::getInstance($model, 'FImage1Url');
+            if(!empty($uploadedFile1))
+                $model->Image1Url = $uploadedFile1;
+
+            $uploadedFile2 = CUploadedFile::getInstance($model, 'FImage2Url');
+            if(!empty($uploadedFile2))
+                $model->Image2Url = $uploadedFile2;
+
+            $uploadedFile3 = CUploadedFile::getInstance($model, 'FImage3Url');
+            if(!empty($uploadedFile3))
+                $model->Image3Url = $uploadedFile3;
+
+            $uploadedFile4 = CUploadedFile::getInstance($model, 'FImage4Url');
+            if(!empty($uploadedFile4))
+                $model->Image4Url = $uploadedFile4;
+
+            $uploadedFile5 = CUploadedFile::getInstance($model, 'FImage5Url');
+            if(!empty($uploadedFile5))
+                $model->Image5Url = $uploadedFile5;
+
+            $uploadedFile6 = CUploadedFile::getInstance($model, 'FImage6Url');
+            if(!empty($uploadedFile6))
+                $model->Image6Url = $uploadedFile6;
+
 			if($model->save())
+            {
+				if(!empty($uploadedFile1))
+                {
+                    $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                }
+				if(!empty($uploadedFile2))
+                {
+                    $uploadedFile2->saveAs($basePath . $uploadedFile2);
+                }
+				if(!empty($uploadedFile3))
+                {
+                    $uploadedFile3->saveAs($basePath . $uploadedFile3);
+                }
+				if(!empty($uploadedFile4))
+                {
+                    $uploadedFile4->saveAs($basePath . $uploadedFile4);
+                }
+				if(!empty($uploadedFile5))
+                {
+                    $uploadedFile5->saveAs($basePath . $uploadedFile5);
+                }
+				if(!empty($uploadedFile6))
+                {
+                    $uploadedFile6->saveAs($basePath . $uploadedFile6);
+                }                
+
 				$this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(

@@ -3,16 +3,15 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Contactos',
+	'Contacto',
 );
 
 $this->menu=array(
-	array('label'=>'Create Contacto', 'url'=>array('create')),
-	array('label'=>'Manage Contacto', 'url'=>array('admin')),
+  array('label'=>'Modificar Contacto', 'url'=>array('contacto/update/1')),
 );
 ?>
 
-<h1>Contactos</h1>
+<h1>Contacto</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

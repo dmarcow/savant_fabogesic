@@ -25,7 +25,7 @@
             </div>
             <div class="col-xs-12 col-sm-12">
               <?php $url = Yii::app()->createUrl('site/prospectoIbuprofeno/'); ?>
-              <p class="text-center"><a href="<?php echo $url ?>"><img src="<?php echo Yii::app()->theme->baseUrl . '/img/btn-ver-prospecto.png'?> " alt="VER PROSPECTO" class="img-responsive"></a></p>
+              <p class="text-center">&nbsp;</p>
             </div>
           </div>
         </div>

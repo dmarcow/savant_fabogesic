@@ -3,19 +3,15 @@
 /* @var $model UsosMasFrecuentes */
 
 $this->breadcrumbs=array(
-	'Usos Mas Frecuentes'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Usos Más Frecuentes'=>array('index'),
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List UsosMasFrecuentes', 'url'=>array('index')),
-	array('label'=>'Create UsosMasFrecuentes', 'url'=>array('create')),
-	array('label'=>'View UsosMasFrecuentes', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage UsosMasFrecuentes', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update UsosMasFrecuentes <?php echo $model->id; ?></h1>
+<h1>Modificar Usos Más Frecuentes</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

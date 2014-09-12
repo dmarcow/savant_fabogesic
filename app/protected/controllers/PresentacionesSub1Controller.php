@@ -92,36 +92,62 @@ class PresentacionesSub1Controller extends Controller
 			$model->attributes=$_POST['PresentacionesSub1'];
        	  	$model->FechaModificacion = date("Y-m-d H:i:s");
 
-       	  	// $uploadedFile1 = CUploadedFile::getInstance($model,'Sub1ImageUrl');
-           //  $model->Sub1ImageUrl = $uploadedFile1;
+            $basePath = Yii::app()->theme->basePath . '/img/';
 
-           //  $uploadedFile2 = CUploadedFile::getInstance($model,'Sub2ImageUrl');
-           //  $model->Sub2ImageUrl = $uploadedFile2;
+       	  	$uploadedFile1 = CUploadedFile::getInstance($model, 'FSub1ImageUrl');
+            if(!empty($uploadedFile1))
+                $model->Sub1ImageUrl = $uploadedFile1;
 
-           //  $uploadedFile3 = CUploadedFile::getInstance($model,'Sub1Link');
-           //  $model->Sub1Link = $uploadedFile3;
+            $uploadedFile2 = CUploadedFile::getInstance($model,'FSub4ImageUrl');
+            if(!empty($uploadedFile2))
+                $model->Sub2ImageUrl = $uploadedFile2;
 
-           //  $uploadedFile4 = CUploadedFile::getInstance($model,'Sub4Link');
-           //  $model->Sub4Link = $uploadedFile4;
-       	  	
+            $uploadedFile3 = CUploadedFile::getInstance($model,'FSub1Link');
+            if(!empty($uploadedFile3))
+                $model->Sub1Link = $uploadedFile3;
+
+            $uploadedFile4 = CUploadedFile::getInstance($model,'FSub4Link');
+            if(!empty($uploadedFile4))
+                $model->Sub4Link = $uploadedFile4;
+
+            $uploadedFile5 = CUploadedFile::getInstance($model,'ProspectoFile');
+            if(!empty($uploadedFile5))
+                $model->Prospecto = $uploadedFile5;
+
+            $uploadedFile6 = CUploadedFile::getInstance($model,'ProspectoFile2');
+            if(!empty($uploadedFile6))
+                $model->Prospecto2 = $uploadedFile6;
+
 			if($model->save())
-				// if(!empty($uploadedFile1))
-    //             {
-    //                 $uploadedFile1->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile1);
-    //             }
-    //             if(!empty($uploadedFile2))
-    //             {
-    //                 $uploadedFile2->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile2);
-    //             }
-    //             if(!empty($uploadedFile3))
-    //             {
-    //                 $uploadedFile3->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile3);
-    //             }
-    //             if(!empty($uploadedFile4))
-    //             {
-    //                 $uploadedFile4->saveAs(Yii::app()->theme->baseUrl. '/img/prospectos/'.$uploadedFile4);
-    //             }
+            {
+				 if(!empty($uploadedFile1))
+                 {
+                     $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                 }
+                 if(!empty($uploadedFile2))
+                 {
+                     $uploadedFile2->saveAs($basePath . $uploadedFile2);
+                 }
+                 if(!empty($uploadedFile3))
+                 {
+                     $uploadedFile3->saveAs($basePath . '/prospectos/'.$uploadedFile3);
+                 }
+                 if(!empty($uploadedFile4))
+                 {
+                     $uploadedFile4->saveAs($basePath . '/prospectos/'.$uploadedFile4);
+                 }
+
+                 if(!empty($uploadedFile5))
+                 {
+                     $uploadedFile5->saveAs($basePath . '/prospectos/'.$uploadedFile5);
+                 }
+                 if(!empty($uploadedFile6))
+                 {
+                     $uploadedFile6->saveAs($basePath . '/prospectos/'.$uploadedFile6);
+                 }
+
 				$this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(

@@ -92,8 +92,53 @@ class ProspectoIbuprofenoController extends Controller
 			$model->attributes=$_POST['ProspectoIbuprofeno'];
        	  	$model->FechaModificacion = date("Y-m-d H:i:s");
        	  	
+            $basePath = Yii::app()->theme->basePath . '/img/';
+
+            $uploadedFile1 = CUploadedFile::getInstance($model, 'FImageIcon1Url');
+            if(!empty($uploadedFile1))
+                $model->ImageIcon1Url = $uploadedFile1;
+
+            $uploadedFile2 = CUploadedFile::getInstance($model, 'FImageIcon2Url');
+            if(!empty($uploadedFile2))
+                $model->ImageIcon2Url = $uploadedFile2;
+
+            $uploadedFile3 = CUploadedFile::getInstance($model, 'FImageIcon3Url');
+            if(!empty($uploadedFile3))
+                $model->ImageIcon3Url = $uploadedFile3;
+
+            $uploadedFile4 = CUploadedFile::getInstance($model, 'FImageIcon4Url');
+            if(!empty($uploadedFile4))
+                $model->ImageIcon4Url = $uploadedFile4;
+
+            $uploadedFile5 = CUploadedFile::getInstance($model, 'FGraphicImageUrl');
+            if(!empty($uploadedFile5))
+                $model->GraphicImageUrl = $uploadedFile5;
+
 			if($model->save())
+			{
+				if(!empty($uploadedFile1))
+                {
+                    $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                }
+				if(!empty($uploadedFile2))
+                {
+                    $uploadedFile2->saveAs($basePath . $uploadedFile2);
+                }
+				if(!empty($uploadedFile3))
+                {
+                    $uploadedFile3->saveAs($basePath . $uploadedFile3);
+                }
+				if(!empty($uploadedFile4))
+                {
+                    $uploadedFile4->saveAs($basePath . $uploadedFile4);
+                }
+				if(!empty($uploadedFile5))
+                {
+                    $uploadedFile5->saveAs($basePath . $uploadedFile5);
+                }
+
 				$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		$this->render('update',array(

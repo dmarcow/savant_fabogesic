@@ -12,6 +12,7 @@
  */
 class Slider extends CActiveRecord
 {
+	public $FImageUrl;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -30,10 +31,12 @@ class Slider extends CActiveRecord
 		return array(
 			array('ImageUrl', 'required'),
 			array('ImageUrl, LinkUrl', 'length', 'max'=>150),
-			array('ImageUrl', 'file','types'=>'jpg, gif, png','maxSize'=>IMAGES_MAX_UPLOAD_SIZE, 'allowEmpty'=>true, 'on'=>'update'),
+			// array('ImageUrl', 'file','types'=>'jpg, gif, png','maxSize'=>IMAGES_MAX_UPLOAD_SIZE, 'allowEmpty'=>true, 'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, ImageUrl, LinkUrl, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -55,8 +58,8 @@ class Slider extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'ImageUrl' => 'Image Url',
-			'LinkUrl' => 'Link Url',
+			'ImageUrl' => 'Imagen',
+			'LinkUrl' => 'Url Link',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

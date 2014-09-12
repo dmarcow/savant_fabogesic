@@ -122,6 +122,36 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'NinosImageUrl'); ?>
+		<?php echo $form->textField($model,'NinosImageUrl',array('size'=>60,'maxlength'=>200)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'NinosSubtitle'); ?>
+		<?php echo $form->textField($model,'NinosSubtitle',array('size'=>60,'maxlength'=>400)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'NinosSub1'); ?>
+		<?php echo $form->textArea($model,'NinosSub1',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'NinosSub2'); ?>
+		<?php echo $form->textArea($model,'NinosSub2',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'NinosSub3'); ?>
+		<?php echo $form->textArea($model,'NinosSub3',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'NinosSub4'); ?>
+		<?php echo $form->textArea($model,'NinosSub4',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'FechaCreacion'); ?>
 		<?php echo $form->textField($model,'FechaCreacion'); ?>
 	</div>

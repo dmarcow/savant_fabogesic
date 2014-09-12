@@ -3,16 +3,15 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Presentaciones Sub2s',
+	'Comprimidos',
 );
 
 $this->menu=array(
-	array('label'=>'Create PresentacionesSub2', 'url'=>array('create')),
-	array('label'=>'Manage PresentacionesSub2', 'url'=>array('admin')),
+	array('label'=>'Modificar Comprimidos', 'url'=>array('presentacionesSub2/update/1')),
 );
 ?>
 
-<h1>Presentaciones Sub2s</h1>
+<h1>Comprimidos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

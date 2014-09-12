@@ -16,6 +16,8 @@
  */
 class QueEsIbuprofeno extends CActiveRecord
 {
+    public $FImage1Url;
+    public $FImage2Url;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -38,6 +40,8 @@ class QueEsIbuprofeno extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Title, SubTitle, Text1, Text2, Image1Url, Image2Url, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+			array('FImage1Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage2Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -59,12 +63,12 @@ class QueEsIbuprofeno extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Title' => 'Title',
-			'SubTitle' => 'Sub Title',
-			'Text1' => 'Text1',
-			'Text2' => 'Text2',
-			'Image1Url' => 'Image1 Url',
-			'Image2Url' => 'Image2 Url',
+			'Title' => 'Título',
+			'SubTitle' => 'Sub Título',
+			'Text1' => 'Texto 1',
+			'Text2' => 'Texto 2',
+			'Image1Url' => 'Imagen Cápsulas',
+			'Image2Url' => 'Imagen ADN',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

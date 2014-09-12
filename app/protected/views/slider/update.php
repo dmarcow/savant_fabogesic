@@ -4,18 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Sliders'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Modificar',  
+	$model->id,
 );
 
 $this->menu=array(
-	array('label'=>'List Slider', 'url'=>array('index')),
-	array('label'=>'Create Slider', 'url'=>array('create')),
-	array('label'=>'View Slider', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Slider', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Slider <?php echo $model->id; ?></h1>
+<h1>Modificar Slider <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -22,6 +22,12 @@
  */
 class ProspectoIbuprofeno extends CActiveRecord
 {
+	public $FImageIcon1Url;
+	public $FImageIcon2Url;
+	public $FImageIcon3Url;
+	public $FImageIcon4Url;
+	public $FGraphicImageUrl;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -44,6 +50,12 @@ class ProspectoIbuprofeno extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Title, Subtitle, Text1, TextIcon1, ImageIcon1Url, TextIcon2, ImageIcon2Url, TextIcon3, ImageIcon3Url, TextIcon4, ImageIcon4Url, GraphicImageUrl, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FImageIcon1Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FImageIcon2Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FImageIcon3Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FImageIcon4Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('FGraphicImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
 		);
 	}
 
@@ -65,18 +77,18 @@ class ProspectoIbuprofeno extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Title' => 'Title',
-			'Subtitle' => 'Subtitle',
-			'Text1' => 'Text1',
-			'TextIcon1' => 'Text Icon1',
-			'ImageIcon1Url' => 'Image Icon1 Url',
-			'TextIcon2' => 'Text Icon2',
-			'ImageIcon2Url' => 'Image Icon2 Url',
-			'TextIcon3' => 'Text Icon3',
-			'ImageIcon3Url' => 'Image Icon3 Url',
-			'TextIcon4' => 'Text Icon4',
-			'ImageIcon4Url' => 'Image Icon4 Url',
-			'GraphicImageUrl' => 'Graphic Image Url',
+			'Title' => 'Título',
+			'Subtitle' => 'Sub Título',
+			'Text1' => 'Texto',
+			'TextIcon1' => 'Texto Máxima Potencia',
+			'ImageIcon1Url' => 'Imagen Icono Máxima Potencia',
+			'TextIcon2' => 'Texto Rápida Acción',
+			'ImageIcon2Url' => 'Imagen Icono Rápida Acción',
+			'TextIcon3' => 'Texto Fácil de Tomar',
+			'ImageIcon3Url' => 'Imagen Icono Fácil de Tomar',
+			'TextIcon4' => 'Texto Indicaciones',
+			'ImageIcon4Url' => 'Imagen Icono Indicaciones',
+			'GraphicImageUrl' => 'Imagen Gráfico Cuadro',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

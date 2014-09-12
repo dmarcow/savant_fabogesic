@@ -65,8 +65,9 @@ class SliderController extends Controller
 	      $model->setAttributes($_POST['Slider']);
 	      
 	      $rnd = time(); //nro  para prefijo al guardar la imagen, para evitar conflictos si existen 2 imagenes llamadas igual.
-	      $uploadedFile = CUploadedFile::getInstance($model, 'ImageUrl');
+	      $uploadedFile = CUploadedFile::getInstance($model, 'FImageUrl');
 	      if (!empty($uploadedFile)) {
+            $model->ImageUrl = $uploadedFile;
 	        $extension = substr(strrchr($uploadedFile, '.'), 1);
 	        $fileName = "slide_{$rnd}." . $extension;  // numero aleatorio  + nombre de archivo
 	        $model->ImageUrl = str_replace(' ', '_', $fileName);
@@ -89,7 +90,7 @@ class SliderController extends Controller
 	        if (Yii::app()->getRequest()->getIsAjaxRequest())
 	          Yii::app()->end();
 	        else
-	          $this->redirect(array('view', 'id' => $model->id));
+	          $this->redirect(array('index', '#' => $model->id));
 	      }
 		}
 
@@ -113,7 +114,9 @@ class SliderController extends Controller
 	      $_POST['Slider']['ImageUrl'] = str_replace(' ', '_', $model->ImageUrl);
 	      $model->setAttributes($_POST['Slider']);
 
-	      $uploadedFile = CUploadedFile::getInstance($model, 'ImageUrl');
+	      $uploadedFile = CUploadedFile::getInstance($model, 'FImageUrl');
+          if (!empty($uploadedFile)) 
+            $model->ImageUrl = $uploadedFile;
 
        	  $model->FechaModificacion = date("Y-m-d H:i:s");
 
@@ -127,7 +130,7 @@ class SliderController extends Controller
 	          $img->resizeToWidth(250);
 	          $img->save(SLIDE_THUMBS_IMAGES_PATH . "{$model->ImageUrl}");
 	        }
-	        $this->redirect(array('view', 'id' => $model->id));
+	        $this->redirect(array('index', '#' => $model->id));
 	      }
 	    }
 

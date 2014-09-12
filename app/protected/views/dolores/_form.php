@@ -13,18 +13,60 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+  'htmlOptions' => array('enctype'=>'multipart/form-data'),  
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'MuscularesImageUrl'); ?>
-		<?php echo $form->textField($model,'MuscularesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'MuscularesImageUrl'); ?>
-	</div>
+  <h4>Imágenes</h4>
 
+  <div class="row">
+		<?php echo $form->labelEx($model,'MuscularesImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->MuscularesImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FMuscularesImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'MuscularesImageUrl'); ?>
+	</div>  
+  
+  <div class="row">
+		<?php echo $form->labelEx($model,'PosturalesImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->PosturalesImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FPosturalesImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'PosturalesImageUrl'); ?>
+	</div>  
+  
+  <div class="row">
+		<?php echo $form->labelEx($model,'MenstrualesImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->MenstrualesImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FMenstrualesImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'MenstrualesImageUrl'); ?>
+	</div>  
+  
+  <div class="row">
+		<?php echo $form->labelEx($model,'MenstrualesSub2ImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->MenstrualesSub2ImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FMenstrualesSub2ImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'MenstrualesSub2ImageUrl'); ?>
+	</div>  
+  
+  <div class="row">
+		<?php echo $form->labelEx($model,'ArticularesImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->ArticularesImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FArticularesImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'ArticularesImageUrl'); ?>
+	</div>    
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosImageUrl'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->NinosImageUrl; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FNinosImageUrl', array('required' => false)); ?>  
+		<?php echo $form->error($model,'NinosImageUrl'); ?>
+	</div>    
+  
+  <hr/>
+  <h4>Textos</h4>  
+  
 	<div class="row">
 		<?php echo $form->labelEx($model,'MuscularesSubtitle'); ?>
 		<?php echo $form->textField($model,'MuscularesSubtitle',array('size'=>60,'maxlength'=>400)); ?>
@@ -35,12 +77,6 @@
 		<?php echo $form->labelEx($model,'MuscularesSub1'); ?>
 		<?php echo $form->textArea($model,'MuscularesSub1',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'MuscularesSub1'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'PosturalesImageUrl'); ?>
-		<?php echo $form->textField($model,'PosturalesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'PosturalesImageUrl'); ?>
 	</div>
 
 	<div class="row">
@@ -68,12 +104,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'MenstrualesImageUrl'); ?>
-		<?php echo $form->textField($model,'MenstrualesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'MenstrualesImageUrl'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'MenstrualesSubtitle'); ?>
 		<?php echo $form->textField($model,'MenstrualesSubtitle',array('size'=>60,'maxlength'=>400)); ?>
 		<?php echo $form->error($model,'MenstrualesSubtitle'); ?>
@@ -92,21 +122,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'MenstrualesSub2ImageUrl'); ?>
-		<?php echo $form->textField($model,'MenstrualesSub2ImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'MenstrualesSub2ImageUrl'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'MenstrualesSub3'); ?>
 		<?php echo $form->textArea($model,'MenstrualesSub3',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'MenstrualesSub3'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'ArticularesImageUrl'); ?>
-		<?php echo $form->textField($model,'ArticularesImageUrl',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'ArticularesImageUrl'); ?>
 	</div>
 
 	<div class="row">
@@ -145,7 +163,37 @@
 		<?php echo $form->error($model,'ArticularesSub5'); ?>
 	</div>
 
-	<div class="row buttons">
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosSubtitle'); ?>
+		<?php echo $form->textField($model,'NinosSubtitle',array('size'=>60,'maxlength'=>400)); ?>
+		<?php echo $form->error($model,'NinosSubtitle'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosSub1'); ?>
+		<?php echo $form->textArea($model,'NinosSub1',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'NinosSub1'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosSub2'); ?>
+		<?php echo $form->textArea($model,'NinosSub2',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'NinosSub2'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosSub3'); ?>
+		<?php echo $form->textArea($model,'NinosSub3',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'NinosSub3'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'NinosSub4'); ?>
+		<?php echo $form->textArea($model,'NinosSub4',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'NinosSub4'); ?>
+	</div>
+  
+  <div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 

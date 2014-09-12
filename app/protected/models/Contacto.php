@@ -12,6 +12,7 @@
  */
 class Contacto extends CActiveRecord
 {
+	public $FImageUrl;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,6 +35,8 @@ class Contacto extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, ImageUrl, Title, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -55,8 +58,8 @@ class Contacto extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'ImageUrl' => 'Image Url',
-			'Title' => 'Title',
+			'ImageUrl' => 'Imagen Contacto',
+			'Title' => 'Título',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

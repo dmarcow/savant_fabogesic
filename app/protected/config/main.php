@@ -57,7 +57,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'w1r4ll',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('127.0.0.1', '::1', '190.221.128.134'),
             'generatorPaths' => array(
                 'ext.giix-core', // giix generators
                 //'generatorPaths' => array('bootstrap.gii'),
@@ -66,7 +66,6 @@ return array(
 	),
 
 	// application components
-	'language'=>'es',
 	'components'=>array(
 		'coreMessages'=>array(
 			'basePath'=>'protected/messages'
@@ -98,18 +97,18 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),*/
 		// uncomment the following to use a MySQL database
+		/*'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=fabogesic',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => 'root',
+		),*/	
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=fabogesic',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'sqlw1r4ll',
-		),	
-		/*'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=developw_fabogesic',
-			'emulatePrepare' => true,
-			'username' => 'developw_fabo',
-			'password' => 'w1r4ll',
-		), */
+		), 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

@@ -3,19 +3,15 @@
 /* @var $model Contacto */
 
 $this->breadcrumbs=array(
-	'Contactos'=>array('index'),
-	$model->Title=>array('view','id'=>$model->id),
-	'Update',
+	'Contacto'=>array('index'),
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List Contacto', 'url'=>array('index')),
-	array('label'=>'Create Contacto', 'url'=>array('create')),
-	array('label'=>'View Contacto', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Contacto', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Contacto <?php echo $model->id; ?></h1>
+<h1>Modificar Contacto</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

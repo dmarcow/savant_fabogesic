@@ -91,9 +91,30 @@ class QueEsIbuprofenoController extends Controller
 		{
 			$model->attributes=$_POST['QueEsIbuprofeno'];
        	  	$model->FechaModificacion = date("Y-m-d H:i:s");
+
+            $basePath = Yii::app()->theme->basePath . '/img/';
+
+            $uploadedFile1 = CUploadedFile::getInstance($model, 'FImage1Url');
+            if(!empty($uploadedFile1))
+                $model->Image1Url = $uploadedFile1;
+
+            $uploadedFile2 = CUploadedFile::getInstance($model, 'FImage2Url');
+            if(!empty($uploadedFile2))
+                $model->Image2Url = $uploadedFile2;
        	  	
 			if($model->save())
+			{
+				if(!empty($uploadedFile1))
+                {
+                    $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                }
+				if(!empty($uploadedFile2))
+                {
+                    $uploadedFile2->saveAs($basePath . $uploadedFile2);
+                }
+
 				$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		$this->render('update',array(

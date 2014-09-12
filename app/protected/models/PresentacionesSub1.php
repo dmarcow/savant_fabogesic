@@ -20,11 +20,20 @@
  * @property string $Sub5ImageUrl
  * @property string $Sub5Text
  * @property string $Sub5Link
+ * @property string $Prospecto
+ * @property string $Prospecto2
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
 class PresentacionesSub1 extends CActiveRecord
 {
+    public $FSub1ImageUrl;
+    public $FSub4ImageUrl;
+    public $FSub1Link;
+    public $FSub4Link;
+    public $ProspectoFile;
+    public $ProspectoFile2;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -48,10 +57,12 @@ class PresentacionesSub1 extends CActiveRecord
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, Sub4ImageUrl, Sub4Text, Sub4Link, Sub5ImageUrl, Sub5Text, Sub5Link, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
 			
-			//array('Sub1ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
-			//array('Sub4ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
-			//array('Sub1Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
-			//array('Sub4Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub1ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub4ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub1Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub4Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('ProspectoFile', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('ProspectoFile2', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'),              
 		);
 	}
 
@@ -94,6 +105,12 @@ class PresentacionesSub1 extends CActiveRecord
 			
 			'Sub1Link' => '400mg',
 			'Sub4Link' => '600mg',
+
+			'Prospecto' => 'PDF Prospecto 400mg',
+			'Prospecto2' => 'PDF Prospecto 600mg',
+
+			'ProspectoFile' => 'PDF Prospecto 400mg',
+			'ProspectoFile2' => 'PDF Prospecto 600mg',
 
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',

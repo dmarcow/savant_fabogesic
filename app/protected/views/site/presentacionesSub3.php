@@ -251,9 +251,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <?php $url1 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto1ImageUrl; ?>
+        <?php
+            $url1 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto1ImageUrl;
+            $url1pdf = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto;
+        ?>
         <p><img class="img-responsive" src="<?php echo $url1 ?>" /></p>
-        <a role="button" class="btn btn-primary" href="<?php echo $url1 ?>" target="_blank">Descargar</a>
+        <a role="button" class="btn btn-primary" href="<?php echo $url1pdf ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -266,9 +269,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
-        <?php $url2 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto2ImageUrl; ?>
+        <?php
+            $url2 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto2ImageUrl;
+            $url2pdf = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub3Model->Prospecto2;
+        ?>
         <p><img class="img-responsive" src="<?php echo $url2 ?>" /></p>
-        <a role="button" class="btn btn-primary" href="<?php echo $url2 ?>" target="_blank">Descargar</a>
+        <a role="button" class="btn btn-primary" href="<?php echo $url2pdf ?>" target="_blank">Descargar</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

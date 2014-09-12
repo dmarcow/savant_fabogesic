@@ -30,11 +30,30 @@
  * @property string $Text13
  * @property string $Prospecto1ImageUrl
  * @property string $Prospecto2ImageUrl
+ * @property string $Prospecto
+ * @property string $Prospecto2
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
 class PresentacionesSub3 extends CActiveRecord
 {
+    public $FImage1Url;
+    public $FImage2Url;
+    public $FImage3Url;
+    public $FImage4Url;
+    public $FImage5Url;
+    public $FImage6Url;
+    public $FImage7Url;
+    public $FImage8Url;
+    public $FImage9Url;
+    public $FImage10Url;
+    public $FBtnImageUrl1;
+    public $FBtnImageUrl2;
+    public $FProspecto1ImageUrl;
+    public $FProspecto2ImageUrl;
+    public $ProspectoFile;
+    public $ProspectoFile2;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -57,6 +76,23 @@ class PresentacionesSub3 extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Image1Url, Image2Url, Image3Url, Image4Url, Image5Url, Image6Url, Image7Url, Image8Url, Image9Url, Image10Url, Text1, Text2, Text3, Text4, Text5, Text6, BtnImageUrl1, BtnImageUrl2, Text9, Text10, Text11, Text12, Text13, Prospecto1ImageUrl, Prospecto2ImageUrl, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+            array('FImage1Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage2Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage3Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage4Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage5Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage6Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage7Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage8Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage9Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage10Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),   
+            array('FBtnImageUrl1', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FBtnImageUrl2', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),   
+            array('FProspecto1ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FProspecto2ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			array('ProspectoFile', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('ProspectoFile2', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'),                                                  
 		);
 	}
 
@@ -78,33 +114,38 @@ class PresentacionesSub3 extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Image1Url' => 'Image1 Url',
-			'Image2Url' => 'Image2 Url',
-			'Image3Url' => 'Image3 Url',
-			'Image4Url' => 'Image4 Url',
-			'Image5Url' => 'Image5 Url',
-			'Image6Url' => 'Image6 Url',
-			'Image7Url' => 'Image7 Url',
-			'Image8Url' => 'Image8 Url',
-			'Image9Url' => 'Image9 Url',
-			'Image10Url' => 'Image10 Url',
-			'Text1' => 'Text1',
-			'Text2' => 'Text2',
-			'Text3' => 'Text3',
-			'Text4' => 'Text4',
-			'Text5' => 'Text5',
-			'Text6' => 'Text6',
-			'BtnImageUrl1' => 'Btn Image Url1',
-			'BtnImageUrl2' => 'Btn Image Url2',
-			'Text9' => 'Text9',
-			'Text10' => 'Text10',
-			'Text11' => 'Text11',
-			'Text12' => 'Text12',
-			'Text13' => 'Text13',
-			'Prospecto1ImageUrl' => 'Prospecto1 Image Url',
-			'Prospecto2ImageUrl' => 'Prospecto2 Image Url',
+			'Image1Url' => 'Imagen Sección Pediátrica',
+			'Image2Url' => 'Header Sección Pediátrica',
+			'Image3Url' => 'Imagen Tip Sección Pediátrica',
+			'Image4Url' => 'Imagen Caja Niños x 10',
+			'Image5Url' => 'Imagen Venta Bajo Receta',
+			'Image6Url' => 'Imagen Niña',
+			'Image7Url' => 'Imagen Caja Niños x 20',
+			'Image8Url' => 'Imagen Venta Libre',
+			'Image9Url' => 'Imagen Vaquita',
+			'Image10Url' => 'Imagen Niño',
+			'Text1' => 'Texto 1',
+			'Text2' => 'Texto 2',
+			'Text3' => 'Texto 3',
+			'Text4' => 'Texto 4',
+			'Text5' => 'Texto 5',
+			'Text6' => 'Texto 6',
+			'BtnImageUrl1' => 'Botón Pregunta 1',
+			'BtnImageUrl2' => 'Botón Pregunta 2',
+			'Text9' => 'Texto 9',
+			'Text10' => 'Texto 10',
+			'Text11' => 'Texto 11',
+			'Text12' => 'Texto 12',
+			'Text13' => 'Texto 13',
+			'Prospecto1ImageUrl' => 'Prospecto 2%',
+			'Prospecto2ImageUrl' => 'Prospecto 4%',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
+            'Prospecto' => 'PDF Prospecto 2%',
+			'Prospecto2' => 'PDF Prospecto 4%',
+
+			'ProspectoFile' => 'PDF Prospecto 2%',
+			'ProspectoFile2' => 'PDF Prospecto 4%',
 		);
 	}
 

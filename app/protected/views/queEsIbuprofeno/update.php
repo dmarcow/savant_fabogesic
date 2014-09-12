@@ -3,19 +3,15 @@
 /* @var $model QueEsIbuprofeno */
 
 $this->breadcrumbs=array(
-	'Que Es Ibuprofenos'=>array('index'),
-	$model->Title=>array('view','id'=>$model->id),
-	'Update',
+	'¿Qué es el Ibuprofeno?'=>array('index'),
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List QueEsIbuprofeno', 'url'=>array('index')),
-	array('label'=>'Create QueEsIbuprofeno', 'url'=>array('create')),
-	array('label'=>'View QueEsIbuprofeno', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage QueEsIbuprofeno', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update QueEsIbuprofeno <?php echo $model->id; ?></h1>
+<h1>Modificar ¿Qué es el Ibuprofeno?</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

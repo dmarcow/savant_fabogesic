@@ -14,11 +14,20 @@
  * @property string $Sub3ImageUrl
  * @property string $Sub3Text
  * @property string $Sub3Link
+ * @property string $Prospecto
+ * @property string $Prospecto2
  * @property string $FechaCreacion
  * @property string $FechaModificacion
  */
 class PresentacionesSub2 extends CActiveRecord
 {
+    public $FSub1ImageUrl;
+    public $FSub2ImageUrl;
+    public $FSub1Link;
+    public $FSub2Link;
+    public $ProspectoFile;
+    public $ProspectoFile2;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -40,6 +49,13 @@ class PresentacionesSub2 extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Sub1ImageUrl, Sub1Text, Sub1Link, Sub2ImageUrl, Sub2Text, Sub2Link, Sub3ImageUrl, Sub3Text, Sub3Link, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+			array('FSub1ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub2ImageUrl', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub1Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('FSub2Link', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('ProspectoFile', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'), 
+			array('ProspectoFile2', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'),        
 		);
 	}
 
@@ -61,17 +77,23 @@ class PresentacionesSub2 extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Sub1ImageUrl' => 'Sub1 Image Url',
-			'Sub1Text' => 'Sub1 Text',
-			'Sub1Link' => 'Sub1 Link',
-			'Sub2ImageUrl' => 'Sub2 Image Url',
-			'Sub2Text' => 'Sub2 Text',
-			'Sub2Link' => 'Sub2 Link',
-			'Sub3ImageUrl' => 'Sub3 Image Url',
-			'Sub3Text' => 'Sub3 Text',
-			'Sub3Link' => 'Sub3 Link',
+			'Sub1ImageUrl' => 'Imagen Principal',
+			'Sub1Text' => 'Descripción',
+			'Sub1Link' => '400mg',
+			'Sub2ImageUrl' => 'Imagen Principal',
+			'Sub2Text' => 'Descripción 1',
+			'Sub2Link' => '600mg',
+			'Sub3ImageUrl' => 'Imagen Principal',
+			'Sub3Text' => 'Descripción 2',
+			'Sub3Link' => '600mg',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
+			
+            'Prospecto' => 'PDF Prospecto 400mg',
+			'Prospecto2' => 'PDF Prospecto 600mg',
+
+			'ProspectoFile' => 'PDF Prospecto 400mg',
+			'ProspectoFile2' => 'PDF Prospecto 600mg',
 		);
 	}
 

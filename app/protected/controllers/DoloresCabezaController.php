@@ -92,9 +92,22 @@ class DoloresCabezaController extends Controller
 		{
 			$model->attributes=$_POST['DoloresCabeza'];
         	$model->FechaModificacion = date("Y-m-d H:i:s"); 
+
+			$basePath = Yii::app()->theme->basePath . '/img/'; 
+
+            $uploadedFile1 = CUploadedFile::getInstance($model, 'FImageUrl');
+            if(!empty($uploadedFile1))
+                $model->ImageUrl = $uploadedFile1;
         	
 			if($model->save())
+			{
+				if(!empty($uploadedFile1))
+                {
+                    $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                }				
+
 				$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 
 		$this->render('update',array(

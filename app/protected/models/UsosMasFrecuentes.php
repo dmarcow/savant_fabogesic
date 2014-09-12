@@ -22,6 +22,12 @@
  */
 class UsosMasFrecuentes extends CActiveRecord
 {
+    public $FImage1Url;
+    public $FImage2Url;
+    public $FImage3Url;
+    public $FImage4Url;
+    public $FImage5Url;
+    public $FImage6Url;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -43,6 +49,13 @@ class UsosMasFrecuentes extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Image1Url, Text1, Image2Url, Text2, Image3Url, Text3, Image4Url, Text4, Image5Url, Text5, Image6Url, Text6, FechaCreacion, FechaModificacion', 'safe', 'on'=>'search'),
+
+            array('FImage1Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage2Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage3Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage4Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage5Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+            array('FImage6Url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -64,18 +77,18 @@ class UsosMasFrecuentes extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Image1Url' => 'Image1 Url',
-			'Text1' => 'Text1',
-			'Image2Url' => 'Image2 Url',
-			'Text2' => 'Text2',
-			'Image3Url' => 'Image3 Url',
-			'Text3' => 'Text3',
-			'Image4Url' => 'Image4 Url',
-			'Text4' => 'Text4',
-			'Image5Url' => 'Image5 Url',
-			'Text5' => 'Text5',
-			'Image6Url' => 'Image6 Url',
-			'Text6' => 'Text6',
+			'Image1Url' => 'Dolores Musculares',
+			'Text1' => 'Dolores Musculares',
+			'Image2Url' => 'Dolores Menstruales',
+			'Text2' => 'Dolores Menstruales',
+			'Image3Url' => 'Dolores Posturales',
+			'Text3' => 'Dolores Posturales',
+			'Image4Url' => 'Dolores Cabeza',
+			'Text4' => 'Dolores Cabeza',
+			'Image5Url' => 'Dolores Articulares',
+			'Text5' => 'Dolores Articulares',
+			'Image6Url' => 'Dolores Niños',
+			'Text6' => 'Dolores Niños',
 			'FechaCreacion' => 'Fecha Creacion',
 			'FechaModificacion' => 'Fecha Modificacion',
 		);

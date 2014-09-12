@@ -43,7 +43,7 @@
 				array('label'=>'PRODUCTOS', 'url'=>array('/site/presentaciones')),
 				array('label'=>'¿QUÉ ES EL IBUPROFENO?', 'url'=>array('/site/queEsIbuprofeno')),
 				array('label'=>'¿USOS MÁS FRECUENTES', 'url'=>array('/site/usosMasFrecuentes')),
-				array('label'=>'CONTACTO', 'url'=>array('/site/contact')),
+				array('label'=>'RÁPIDA ACCIÓN', 'url'=>array('/site/prospectoIbuprofeno')),
 				//array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.$UserName.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'BackOffice', 'url'=>array('/BackOffice'), 'visible'=>Yii::app()->user->name != 0 && !Yii::app()->user->isGuest )

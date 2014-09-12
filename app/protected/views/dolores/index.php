@@ -7,8 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Dolores', 'url'=>array('create')),
-	array('label'=>'Manage Dolores', 'url'=>array('admin')),
+  array('label'=>'Modificar Dolores', 'url'=>array('dolores/update/1')),
 );
 ?>
 

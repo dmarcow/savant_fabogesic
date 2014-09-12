@@ -91,9 +91,69 @@ class PresentacionesSub2Controller extends Controller
 		{
 			$model->attributes=$_POST['PresentacionesSub2'];
        	  	$model->FechaModificacion = date("Y-m-d H:i:s");
-       	  	
+
+            $basePath = Yii::app()->theme->basePath . '/img/';
+
+       	  	$uploadedFile1 = CUploadedFile::getInstance($model, 'FSub1ImageUrl');
+            if(!empty($uploadedFile1))
+                $model->Sub1ImageUrl = $uploadedFile1;
+
+       	  	$uploadedFile2 = CUploadedFile::getInstance($model, 'FSub2ImageUrl');
+            if(!empty($uploadedFile2))
+            {
+                $model->Sub2ImageUrl = $uploadedFile2;
+                $model->Sub3ImageUrl = $uploadedFile2;
+       	  	}
+
+            $uploadedFile3 = CUploadedFile::getInstance($model,'FSub1Link');
+            if(!empty($uploadedFile3))
+                $model->Sub1Link = $uploadedFile3;
+
+            $uploadedFile4 = CUploadedFile::getInstance($model,'FSub2Link');
+            if(!empty($uploadedFile4))
+            {
+                $model->Sub2Link = $uploadedFile4;
+                $model->Sub3Link = $uploadedFile4;
+            }
+
+            $uploadedFile5 = CUploadedFile::getInstance($model,'ProspectoFile');
+            if(!empty($uploadedFile5))
+                $model->Prospecto = $uploadedFile5;
+
+            $uploadedFile6 = CUploadedFile::getInstance($model,'ProspectoFile2');
+            if(!empty($uploadedFile6))
+                $model->Prospecto2 = $uploadedFile6;
+
 			if($model->save())
+            {
+				 if(!empty($uploadedFile1))
+                 {
+                     $uploadedFile1->saveAs($basePath . $uploadedFile1);
+                 }
+                 if(!empty($uploadedFile2))
+                 {
+                     $uploadedFile2->saveAs($basePath . $uploadedFile2);
+                 }
+                 if(!empty($uploadedFile3))
+                 {
+                     $uploadedFile3->saveAs($basePath . '/prospectos/'.$uploadedFile3);
+                 }
+                 if(!empty($uploadedFile4))
+                 {
+                     $uploadedFile4->saveAs($basePath . '/prospectos/'.$uploadedFile4);
+                 }
+
+                 if(!empty($uploadedFile5))
+                 {
+                     $uploadedFile5->saveAs($basePath . '/prospectos/'.$uploadedFile5);
+                 }
+                 if(!empty($uploadedFile6))
+                 {
+                     $uploadedFile6->saveAs($basePath . '/prospectos/'.$uploadedFile6);
+                 }
+
 				$this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(

@@ -20,11 +20,11 @@ $this->pageTitle=Yii::app()->name;
   			}
     	}?>
       </ol>
-
       <div class="carousel-inner">
 
       	<?php 
       		for($i = 0; $i < count($sliders); $i++){
+        	
 	        	$url = HTTP_AND_SERVER_CONST . Yii::app()->baseUrl . "/" . SLIDE_IMAGES_PATH . $sliders[$i]->ImageUrl;
             $link = $sliders[$i]->LinkUrl;
 		        if($i == 0){
@@ -53,14 +53,40 @@ $this->pageTitle=Yii::app()->name;
     <div class="marketing">
 
       <!-- Four columns of text below the carousel -->
+
+      	<?php
+            for($i = 0; $i < count($hboxes); $i++){
+                $bgclass = 'bg-primary';
+                if($i % 2 != 0)
+                    $bgclass = 'bg-warning';
+
+                $linkTarget = '';
+                
+                if(strpos($hboxes[$i]->ButtonLink, 'http://') === false)
+                    $linkUrl =  Yii::app()->createUrl($hboxes[$i]->ButtonLink);
+                else
+                {
+                    $linkUrl = $hboxes[$i]->ButtonLink;
+                    $linkTarget = ' target="_blank"';
+                }
+
+                echo('<div class="col-md-3 '.$bgclass.'">') ;
+                echo('<h4>'.$hboxes[$i]->Title.'</h4>');
+                echo('<p>'.$hboxes[$i]->Text.'</p>');
+                echo('<a href="'.$linkUrl.'" role="button" class="btn '.$hboxes[$i]->ButtonClass.'"'.$linkTarget.'>'.$hboxes[$i]->ButtonText.'</a>');
+                if(!empty($hboxes[$i]->ImageUrl))
+                    echo('<img src="'.Yii::app()->theme->baseUrl . '/img/'.$hboxes[$i]->ImageUrl. '" alt="'.$hboxes[$i]->Title.'">');
+                echo('</div>') ;
+            }              
+        ?> 
         
-        <div class="col-md-3 bg-primary">
+    <!--    <div class="col-md-3 bg-primary">
           <h4>PRODUCTO</h4>
           <p>Conocé las distintas versiones de Fabogesic: cápsulas blandas, comprimidos, solución oral, en sus distintas presentaciones.</p>
           <?php $url1 = Yii::app()->createUrl('site/presentaciones/'); ?>
           <a class="btn btn-warning" href="<?php echo $url1?>" role="button">VER MÁS</a>
           <img src="<?php echo Yii::app()->theme->baseUrl . '/img/fabogesic-cajas.png'?> " alt="PRESENTACIONES">
-        </div><!-- /.col-md-3 -->
+        </div>
         
         <div class="col-md-3 bg-warning">
           <h4>¿QUÉ ES IBUPROFENO?</h4>
@@ -68,7 +94,7 @@ $this->pageTitle=Yii::app()->name;
           <?php $url2 = Yii::app()->createUrl('site/queEsIbuprofeno/'); ?>
           <a class="btn btn-primary" href="<?php echo $url2 ?>" role="button">VER MÁS</a>
           <img src="<?php echo Yii::app()->theme->baseUrl . '/img/fabogesic-capsulas.png'?> " alt="¿QUÉ ES IBUPROFENO?">
-        </div><!-- /.col-md-3 -->
+        </div>
         
         <div class="col-md-3 bg-primary">
           <h4>USOS MÁS FRECUENTES</h4>
@@ -76,19 +102,19 @@ $this->pageTitle=Yii::app()->name;
           <?php $url3 = Yii::app()->createUrl('site/usosMasFrecuentes/'); ?>
           <a class="btn btn-success" href="<?php echo $url3 ?>" role="button">VER MÁS</a>
           <img src="<?php echo Yii::app()->theme->baseUrl . '/img/pizarra.png'?> " alt="USOS MÁS FRECUENTES">
-        </div> <!-- /.col-md-3 -->
+        </div>
 
         <div class="col-md-3 bg-warning">
           <h4>CERTEZA DE CALIDAD</h4>
           <p>Fabogesic es producido y comercializado por SAVANT.</p>
           <a class="btn btn-default" href="http://www.savant.com.ar" target="_blank" role="button">VER MÁS</a>
-        </div> <!-- /.col-xs-6 .col-sm-3 -->
+        </div> -->
 
     </div><!-- /.marketing -->
 
 
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="true">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">

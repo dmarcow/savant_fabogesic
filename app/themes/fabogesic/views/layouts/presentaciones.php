@@ -9,7 +9,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> -->
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
     <meta name="description" content="" />
-    <meta name="author" content="ClaPat Studio">
+    <meta name="author" content="SAVANT">
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl ?>/img/favicon.ico">
@@ -60,9 +60,10 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" <?php if(!Yii::app()->user->isGuest){ echo "id = menuLogged";}?>>
               	<li class="active"><a href="<?php echo $this->createUrl('/site/presentaciones') ?>">PRODUCTOS</a></li>
-                <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
+                
                 <li><a href="<?php echo $this->createUrl('/site/usosMasFrecuentes') ?>">USOS MÁS FRECUENTES</a></li>
-                <li><a href="<?php echo $this->createUrl('/site/contact') ?>">CONTACTO</a></li>
+                <li><a href="<?php echo $this->createUrl('/site/prospectoIbuprofeno') ?>">RÁPIDA ACCIÓN</a></li>
+                <li><a href="<?php echo $this->createUrl('/site/queEsIbuprofeno') ?>">¿QUÉ ES EL IBUPROFENO?</a></li>
                 <?php if(!Yii::app()->user->isGuest ){ ?>
                 	<li><a href="<?php echo $this->createUrl('/site/logout') ?>">LOGOUT ( <?php echo utf8_encode($UserName) ?> )</a></li>
                 <?php }
@@ -96,9 +97,9 @@
 	<script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/app.js"></script>
 
 	<script>
-	//   $('#myModal').modal({
-	//       show: true
-	//   });
+	  $('#myModal').modal({
+	      show: true
+	  });
 	</script>
 
 	<!-- Google Analytics -->

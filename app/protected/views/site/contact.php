@@ -2,7 +2,7 @@
 /* @var $this SiteController */
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
-
+//Yii::app()->clientScript->registerCoreScript('jquery.ui');
 $this->pageTitle=Yii::app()->name . ' - Contacto';
 ?>
 
@@ -58,7 +58,7 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
         
         <?php $form=$this->beginWidget('CActiveForm', array(
           'id'=>'contact-form',
-          'enableClientValidation'=>true,
+          'enableClientValidation'=>false,
           'clientOptions'=>array(
             'validateOnSubmit'=>true
           )
@@ -114,7 +114,35 @@ $this->pageTitle=Yii::app()->name . ' - Contacto';
   </div>
 
 </div><!-- /.container -->
-
+<?php
+  if($attempt)
+  {
+    $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+      'id'=>'mymodal',
+      'options'=>array(
+          'title'=>'Solicitud Contacto',
+          'width'=>400,
+          'height'=>200,
+          'autoOpen'=>true,
+          'resizable'=>false,
+          'modal'=>true,
+          'overlay'=>array(
+              'backgroundColor'=>'#000',
+              'opacity'=>'0.5'
+          ),
+          'buttons'=>array(
+              'OK'=>'js:function(){$(this).dialog("close");}',
+          ),
+      ),
+  ));
+  if($sent)
+    echo 'Los datos se enviaron correctamente. Nos comunicaremos con Ud. a la brevedad.';
+  else
+    echo 'Ocurrió un error al procesar la solicitud. Por favor reinténtelo en unos minutos.';
+    
+  $this->endWidget('zii.widgets.jui.CJuiDialog');
+  }
+?>
 
 
 

@@ -13,7 +13,7 @@
         <p><?php echo $usosModel->Text4 ?></p>
       </div>
     </a><!-- /.col-sm-4 -->
-    <?php $url6 = Yii::app()->createUrl('site/presentacionesSub3/'); ?>
+    <?php $url6 = Yii::app()->createUrl('site/doloresNinos/'); ?>
     <a href="<?php echo $url6 ?>" class="col-sm-4">
       <div class="producto usos-frecuentes">
          <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $usosModel->Image6Url ?> " alt="Dolores en niños" />

@@ -8,11 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List PresentacionesSub3', 'url'=>array('index')),
-	array('label'=>'Create PresentacionesSub3', 'url'=>array('create')),
-	array('label'=>'Update PresentacionesSub3', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete PresentacionesSub3', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage PresentacionesSub3', 'url'=>array('admin')),
+	array('label'=>'Lista PresentacionesSub3', 'url'=>array('index')),
+	array('label'=>'Modificar PresentacionesSub3', 'url'=>array('update', 'id'=>$model->id)),
 );
 ?>
 
@@ -47,5 +44,7 @@ $this->menu=array(
 		'Text13',
 		'Prospecto1ImageUrl',
 		'Prospecto2ImageUrl',
+        'Prospecto',
+        'Prospecto2',
 	),
 )); ?>

@@ -31,6 +31,8 @@ $this->menu=array(
 		'Sub3ImageUrl',
 		'Sub3Text',
 		'Sub3Link',
+		'Prospecto',
+		'Prospecto2',
 		'FechaCreacion',
 		'FechaModificacion',
 	),

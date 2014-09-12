@@ -3,16 +3,15 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Que Es Ibuprofenos',
+	'¿Qué es el Ibuprofeno?',
 );
 
 $this->menu=array(
-	array('label'=>'Create QueEsIbuprofeno', 'url'=>array('create')),
-	array('label'=>'Manage QueEsIbuprofeno', 'url'=>array('admin')),
+  array('label'=>'Modificar ¿Qué es el Ibuprofeno?', 'url'=>array('QueEsIbuprofeno/update/1')),
 );
 ?>
 
-<h1>Que Es Ibuprofenos</h1>
+<h1>¿Qué es el Ibuprofeno?</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

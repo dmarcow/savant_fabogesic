@@ -7,8 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create ProspectoIbuprofeno', 'url'=>array('create')),
-	array('label'=>'Manage ProspectoIbuprofeno', 'url'=>array('admin')),
+  array('label'=>'Modificar Prospecto Ibuprofenos', 'url'=>array('prospectoIbuprofeno/update/1')),
 );
 ?>
 

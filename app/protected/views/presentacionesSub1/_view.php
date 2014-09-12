@@ -17,11 +17,11 @@
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1Text')); ?>:</dt>
       <dd><?php echo $data->Sub1Text; ?></dd>
       
-      <!-- <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</dt>
+      <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub2Text')); ?>:</dt>
       <dd><?php echo $data->Sub2Text; ?></dd>
 
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub3Text')); ?>:</dt>
-      <dd><?php echo $data->Sub3Text; ?></dd> -->
+      <dd><?php echo $data->Sub3Text; ?></dd>
     
     </dl>
 
@@ -36,8 +36,8 @@
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub4Text')); ?>:</dt>
       <dd><?php echo $data->Sub4Text; ?></dd>
       
-      <!-- <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub5Text')); ?>:</dt>
-      <dd><?php echo $data->Sub5Text; ?></dd> -->
+      <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub5Text')); ?>:</dt>
+      <dd><?php echo $data->Sub5Text; ?></dd>
     
     </dl>
 
@@ -47,11 +47,14 @@
 	<dl class="dl-horizontal">
       
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub1Link')); ?>:</dt>
-      <dd><?php echo $data->Sub1Link; ?></dd>
+      <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . CHtml::encode($data->Sub1Link) ?>" width="80px" height="auto"></dd>
+      <dt><?php echo CHtml::encode($data->getAttributeLabel('Prospecto')); ?>:</dt>
+      <dd><?php echo CHtml::encode($data->Prospecto); ?></dd>
       
       <dt><?php echo CHtml::encode($data->getAttributeLabel('Sub4Link')); ?>:</dt>
-      <dd><?php echo $data->Sub4Link; ?></dd>
-    
+      <dd><img src="<?php echo Yii::app()->theme->baseUrl . '/img/prospectos/' . CHtml::encode($data->Sub4Link) ?>" width="80px" height="auto"></dd>
+      <dt><?php echo CHtml::encode($data->getAttributeLabel('Prospecto2')); ?>:</dt>
+      <dd><?php echo CHtml::encode($data->Prospecto2); ?></dd>
     </dl>
 
 

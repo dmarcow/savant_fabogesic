@@ -13,12 +13,53 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+  'htmlOptions' => array('enctype'=>'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
+  <h4>Imágenes</h4>
+
+  <div class="row">
+		<?php echo $form->labelEx($model,'ImageIcon1Url'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->ImageIcon1Url; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FImageIcon1Url', array('required' => false)); ?>  
+		<?php echo $form->error($model,'ImageIcon1Url'); ?>
+	</div>
+  
+  <div class="row">
+    <?php echo $form->labelEx($model,'ImageIcon2Url'); ?>
+    <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->ImageIcon2Url; ?>" width="80px" height="auto"><br>
+      <?php echo CHtml::activeFileField($model, 'FImageIcon2Url', array('required' => false)); ?>
+      <?php echo $form->error($model,'ImageIcon2Url'); ?>
+  </div>
+
+  <div class="row">
+		<?php echo $form->labelEx($model,'ImageIcon3Url'); ?>
+		<img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->ImageIcon3Url; ?>" width="80px" height="auto"><br>
+		<?php echo CHtml::activeFileField($model, 'FImageIcon3Url', array('required' => false)); ?>  
+		<?php echo $form->error($model,'ImageIcon3Url'); ?>
+	</div>
+  
+  <div class="row">
+    <?php echo $form->labelEx($model,'ImageIcon4Url'); ?>
+    <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->ImageIcon4Url; ?>" width="80px" height="auto"><br>
+      <?php echo CHtml::activeFileField($model, 'FImageIcon4Url', array('required' => false)); ?>
+      <?php echo $form->error($model,'ImageIcon4Url'); ?>
+  </div>
+
+  <div class="row">
+    <?php echo $form->labelEx($model,'GraphicImageUrl'); ?>
+    <img src="<?php echo Yii::app()->theme->baseUrl . '/img/' . $model->GraphicImageUrl; ?>" width="80px" height="auto"><br>
+      <?php echo CHtml::activeFileField($model, 'FGraphicImageUrl', array('required' => false)); ?>
+      <?php echo $form->error($model,'GraphicImageUrl'); ?>
+  </div>
+
+  <hr/>
+  <h4>Textos</h4>
+  
 	<div class="row">
 		<?php echo $form->labelEx($model,'Title'); ?>
 		<?php echo $form->textField($model,'Title',array('size'=>60,'maxlength'=>200)); ?>

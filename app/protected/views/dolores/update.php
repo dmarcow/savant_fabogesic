@@ -4,18 +4,14 @@
 
 $this->breadcrumbs=array(
 	'Dolores'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List Dolores', 'url'=>array('index')),
-	array('label'=>'Create Dolores', 'url'=>array('create')),
-	array('label'=>'View Dolores', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Dolores', 'url'=>array('admin')),
+	array('label'=>'Atrás', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Dolores <?php echo $model->id; ?></h1>
+<h1>Modificar Dolores</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
