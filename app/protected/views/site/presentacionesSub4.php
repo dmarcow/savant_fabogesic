@@ -91,7 +91,7 @@
       </div>
       <div class="modal-body">
         <?php
-            $url1 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Prospecto1ImageUrl;
+            $url1 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Sub1Link;
             $url1pdf = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Prospecto;
         ?>
         <p><img class="img-responsive" src="<?php echo $url1 ?>" /></p>
@@ -109,7 +109,7 @@
       </div>
       <div class="modal-body">
         <?php
-            $url2 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Prospecto2ImageUrl;
+            $url2 = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Sub2Link;
             $url2pdf = Yii::app()->theme->baseUrl . '/img/prospectos/' . $presSub4Model->Prospecto2;
         ?>
         <p><img class="img-responsive" src="<?php echo $url2 ?>" /></p>
